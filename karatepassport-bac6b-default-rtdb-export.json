@@ -1,0 +1,46 @@
+{
+  "cinture": {
+    "15": {
+      "dan1": "5/5/1997",
+      "dan2": "5/5/2000",
+      "dan3": "5/5/2005",
+      "dan4": "5/5/2012",
+      "dan5": "5/5/2020",
+      "numeroTessera": 15
+    },
+    "106": {
+      "dan1": "10/11/2020",
+      "dan2": "10/11/2022",
+      "kyu1": "10/11/2018",
+      "kyu2": "10/11/2017",
+      "numeroTessera": 106
+    },
+    "127": {
+      "kyu2": "3/3/2022",
+      "numeroTessera": 127
+    }
+  },
+  "users": {
+    "15": {
+      "email": "ariella@gmail.com",
+      "flagMaestro": true,
+      "numeroTessera": 15,
+      "password": "Ariellapass",
+      "username": "Ariella"
+    },
+    "106": {
+      "email": "camillagiaccari97@gmail.com",
+      "flagMaestro": false,
+      "numeroTessera": 106,
+      "password": "Camillapass",
+      "username": "Camilla Giaccari"
+    },
+    "127": {
+      "email": "gianni@gmail.com",
+      "flagMaestro": false,
+      "numeroTessera": 127,
+      "password": "Giannipass",
+      "username": "Gianni"
+    }
+  }
+}
