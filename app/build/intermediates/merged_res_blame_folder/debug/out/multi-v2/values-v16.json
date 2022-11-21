@@ -4,7 +4,17 @@
             "outputFile": "/Users/Camilla/AndroidStudioProjects/KaratePassport/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-v16/values-v16.xml",
             "map": [
                 {
-                    "source": "/Users/Camilla/.gradle/caches/transforms-3/ec4e0aa6e4c4d69a03cd15be7053f44e/transformed/appcompat-1.5.1/res/values-v16/values-v16.xml",
+                    "source": "/Users/Camilla/.gradle/caches/transforms-3/d2c2a41cccc4a8a09f37d2d4b50f77ad/transformed/core-1.8.0/res/values-v16/values-v16.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "65",
+                        "endOffsets": "116"
+                    }
+                },
+                {
+                    "source": "/Users/Camilla/.gradle/caches/transforms-3/c5a01bac072979aa1dd720ccb0ad1cad/transformed/appcompat-1.5.1/res/values-v16/values-v16.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
@@ -20,16 +30,6 @@
                         "endLines": "6",
                         "endColumns": "12",
                         "endOffsets": "289"
-                    }
-                },
-                {
-                    "source": "/Users/Camilla/.gradle/caches/transforms-3/153d23b0292a73e428efdc92bbd7fd89/transformed/core-1.8.0/res/values-v16/values-v16.xml",
-                    "from": {
-                        "startLines": "2",
-                        "startColumns": "4",
-                        "startOffsets": "55",
-                        "endColumns": "65",
-                        "endOffsets": "116"
                     }
                 }
             ]

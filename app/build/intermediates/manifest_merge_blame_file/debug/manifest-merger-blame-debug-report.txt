@@ -11,11 +11,11 @@
 9-->/Users/Camilla/AndroidStudioProjects/KaratePassport/app/src/main/AndroidManifest.xml
 10
 11    <application
-11-->/Users/Camilla/AndroidStudioProjects/KaratePassport/app/src/main/AndroidManifest.xml:5:5-22:19
+11-->/Users/Camilla/AndroidStudioProjects/KaratePassport/app/src/main/AndroidManifest.xml:5:5-21:19
 12        android:allowBackup="true"
 12-->/Users/Camilla/AndroidStudioProjects/KaratePassport/app/src/main/AndroidManifest.xml:6:9-35
 13        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
-13-->[androidx.core:core:1.8.0] /Users/Camilla/.gradle/caches/transforms-3/153d23b0292a73e428efdc92bbd7fd89/transformed/core-1.8.0/AndroidManifest.xml:24:18-86
+13-->[androidx.core:core:1.8.0] /Users/Camilla/.gradle/caches/transforms-3/d2c2a41cccc4a8a09f37d2d4b50f77ad/transformed/core-1.8.0/AndroidManifest.xml:24:18-86
 14        android:debuggable="true"
 15        android:icon="@mipmap/ic_launcher"
 15-->/Users/Camilla/AndroidStudioProjects/KaratePassport/app/src/main/AndroidManifest.xml:7:9-43
@@ -25,48 +25,47 @@
 17-->/Users/Camilla/AndroidStudioProjects/KaratePassport/app/src/main/AndroidManifest.xml:9:9-54
 18        android:supportsRtl="true"
 18-->/Users/Camilla/AndroidStudioProjects/KaratePassport/app/src/main/AndroidManifest.xml:10:9-35
-19        android:theme="@style/Theme.KaratePassport" >
-19-->/Users/Camilla/AndroidStudioProjects/KaratePassport/app/src/main/AndroidManifest.xml:11:9-52
-20        <activity
-20-->/Users/Camilla/AndroidStudioProjects/KaratePassport/app/src/main/AndroidManifest.xml:12:9-21:20
-21            android:name="it.units.karatepassport.ui.login.LoginActivity"
-21-->/Users/Camilla/AndroidStudioProjects/KaratePassport/app/src/main/AndroidManifest.xml:13:13-51
-22            android:exported="true"
-22-->/Users/Camilla/AndroidStudioProjects/KaratePassport/app/src/main/AndroidManifest.xml:14:13-36
-23            android:label="@string/app_name" >
-23-->/Users/Camilla/AndroidStudioProjects/KaratePassport/app/src/main/AndroidManifest.xml:15:13-45
+19        android:testOnly="true"
+20        android:theme="@style/Theme.KaratePassport" >
+20-->/Users/Camilla/AndroidStudioProjects/KaratePassport/app/src/main/AndroidManifest.xml:11:9-52
+21        <activity
+21-->/Users/Camilla/AndroidStudioProjects/KaratePassport/app/src/main/AndroidManifest.xml:12:9-20:20
+22            android:name="it.units.karatepassport.MainActivity"
+22-->/Users/Camilla/AndroidStudioProjects/KaratePassport/app/src/main/AndroidManifest.xml:13:13-41
+23            android:exported="true" >
+23-->/Users/Camilla/AndroidStudioProjects/KaratePassport/app/src/main/AndroidManifest.xml:14:13-36
 24            <intent-filter>
-24-->/Users/Camilla/AndroidStudioProjects/KaratePassport/app/src/main/AndroidManifest.xml:16:13-20:29
+24-->/Users/Camilla/AndroidStudioProjects/KaratePassport/app/src/main/AndroidManifest.xml:15:13-19:29
 25                <action android:name="android.intent.action.MAIN" />
-25-->/Users/Camilla/AndroidStudioProjects/KaratePassport/app/src/main/AndroidManifest.xml:17:17-69
-25-->/Users/Camilla/AndroidStudioProjects/KaratePassport/app/src/main/AndroidManifest.xml:17:25-66
+25-->/Users/Camilla/AndroidStudioProjects/KaratePassport/app/src/main/AndroidManifest.xml:16:17-69
+25-->/Users/Camilla/AndroidStudioProjects/KaratePassport/app/src/main/AndroidManifest.xml:16:25-66
 26
 27                <category android:name="android.intent.category.LAUNCHER" />
-27-->/Users/Camilla/AndroidStudioProjects/KaratePassport/app/src/main/AndroidManifest.xml:19:17-77
-27-->/Users/Camilla/AndroidStudioProjects/KaratePassport/app/src/main/AndroidManifest.xml:19:27-74
+27-->/Users/Camilla/AndroidStudioProjects/KaratePassport/app/src/main/AndroidManifest.xml:18:17-77
+27-->/Users/Camilla/AndroidStudioProjects/KaratePassport/app/src/main/AndroidManifest.xml:18:27-74
 28            </intent-filter>
 29        </activity>
 30
 31        <provider
-31-->[androidx.emoji2:emoji2:1.2.0] /Users/Camilla/.gradle/caches/transforms-3/0961df5fe2f3ba3b8d403bee9cc3fbdd/transformed/emoji2-1.2.0/AndroidManifest.xml:24:9-32:20
+31-->[androidx.emoji2:emoji2:1.2.0] /Users/Camilla/.gradle/caches/transforms-3/cc51ba35f9749843a7ea676b5bba90b4/transformed/emoji2-1.2.0/AndroidManifest.xml:24:9-32:20
 32            android:name="androidx.startup.InitializationProvider"
-32-->[androidx.emoji2:emoji2:1.2.0] /Users/Camilla/.gradle/caches/transforms-3/0961df5fe2f3ba3b8d403bee9cc3fbdd/transformed/emoji2-1.2.0/AndroidManifest.xml:25:13-67
+32-->[androidx.emoji2:emoji2:1.2.0] /Users/Camilla/.gradle/caches/transforms-3/cc51ba35f9749843a7ea676b5bba90b4/transformed/emoji2-1.2.0/AndroidManifest.xml:25:13-67
 33            android:authorities="it.units.karatepassport.androidx-startup"
-33-->[androidx.emoji2:emoji2:1.2.0] /Users/Camilla/.gradle/caches/transforms-3/0961df5fe2f3ba3b8d403bee9cc3fbdd/transformed/emoji2-1.2.0/AndroidManifest.xml:26:13-68
+33-->[androidx.emoji2:emoji2:1.2.0] /Users/Camilla/.gradle/caches/transforms-3/cc51ba35f9749843a7ea676b5bba90b4/transformed/emoji2-1.2.0/AndroidManifest.xml:26:13-68
 34            android:exported="false" >
-34-->[androidx.emoji2:emoji2:1.2.0] /Users/Camilla/.gradle/caches/transforms-3/0961df5fe2f3ba3b8d403bee9cc3fbdd/transformed/emoji2-1.2.0/AndroidManifest.xml:27:13-37
+34-->[androidx.emoji2:emoji2:1.2.0] /Users/Camilla/.gradle/caches/transforms-3/cc51ba35f9749843a7ea676b5bba90b4/transformed/emoji2-1.2.0/AndroidManifest.xml:27:13-37
 35            <meta-data
-35-->[androidx.emoji2:emoji2:1.2.0] /Users/Camilla/.gradle/caches/transforms-3/0961df5fe2f3ba3b8d403bee9cc3fbdd/transformed/emoji2-1.2.0/AndroidManifest.xml:29:13-31:52
+35-->[androidx.emoji2:emoji2:1.2.0] /Users/Camilla/.gradle/caches/transforms-3/cc51ba35f9749843a7ea676b5bba90b4/transformed/emoji2-1.2.0/AndroidManifest.xml:29:13-31:52
 36                android:name="androidx.emoji2.text.EmojiCompatInitializer"
-36-->[androidx.emoji2:emoji2:1.2.0] /Users/Camilla/.gradle/caches/transforms-3/0961df5fe2f3ba3b8d403bee9cc3fbdd/transformed/emoji2-1.2.0/AndroidManifest.xml:30:17-75
+36-->[androidx.emoji2:emoji2:1.2.0] /Users/Camilla/.gradle/caches/transforms-3/cc51ba35f9749843a7ea676b5bba90b4/transformed/emoji2-1.2.0/AndroidManifest.xml:30:17-75
 37                android:value="androidx.startup" />
-37-->[androidx.emoji2:emoji2:1.2.0] /Users/Camilla/.gradle/caches/transforms-3/0961df5fe2f3ba3b8d403bee9cc3fbdd/transformed/emoji2-1.2.0/AndroidManifest.xml:31:17-49
+37-->[androidx.emoji2:emoji2:1.2.0] /Users/Camilla/.gradle/caches/transforms-3/cc51ba35f9749843a7ea676b5bba90b4/transformed/emoji2-1.2.0/AndroidManifest.xml:31:17-49
 38            <meta-data
-38-->[androidx.lifecycle:lifecycle-process:2.4.1] /Users/Camilla/.gradle/caches/transforms-3/9b820917e75e3af801a3cfd0cf2f343a/transformed/lifecycle-process-2.4.1/AndroidManifest.xml:31:13-33:52
+38-->[androidx.lifecycle:lifecycle-process:2.4.1] /Users/Camilla/.gradle/caches/transforms-3/30d54f463dd29bfb0e1a99d2b7654f72/transformed/lifecycle-process-2.4.1/AndroidManifest.xml:31:13-33:52
 39                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
-39-->[androidx.lifecycle:lifecycle-process:2.4.1] /Users/Camilla/.gradle/caches/transforms-3/9b820917e75e3af801a3cfd0cf2f343a/transformed/lifecycle-process-2.4.1/AndroidManifest.xml:32:17-78
+39-->[androidx.lifecycle:lifecycle-process:2.4.1] /Users/Camilla/.gradle/caches/transforms-3/30d54f463dd29bfb0e1a99d2b7654f72/transformed/lifecycle-process-2.4.1/AndroidManifest.xml:32:17-78
 40                android:value="androidx.startup" />
-40-->[androidx.lifecycle:lifecycle-process:2.4.1] /Users/Camilla/.gradle/caches/transforms-3/9b820917e75e3af801a3cfd0cf2f343a/transformed/lifecycle-process-2.4.1/AndroidManifest.xml:33:17-49
+40-->[androidx.lifecycle:lifecycle-process:2.4.1] /Users/Camilla/.gradle/caches/transforms-3/30d54f463dd29bfb0e1a99d2b7654f72/transformed/lifecycle-process-2.4.1/AndroidManifest.xml:33:17-49
 41        </provider>
 42    </application>
 43
