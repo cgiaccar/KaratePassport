@@ -10,63 +10,200 @@
 9        android:targetSdkVersion="32" />
 9-->/Users/Camilla/AndroidStudioProjects/KaratePassport/app/src/main/AndroidManifest.xml
 10
-11    <application
-11-->/Users/Camilla/AndroidStudioProjects/KaratePassport/app/src/main/AndroidManifest.xml:5:5-21:19
-12        android:allowBackup="true"
-12-->/Users/Camilla/AndroidStudioProjects/KaratePassport/app/src/main/AndroidManifest.xml:6:9-35
-13        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
-13-->[androidx.core:core:1.8.0] /Users/Camilla/.gradle/caches/transforms-3/d2c2a41cccc4a8a09f37d2d4b50f77ad/transformed/core-1.8.0/AndroidManifest.xml:24:18-86
-14        android:debuggable="true"
-15        android:icon="@mipmap/ic_launcher"
-15-->/Users/Camilla/AndroidStudioProjects/KaratePassport/app/src/main/AndroidManifest.xml:7:9-43
-16        android:label="@string/app_name"
-16-->/Users/Camilla/AndroidStudioProjects/KaratePassport/app/src/main/AndroidManifest.xml:8:9-41
-17        android:roundIcon="@mipmap/ic_launcher_round"
-17-->/Users/Camilla/AndroidStudioProjects/KaratePassport/app/src/main/AndroidManifest.xml:9:9-54
-18        android:supportsRtl="true"
-18-->/Users/Camilla/AndroidStudioProjects/KaratePassport/app/src/main/AndroidManifest.xml:10:9-35
-19        android:testOnly="true"
-20        android:theme="@style/Theme.KaratePassport" >
-20-->/Users/Camilla/AndroidStudioProjects/KaratePassport/app/src/main/AndroidManifest.xml:11:9-52
-21        <activity
-21-->/Users/Camilla/AndroidStudioProjects/KaratePassport/app/src/main/AndroidManifest.xml:12:9-20:20
-22            android:name="it.units.karatepassport.MainActivity"
-22-->/Users/Camilla/AndroidStudioProjects/KaratePassport/app/src/main/AndroidManifest.xml:13:13-41
-23            android:exported="true" >
-23-->/Users/Camilla/AndroidStudioProjects/KaratePassport/app/src/main/AndroidManifest.xml:14:13-36
-24            <intent-filter>
-24-->/Users/Camilla/AndroidStudioProjects/KaratePassport/app/src/main/AndroidManifest.xml:15:13-19:29
-25                <action android:name="android.intent.action.MAIN" />
-25-->/Users/Camilla/AndroidStudioProjects/KaratePassport/app/src/main/AndroidManifest.xml:16:17-69
-25-->/Users/Camilla/AndroidStudioProjects/KaratePassport/app/src/main/AndroidManifest.xml:16:25-66
-26
-27                <category android:name="android.intent.category.LAUNCHER" />
-27-->/Users/Camilla/AndroidStudioProjects/KaratePassport/app/src/main/AndroidManifest.xml:18:17-77
-27-->/Users/Camilla/AndroidStudioProjects/KaratePassport/app/src/main/AndroidManifest.xml:18:27-74
-28            </intent-filter>
-29        </activity>
-30
-31        <provider
-31-->[androidx.emoji2:emoji2:1.2.0] /Users/Camilla/.gradle/caches/transforms-3/cc51ba35f9749843a7ea676b5bba90b4/transformed/emoji2-1.2.0/AndroidManifest.xml:24:9-32:20
-32            android:name="androidx.startup.InitializationProvider"
-32-->[androidx.emoji2:emoji2:1.2.0] /Users/Camilla/.gradle/caches/transforms-3/cc51ba35f9749843a7ea676b5bba90b4/transformed/emoji2-1.2.0/AndroidManifest.xml:25:13-67
-33            android:authorities="it.units.karatepassport.androidx-startup"
-33-->[androidx.emoji2:emoji2:1.2.0] /Users/Camilla/.gradle/caches/transforms-3/cc51ba35f9749843a7ea676b5bba90b4/transformed/emoji2-1.2.0/AndroidManifest.xml:26:13-68
-34            android:exported="false" >
-34-->[androidx.emoji2:emoji2:1.2.0] /Users/Camilla/.gradle/caches/transforms-3/cc51ba35f9749843a7ea676b5bba90b4/transformed/emoji2-1.2.0/AndroidManifest.xml:27:13-37
-35            <meta-data
-35-->[androidx.emoji2:emoji2:1.2.0] /Users/Camilla/.gradle/caches/transforms-3/cc51ba35f9749843a7ea676b5bba90b4/transformed/emoji2-1.2.0/AndroidManifest.xml:29:13-31:52
-36                android:name="androidx.emoji2.text.EmojiCompatInitializer"
-36-->[androidx.emoji2:emoji2:1.2.0] /Users/Camilla/.gradle/caches/transforms-3/cc51ba35f9749843a7ea676b5bba90b4/transformed/emoji2-1.2.0/AndroidManifest.xml:30:17-75
-37                android:value="androidx.startup" />
-37-->[androidx.emoji2:emoji2:1.2.0] /Users/Camilla/.gradle/caches/transforms-3/cc51ba35f9749843a7ea676b5bba90b4/transformed/emoji2-1.2.0/AndroidManifest.xml:31:17-49
-38            <meta-data
-38-->[androidx.lifecycle:lifecycle-process:2.4.1] /Users/Camilla/.gradle/caches/transforms-3/30d54f463dd29bfb0e1a99d2b7654f72/transformed/lifecycle-process-2.4.1/AndroidManifest.xml:31:13-33:52
-39                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
-39-->[androidx.lifecycle:lifecycle-process:2.4.1] /Users/Camilla/.gradle/caches/transforms-3/30d54f463dd29bfb0e1a99d2b7654f72/transformed/lifecycle-process-2.4.1/AndroidManifest.xml:32:17-78
-40                android:value="androidx.startup" />
-40-->[androidx.lifecycle:lifecycle-process:2.4.1] /Users/Camilla/.gradle/caches/transforms-3/30d54f463dd29bfb0e1a99d2b7654f72/transformed/lifecycle-process-2.4.1/AndroidManifest.xml:33:17-49
-41        </provider>
-42    </application>
-43
-44</manifest>
+11    <!-- Although the *SdkVersion is captured in gradle build files, this is required for non gradle builds -->
+12    <!-- <uses-sdk android:minSdkVersion="14"/> -->
+13    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+13-->[com.google.firebase:firebase-database:20.1.0] /Users/Camilla/.gradle/caches/transforms-3/c6aa551d10a0219b0d8b1be8cf6fe149/transformed/firebase-database-20.1.0/AndroidManifest.xml:24:5-79
+13-->[com.google.firebase:firebase-database:20.1.0] /Users/Camilla/.gradle/caches/transforms-3/c6aa551d10a0219b0d8b1be8cf6fe149/transformed/firebase-database-20.1.0/AndroidManifest.xml:24:22-76
+14    <uses-permission android:name="android.permission.INTERNET" />
+14-->[com.google.firebase:firebase-database:20.1.0] /Users/Camilla/.gradle/caches/transforms-3/c6aa551d10a0219b0d8b1be8cf6fe149/transformed/firebase-database-20.1.0/AndroidManifest.xml:25:5-67
+14-->[com.google.firebase:firebase-database:20.1.0] /Users/Camilla/.gradle/caches/transforms-3/c6aa551d10a0219b0d8b1be8cf6fe149/transformed/firebase-database-20.1.0/AndroidManifest.xml:25:22-64
+15
+16    <application
+16-->/Users/Camilla/AndroidStudioProjects/KaratePassport/app/src/main/AndroidManifest.xml:5:5-21:19
+17        android:allowBackup="true"
+17-->/Users/Camilla/AndroidStudioProjects/KaratePassport/app/src/main/AndroidManifest.xml:6:9-35
+18        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+18-->[androidx.core:core:1.8.0] /Users/Camilla/.gradle/caches/transforms-3/5e3551786c4cdaa0745df26c3708cbff/transformed/core-1.8.0/AndroidManifest.xml:24:18-86
+19        android:debuggable="true"
+20        android:icon="@mipmap/ic_launcher"
+20-->/Users/Camilla/AndroidStudioProjects/KaratePassport/app/src/main/AndroidManifest.xml:7:9-43
+21        android:label="@string/app_name"
+21-->/Users/Camilla/AndroidStudioProjects/KaratePassport/app/src/main/AndroidManifest.xml:8:9-41
+22        android:roundIcon="@mipmap/ic_launcher_round"
+22-->/Users/Camilla/AndroidStudioProjects/KaratePassport/app/src/main/AndroidManifest.xml:9:9-54
+23        android:supportsRtl="true"
+23-->/Users/Camilla/AndroidStudioProjects/KaratePassport/app/src/main/AndroidManifest.xml:10:9-35
+24        android:testOnly="true"
+25        android:theme="@style/Theme.KaratePassport" >
+25-->/Users/Camilla/AndroidStudioProjects/KaratePassport/app/src/main/AndroidManifest.xml:11:9-52
+26        <activity
+26-->/Users/Camilla/AndroidStudioProjects/KaratePassport/app/src/main/AndroidManifest.xml:12:9-20:20
+27            android:name="it.units.karatepassport.MainActivity"
+27-->/Users/Camilla/AndroidStudioProjects/KaratePassport/app/src/main/AndroidManifest.xml:13:13-41
+28            android:exported="true" >
+28-->/Users/Camilla/AndroidStudioProjects/KaratePassport/app/src/main/AndroidManifest.xml:14:13-36
+29            <intent-filter>
+29-->/Users/Camilla/AndroidStudioProjects/KaratePassport/app/src/main/AndroidManifest.xml:15:13-19:29
+30                <action android:name="android.intent.action.MAIN" />
+30-->/Users/Camilla/AndroidStudioProjects/KaratePassport/app/src/main/AndroidManifest.xml:16:17-69
+30-->/Users/Camilla/AndroidStudioProjects/KaratePassport/app/src/main/AndroidManifest.xml:16:25-66
+31
+32                <category android:name="android.intent.category.LAUNCHER" />
+32-->/Users/Camilla/AndroidStudioProjects/KaratePassport/app/src/main/AndroidManifest.xml:18:17-77
+32-->/Users/Camilla/AndroidStudioProjects/KaratePassport/app/src/main/AndroidManifest.xml:18:27-74
+33            </intent-filter>
+34        </activity>
+35
+36        <service
+36-->[com.google.firebase:firebase-database:20.1.0] /Users/Camilla/.gradle/caches/transforms-3/c6aa551d10a0219b0d8b1be8cf6fe149/transformed/firebase-database-20.1.0/AndroidManifest.xml:28:9-34:19
+37            android:name="com.google.firebase.components.ComponentDiscoveryService"
+37-->[com.google.firebase:firebase-database:20.1.0] /Users/Camilla/.gradle/caches/transforms-3/c6aa551d10a0219b0d8b1be8cf6fe149/transformed/firebase-database-20.1.0/AndroidManifest.xml:29:13-84
+38            android:directBootAware="true"
+38-->[com.google.firebase:firebase-common:20.2.0] /Users/Camilla/.gradle/caches/transforms-3/c45860aeb1a0ff196719a18b24c7711a/transformed/firebase-common-20.2.0/AndroidManifest.xml:34:13-43
+39            android:exported="false" >
+39-->[com.google.firebase:firebase-database:20.1.0] /Users/Camilla/.gradle/caches/transforms-3/c6aa551d10a0219b0d8b1be8cf6fe149/transformed/firebase-database-20.1.0/AndroidManifest.xml:30:13-37
+40            <meta-data
+40-->[com.google.firebase:firebase-database:20.1.0] /Users/Camilla/.gradle/caches/transforms-3/c6aa551d10a0219b0d8b1be8cf6fe149/transformed/firebase-database-20.1.0/AndroidManifest.xml:31:13-33:85
+41                android:name="com.google.firebase.components:com.google.firebase.database.DatabaseRegistrar"
+41-->[com.google.firebase:firebase-database:20.1.0] /Users/Camilla/.gradle/caches/transforms-3/c6aa551d10a0219b0d8b1be8cf6fe149/transformed/firebase-database-20.1.0/AndroidManifest.xml:32:17-109
+42                android:value="com.google.firebase.components.ComponentRegistrar" />
+42-->[com.google.firebase:firebase-database:20.1.0] /Users/Camilla/.gradle/caches/transforms-3/c6aa551d10a0219b0d8b1be8cf6fe149/transformed/firebase-database-20.1.0/AndroidManifest.xml:33:17-82
+43            <meta-data
+43-->[com.google.firebase:firebase-auth:21.1.0] /Users/Camilla/.gradle/caches/transforms-3/7f04a10a574f97bc1f1ad8020eb2d7a9/transformed/firebase-auth-21.1.0/AndroidManifest.xml:67:13-69:85
+44                android:name="com.google.firebase.components:com.google.firebase.auth.FirebaseAuthRegistrar"
+44-->[com.google.firebase:firebase-auth:21.1.0] /Users/Camilla/.gradle/caches/transforms-3/7f04a10a574f97bc1f1ad8020eb2d7a9/transformed/firebase-auth-21.1.0/AndroidManifest.xml:68:17-109
+45                android:value="com.google.firebase.components.ComponentRegistrar" />
+45-->[com.google.firebase:firebase-auth:21.1.0] /Users/Camilla/.gradle/caches/transforms-3/7f04a10a574f97bc1f1ad8020eb2d7a9/transformed/firebase-auth-21.1.0/AndroidManifest.xml:69:17-82
+46            <meta-data
+46-->[com.google.firebase:firebase-firestore:24.4.1] /Users/Camilla/.gradle/caches/transforms-3/9d99141e1c0d8d02da61fe3df1001df4/transformed/firebase-firestore-24.4.1/AndroidManifest.xml:19:13-21:85
+47                android:name="com.google.firebase.components:com.google.firebase.firestore.FirestoreRegistrar"
+47-->[com.google.firebase:firebase-firestore:24.4.1] /Users/Camilla/.gradle/caches/transforms-3/9d99141e1c0d8d02da61fe3df1001df4/transformed/firebase-firestore-24.4.1/AndroidManifest.xml:20:17-111
+48                android:value="com.google.firebase.components.ComponentRegistrar" />
+48-->[com.google.firebase:firebase-firestore:24.4.1] /Users/Camilla/.gradle/caches/transforms-3/9d99141e1c0d8d02da61fe3df1001df4/transformed/firebase-firestore-24.4.1/AndroidManifest.xml:21:17-82
+49        </service>
+50
+51        <activity
+51-->[com.google.firebase:firebase-auth:21.1.0] /Users/Camilla/.gradle/caches/transforms-3/7f04a10a574f97bc1f1ad8020eb2d7a9/transformed/firebase-auth-21.1.0/AndroidManifest.xml:27:9-44:20
+52            android:name="com.google.firebase.auth.internal.GenericIdpActivity"
+52-->[com.google.firebase:firebase-auth:21.1.0] /Users/Camilla/.gradle/caches/transforms-3/7f04a10a574f97bc1f1ad8020eb2d7a9/transformed/firebase-auth-21.1.0/AndroidManifest.xml:28:13-80
+53            android:excludeFromRecents="true"
+53-->[com.google.firebase:firebase-auth:21.1.0] /Users/Camilla/.gradle/caches/transforms-3/7f04a10a574f97bc1f1ad8020eb2d7a9/transformed/firebase-auth-21.1.0/AndroidManifest.xml:29:13-46
+54            android:exported="true"
+54-->[com.google.firebase:firebase-auth:21.1.0] /Users/Camilla/.gradle/caches/transforms-3/7f04a10a574f97bc1f1ad8020eb2d7a9/transformed/firebase-auth-21.1.0/AndroidManifest.xml:30:13-36
+55            android:launchMode="singleTask"
+55-->[com.google.firebase:firebase-auth:21.1.0] /Users/Camilla/.gradle/caches/transforms-3/7f04a10a574f97bc1f1ad8020eb2d7a9/transformed/firebase-auth-21.1.0/AndroidManifest.xml:31:13-44
+56            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+56-->[com.google.firebase:firebase-auth:21.1.0] /Users/Camilla/.gradle/caches/transforms-3/7f04a10a574f97bc1f1ad8020eb2d7a9/transformed/firebase-auth-21.1.0/AndroidManifest.xml:32:13-72
+57            <intent-filter>
+57-->[com.google.firebase:firebase-auth:21.1.0] /Users/Camilla/.gradle/caches/transforms-3/7f04a10a574f97bc1f1ad8020eb2d7a9/transformed/firebase-auth-21.1.0/AndroidManifest.xml:33:13-43:29
+58                <action android:name="android.intent.action.VIEW" />
+58-->[com.google.firebase:firebase-auth:21.1.0] /Users/Camilla/.gradle/caches/transforms-3/7f04a10a574f97bc1f1ad8020eb2d7a9/transformed/firebase-auth-21.1.0/AndroidManifest.xml:34:17-69
+58-->[com.google.firebase:firebase-auth:21.1.0] /Users/Camilla/.gradle/caches/transforms-3/7f04a10a574f97bc1f1ad8020eb2d7a9/transformed/firebase-auth-21.1.0/AndroidManifest.xml:34:25-66
+59
+60                <category android:name="android.intent.category.DEFAULT" />
+60-->[com.google.firebase:firebase-auth:21.1.0] /Users/Camilla/.gradle/caches/transforms-3/7f04a10a574f97bc1f1ad8020eb2d7a9/transformed/firebase-auth-21.1.0/AndroidManifest.xml:36:17-76
+60-->[com.google.firebase:firebase-auth:21.1.0] /Users/Camilla/.gradle/caches/transforms-3/7f04a10a574f97bc1f1ad8020eb2d7a9/transformed/firebase-auth-21.1.0/AndroidManifest.xml:36:27-73
+61                <category android:name="android.intent.category.BROWSABLE" />
+61-->[com.google.firebase:firebase-auth:21.1.0] /Users/Camilla/.gradle/caches/transforms-3/7f04a10a574f97bc1f1ad8020eb2d7a9/transformed/firebase-auth-21.1.0/AndroidManifest.xml:37:17-78
+61-->[com.google.firebase:firebase-auth:21.1.0] /Users/Camilla/.gradle/caches/transforms-3/7f04a10a574f97bc1f1ad8020eb2d7a9/transformed/firebase-auth-21.1.0/AndroidManifest.xml:37:27-75
+62
+63                <data
+63-->[com.google.firebase:firebase-auth:21.1.0] /Users/Camilla/.gradle/caches/transforms-3/7f04a10a574f97bc1f1ad8020eb2d7a9/transformed/firebase-auth-21.1.0/AndroidManifest.xml:39:17-42:51
+64                    android:host="firebase.auth"
+64-->[com.google.firebase:firebase-auth:21.1.0] /Users/Camilla/.gradle/caches/transforms-3/7f04a10a574f97bc1f1ad8020eb2d7a9/transformed/firebase-auth-21.1.0/AndroidManifest.xml:40:21-49
+65                    android:path="/"
+65-->[com.google.firebase:firebase-auth:21.1.0] /Users/Camilla/.gradle/caches/transforms-3/7f04a10a574f97bc1f1ad8020eb2d7a9/transformed/firebase-auth-21.1.0/AndroidManifest.xml:41:21-37
+66                    android:scheme="genericidp" />
+66-->[com.google.firebase:firebase-auth:21.1.0] /Users/Camilla/.gradle/caches/transforms-3/7f04a10a574f97bc1f1ad8020eb2d7a9/transformed/firebase-auth-21.1.0/AndroidManifest.xml:42:21-48
+67            </intent-filter>
+68        </activity>
+69        <activity
+69-->[com.google.firebase:firebase-auth:21.1.0] /Users/Camilla/.gradle/caches/transforms-3/7f04a10a574f97bc1f1ad8020eb2d7a9/transformed/firebase-auth-21.1.0/AndroidManifest.xml:45:9-62:20
+70            android:name="com.google.firebase.auth.internal.RecaptchaActivity"
+70-->[com.google.firebase:firebase-auth:21.1.0] /Users/Camilla/.gradle/caches/transforms-3/7f04a10a574f97bc1f1ad8020eb2d7a9/transformed/firebase-auth-21.1.0/AndroidManifest.xml:46:13-79
+71            android:excludeFromRecents="true"
+71-->[com.google.firebase:firebase-auth:21.1.0] /Users/Camilla/.gradle/caches/transforms-3/7f04a10a574f97bc1f1ad8020eb2d7a9/transformed/firebase-auth-21.1.0/AndroidManifest.xml:47:13-46
+72            android:exported="true"
+72-->[com.google.firebase:firebase-auth:21.1.0] /Users/Camilla/.gradle/caches/transforms-3/7f04a10a574f97bc1f1ad8020eb2d7a9/transformed/firebase-auth-21.1.0/AndroidManifest.xml:48:13-36
+73            android:launchMode="singleTask"
+73-->[com.google.firebase:firebase-auth:21.1.0] /Users/Camilla/.gradle/caches/transforms-3/7f04a10a574f97bc1f1ad8020eb2d7a9/transformed/firebase-auth-21.1.0/AndroidManifest.xml:49:13-44
+74            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+74-->[com.google.firebase:firebase-auth:21.1.0] /Users/Camilla/.gradle/caches/transforms-3/7f04a10a574f97bc1f1ad8020eb2d7a9/transformed/firebase-auth-21.1.0/AndroidManifest.xml:50:13-72
+75            <intent-filter>
+75-->[com.google.firebase:firebase-auth:21.1.0] /Users/Camilla/.gradle/caches/transforms-3/7f04a10a574f97bc1f1ad8020eb2d7a9/transformed/firebase-auth-21.1.0/AndroidManifest.xml:51:13-61:29
+76                <action android:name="android.intent.action.VIEW" />
+76-->[com.google.firebase:firebase-auth:21.1.0] /Users/Camilla/.gradle/caches/transforms-3/7f04a10a574f97bc1f1ad8020eb2d7a9/transformed/firebase-auth-21.1.0/AndroidManifest.xml:34:17-69
+76-->[com.google.firebase:firebase-auth:21.1.0] /Users/Camilla/.gradle/caches/transforms-3/7f04a10a574f97bc1f1ad8020eb2d7a9/transformed/firebase-auth-21.1.0/AndroidManifest.xml:34:25-66
+77
+78                <category android:name="android.intent.category.DEFAULT" />
+78-->[com.google.firebase:firebase-auth:21.1.0] /Users/Camilla/.gradle/caches/transforms-3/7f04a10a574f97bc1f1ad8020eb2d7a9/transformed/firebase-auth-21.1.0/AndroidManifest.xml:36:17-76
+78-->[com.google.firebase:firebase-auth:21.1.0] /Users/Camilla/.gradle/caches/transforms-3/7f04a10a574f97bc1f1ad8020eb2d7a9/transformed/firebase-auth-21.1.0/AndroidManifest.xml:36:27-73
+79                <category android:name="android.intent.category.BROWSABLE" />
+79-->[com.google.firebase:firebase-auth:21.1.0] /Users/Camilla/.gradle/caches/transforms-3/7f04a10a574f97bc1f1ad8020eb2d7a9/transformed/firebase-auth-21.1.0/AndroidManifest.xml:37:17-78
+79-->[com.google.firebase:firebase-auth:21.1.0] /Users/Camilla/.gradle/caches/transforms-3/7f04a10a574f97bc1f1ad8020eb2d7a9/transformed/firebase-auth-21.1.0/AndroidManifest.xml:37:27-75
+80
+81                <data
+81-->[com.google.firebase:firebase-auth:21.1.0] /Users/Camilla/.gradle/caches/transforms-3/7f04a10a574f97bc1f1ad8020eb2d7a9/transformed/firebase-auth-21.1.0/AndroidManifest.xml:39:17-42:51
+82                    android:host="firebase.auth"
+82-->[com.google.firebase:firebase-auth:21.1.0] /Users/Camilla/.gradle/caches/transforms-3/7f04a10a574f97bc1f1ad8020eb2d7a9/transformed/firebase-auth-21.1.0/AndroidManifest.xml:40:21-49
+83                    android:path="/"
+83-->[com.google.firebase:firebase-auth:21.1.0] /Users/Camilla/.gradle/caches/transforms-3/7f04a10a574f97bc1f1ad8020eb2d7a9/transformed/firebase-auth-21.1.0/AndroidManifest.xml:41:21-37
+84                    android:scheme="recaptcha" />
+84-->[com.google.firebase:firebase-auth:21.1.0] /Users/Camilla/.gradle/caches/transforms-3/7f04a10a574f97bc1f1ad8020eb2d7a9/transformed/firebase-auth-21.1.0/AndroidManifest.xml:42:21-48
+85            </intent-filter>
+86        </activity>
+87
+88        <provider
+88-->[com.google.firebase:firebase-common:20.2.0] /Users/Camilla/.gradle/caches/transforms-3/c45860aeb1a0ff196719a18b24c7711a/transformed/firebase-common-20.2.0/AndroidManifest.xml:25:9-30:39
+89            android:name="com.google.firebase.provider.FirebaseInitProvider"
+89-->[com.google.firebase:firebase-common:20.2.0] /Users/Camilla/.gradle/caches/transforms-3/c45860aeb1a0ff196719a18b24c7711a/transformed/firebase-common-20.2.0/AndroidManifest.xml:26:13-77
+90            android:authorities="it.units.karatepassport.firebaseinitprovider"
+90-->[com.google.firebase:firebase-common:20.2.0] /Users/Camilla/.gradle/caches/transforms-3/c45860aeb1a0ff196719a18b24c7711a/transformed/firebase-common-20.2.0/AndroidManifest.xml:27:13-72
+91            android:directBootAware="true"
+91-->[com.google.firebase:firebase-common:20.2.0] /Users/Camilla/.gradle/caches/transforms-3/c45860aeb1a0ff196719a18b24c7711a/transformed/firebase-common-20.2.0/AndroidManifest.xml:28:13-43
+92            android:exported="false"
+92-->[com.google.firebase:firebase-common:20.2.0] /Users/Camilla/.gradle/caches/transforms-3/c45860aeb1a0ff196719a18b24c7711a/transformed/firebase-common-20.2.0/AndroidManifest.xml:29:13-37
+93            android:initOrder="100" />
+93-->[com.google.firebase:firebase-common:20.2.0] /Users/Camilla/.gradle/caches/transforms-3/c45860aeb1a0ff196719a18b24c7711a/transformed/firebase-common-20.2.0/AndroidManifest.xml:30:13-36
+94
+95        <activity
+95-->[com.google.android.gms:play-services-base:18.0.1] /Users/Camilla/.gradle/caches/transforms-3/f968e8f7dfe9661550de2d88d97e91d8/transformed/play-services-base-18.0.1/AndroidManifest.xml:20:9-22:45
+96            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+96-->[com.google.android.gms:play-services-base:18.0.1] /Users/Camilla/.gradle/caches/transforms-3/f968e8f7dfe9661550de2d88d97e91d8/transformed/play-services-base-18.0.1/AndroidManifest.xml:20:19-85
+97            android:exported="false"
+97-->[com.google.android.gms:play-services-base:18.0.1] /Users/Camilla/.gradle/caches/transforms-3/f968e8f7dfe9661550de2d88d97e91d8/transformed/play-services-base-18.0.1/AndroidManifest.xml:22:19-43
+98            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+98-->[com.google.android.gms:play-services-base:18.0.1] /Users/Camilla/.gradle/caches/transforms-3/f968e8f7dfe9661550de2d88d97e91d8/transformed/play-services-base-18.0.1/AndroidManifest.xml:21:19-78
+99
+100        <meta-data
+100-->[com.google.android.gms:play-services-basement:18.1.0] /Users/Camilla/.gradle/caches/transforms-3/e432c29bfa58b3ce738d2b7323a73441/transformed/play-services-basement-18.1.0/AndroidManifest.xml:21:9-23:69
+101            android:name="com.google.android.gms.version"
+101-->[com.google.android.gms:play-services-basement:18.1.0] /Users/Camilla/.gradle/caches/transforms-3/e432c29bfa58b3ce738d2b7323a73441/transformed/play-services-basement-18.1.0/AndroidManifest.xml:22:13-58
+102            android:value="@integer/google_play_services_version" />
+102-->[com.google.android.gms:play-services-basement:18.1.0] /Users/Camilla/.gradle/caches/transforms-3/e432c29bfa58b3ce738d2b7323a73441/transformed/play-services-basement-18.1.0/AndroidManifest.xml:23:13-66
+103
+104        <provider
+104-->[androidx.emoji2:emoji2:1.2.0] /Users/Camilla/.gradle/caches/transforms-3/c2076364c93028dc1ac95184b74e21eb/transformed/emoji2-1.2.0/AndroidManifest.xml:24:9-32:20
+105            android:name="androidx.startup.InitializationProvider"
+105-->[androidx.emoji2:emoji2:1.2.0] /Users/Camilla/.gradle/caches/transforms-3/c2076364c93028dc1ac95184b74e21eb/transformed/emoji2-1.2.0/AndroidManifest.xml:25:13-67
+106            android:authorities="it.units.karatepassport.androidx-startup"
+106-->[androidx.emoji2:emoji2:1.2.0] /Users/Camilla/.gradle/caches/transforms-3/c2076364c93028dc1ac95184b74e21eb/transformed/emoji2-1.2.0/AndroidManifest.xml:26:13-68
+107            android:exported="false" >
+107-->[androidx.emoji2:emoji2:1.2.0] /Users/Camilla/.gradle/caches/transforms-3/c2076364c93028dc1ac95184b74e21eb/transformed/emoji2-1.2.0/AndroidManifest.xml:27:13-37
+108            <meta-data
+108-->[androidx.emoji2:emoji2:1.2.0] /Users/Camilla/.gradle/caches/transforms-3/c2076364c93028dc1ac95184b74e21eb/transformed/emoji2-1.2.0/AndroidManifest.xml:29:13-31:52
+109                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+109-->[androidx.emoji2:emoji2:1.2.0] /Users/Camilla/.gradle/caches/transforms-3/c2076364c93028dc1ac95184b74e21eb/transformed/emoji2-1.2.0/AndroidManifest.xml:30:17-75
+110                android:value="androidx.startup" />
+110-->[androidx.emoji2:emoji2:1.2.0] /Users/Camilla/.gradle/caches/transforms-3/c2076364c93028dc1ac95184b74e21eb/transformed/emoji2-1.2.0/AndroidManifest.xml:31:17-49
+111            <meta-data
+111-->[androidx.lifecycle:lifecycle-process:2.4.1] /Users/Camilla/.gradle/caches/transforms-3/5777bbeac130d7366ab02ca2b76e058c/transformed/lifecycle-process-2.4.1/AndroidManifest.xml:31:13-33:52
+112                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+112-->[androidx.lifecycle:lifecycle-process:2.4.1] /Users/Camilla/.gradle/caches/transforms-3/5777bbeac130d7366ab02ca2b76e058c/transformed/lifecycle-process-2.4.1/AndroidManifest.xml:32:17-78
+113                android:value="androidx.startup" />
+113-->[androidx.lifecycle:lifecycle-process:2.4.1] /Users/Camilla/.gradle/caches/transforms-3/5777bbeac130d7366ab02ca2b76e058c/transformed/lifecycle-process-2.4.1/AndroidManifest.xml:33:17-49
+114        </provider>
+115    </application>
+116
+117</manifest>
