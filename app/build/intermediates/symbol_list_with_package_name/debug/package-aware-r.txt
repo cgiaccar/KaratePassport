@@ -2795,6 +2795,7 @@ id browser_actions_menu_item_icon
 id browser_actions_menu_item_text
 id browser_actions_menu_items
 id browser_actions_menu_view
+id button
 id buttonPanel
 id cache_measures
 id callMeasure
@@ -3039,6 +3040,7 @@ id position
 id postLayout
 id pressed
 id progressBar
+id progressBar2
 id progress_circular
 id progress_horizontal
 id radio
@@ -3131,12 +3133,14 @@ id text
 id text2
 id textEnd
 id textLoginHere
+id textRegisterHere
 id textSpacerNoButtons
 id textSpacerNoTitle
 id textStart
 id textTop
 id textView
 id textView2
+id textView3
 id text_input_end_icon
 id text_input_error_icon
 id text_input_start_icon

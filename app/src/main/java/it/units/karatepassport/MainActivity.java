@@ -2,9 +2,12 @@ package it.units.karatepassport;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
+import android.view.View;
 
+import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
@@ -32,14 +35,20 @@ public class MainActivity extends AppCompatActivity {
                 // This method is called once with the initial value and again
                 // whenever data at this location is updated.
                 String value = dataSnapshot.getValue(String.class);
-                Log.d("VALUE","The value is: " + value);
+                Log.d("VALUE", "The value is: " + value);
             }
+
             @Override
             public void onCancelled(DatabaseError error) {
                 // Failed to read value
-                Log.w("ERROR","Failed to read value", error.toException());
+                Log.w("ERROR", "Failed to read value", error.toException());
             }
         });
     }
 
+    public void logout(View view) {
+        FirebaseAuth.getInstance().signOut();
+        startActivity(new Intent(getApplicationContext(), Login.class));
+        finish();
+    }
 }

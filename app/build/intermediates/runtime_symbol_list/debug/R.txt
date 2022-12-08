@@ -2794,6 +2794,7 @@ int id browser_actions_menu_item_icon 0x7f080065
 int id browser_actions_menu_item_text 0x7f080066
 int id browser_actions_menu_items 0x7f080067
 int id browser_actions_menu_view 0x7f080068
+int id button 0x7f0801f1
 int id buttonPanel 0x7f080069
 int id cache_measures 0x7f08006a
 int id callMeasure 0x7f08006b
@@ -3038,6 +3039,7 @@ int id position 0x7f080155
 int id postLayout 0x7f080156
 int id pressed 0x7f080157
 int id progressBar 0x7f0801eb
+int id progressBar2 0x7f0801f3
 int id progress_circular 0x7f080158
 int id progress_horizontal 0x7f080159
 int id radio 0x7f08015a
@@ -3130,12 +3132,14 @@ int id text 0x7f0801af
 int id text2 0x7f0801b0
 int id textEnd 0x7f0801b1
 int id textLoginHere 0x7f0801ed
+int id textRegisterHere 0x7f0801f4
 int id textSpacerNoButtons 0x7f0801b2
 int id textSpacerNoTitle 0x7f0801b3
 int id textStart 0x7f0801b4
 int id textTop 0x7f0801b5
 int id textView 0x7f0801ee
 int id textView2 0x7f0801ef
+int id textView3 0x7f0801f2
 int id text_input_end_icon 0x7f0801b6
 int id text_input_error_icon 0x7f0801b7
 int id text_input_start_icon 0x7f0801b8
