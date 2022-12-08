@@ -8,10 +8,11 @@
         android:minSdkVersion="21"
         android:targetSdkVersion="32" />
 
+    <uses-permission android:name="android.permission.INTERNET" />
+
     <!-- Although the *SdkVersion is captured in gradle build files, this is required for non gradle builds -->
     <!-- <uses-sdk android:minSdkVersion="14"/> -->
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
-    <uses-permission android:name="android.permission.INTERNET" />
 
     <application
         android:allowBackup="true"
@@ -24,7 +25,10 @@
         android:testOnly="true"
         android:theme="@style/Theme.KaratePassport" >
         <activity
-            android:name="it.units.karatepassport.MainActivity"
+            android:name="it.units.karatepassport.Login"
+            android:exported="false" />
+        <activity
+            android:name="it.units.karatepassport.Register"
             android:exported="true" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -32,6 +36,14 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name="it.units.karatepassport.MainActivity"
+            android:exported="true" >
+        </activity>
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
 
         <service
             android:name="com.google.firebase.components.ComponentDiscoveryService"

@@ -65,6 +65,10 @@ int animator mtrl_fab_hide_motion_spec 0x7f02001b
 int animator mtrl_fab_show_motion_spec 0x7f02001c
 int animator mtrl_fab_transformation_sheet_collapse_spec 0x7f02001d
 int animator mtrl_fab_transformation_sheet_expand_spec 0x7f02001e
+int array com_google_android_gms_fonts_certs 0x7f140000
+int array com_google_android_gms_fonts_certs_dev 0x7f140001
+int array com_google_android_gms_fonts_certs_prod 0x7f140002
+int array preloaded_fonts 0x7f140003
 int attr SharedValue 0x7f030000
 int attr SharedValueId 0x7f030001
 int attr actionBarDivider 0x7f030002
@@ -2600,6 +2604,7 @@ int drawable design_password_eye 0x7f070092
 int drawable design_snackbar_background 0x7f070093
 int drawable googleg_disabled_color_18 0x7f070094
 int drawable googleg_standard_color_18 0x7f070095
+int drawable gradient_background 0x7f0700e8
 int drawable ic_clock_black_24dp 0x7f070096
 int drawable ic_keyboard_black_24dp 0x7f070097
 int drawable ic_launcher_background 0x7f070098
@@ -2682,6 +2687,8 @@ int drawable notify_panel_notification_icon_bg 0x7f0700e4
 int drawable test_level_drawable 0x7f0700e5
 int drawable tooltip_frame_dark 0x7f0700e6
 int drawable tooltip_frame_light 0x7f0700e7
+int font aclonica 0x7f150000
+int font bigshot_one 0x7f150001
 int id ALT 0x7f080000
 int id BOTTOM_END 0x7f080001
 int id BOTTOM_START 0x7f080002
@@ -2862,6 +2869,7 @@ int id easeOut 0x7f0800b0
 int id east 0x7f0800b1
 int id edit_query 0x7f0800b2
 int id elastic 0x7f0800b3
+int id email 0x7f0801e7
 int id embed 0x7f0800b4
 int id end 0x7f0800b5
 int id endToStart 0x7f0800b6
@@ -2930,6 +2938,7 @@ int id line3 0x7f0800f4
 int id linear 0x7f0800f5
 int id listMode 0x7f0800f6
 int id list_item 0x7f0800f7
+int id loginBtn 0x7f0801e8
 int id marquee 0x7f0800f8
 int id masked 0x7f0800f9
 int id match_constraint 0x7f0800fa
@@ -3017,6 +3026,8 @@ int id parent 0x7f08014b
 int id parentPanel 0x7f08014c
 int id parentRelative 0x7f08014d
 int id parent_matrix 0x7f08014e
+int id passportNumber 0x7f0801e9
+int id password 0x7f0801ea
 int id password_toggle 0x7f08014f
 int id path 0x7f080150
 int id pathRelative 0x7f080151
@@ -3026,11 +3037,13 @@ int id pin 0x7f080154
 int id position 0x7f080155
 int id postLayout 0x7f080156
 int id pressed 0x7f080157
+int id progressBar 0x7f0801eb
 int id progress_circular 0x7f080158
 int id progress_horizontal 0x7f080159
 int id radio 0x7f08015a
 int id ratio 0x7f08015b
 int id rectangles 0x7f08015c
+int id registerBtn 0x7f0801ec
 int id reverseSawtooth 0x7f08015d
 int id right 0x7f08015e
 int id rightToLeft 0x7f08015f
@@ -3116,10 +3129,13 @@ int id tag_window_insets_animation_callback 0x7f0801ae
 int id text 0x7f0801af
 int id text2 0x7f0801b0
 int id textEnd 0x7f0801b1
+int id textLoginHere 0x7f0801ed
 int id textSpacerNoButtons 0x7f0801b2
 int id textSpacerNoTitle 0x7f0801b3
 int id textStart 0x7f0801b4
 int id textTop 0x7f0801b5
+int id textView 0x7f0801ee
+int id textView2 0x7f0801ef
 int id text_input_end_icon 0x7f0801b6
 int id text_input_error_icon 0x7f0801b7
 int id text_input_start_icon 0x7f0801b8
@@ -3150,6 +3166,7 @@ int id uniform 0x7f0801d0
 int id unlabeled 0x7f0801d1
 int id up 0x7f0801d2
 int id useLogo 0x7f0801d3
+int id username 0x7f0801f0
 int id vertical_only 0x7f0801d4
 int id view_offset_helper 0x7f0801d5
 int id view_transition 0x7f0801d6
@@ -3292,7 +3309,9 @@ int layout abc_search_dropdown_item_icons_2line 0x7f0b0018
 int layout abc_search_view 0x7f0b0019
 int layout abc_select_dialog_material 0x7f0b001a
 int layout abc_tooltip 0x7f0b001b
+int layout activity_login 0x7f0b0069
 int layout activity_main 0x7f0b001c
+int layout activity_register 0x7f0b006a
 int layout browser_actions_context_menu_page 0x7f0b001d
 int layout browser_actions_context_menu_row 0x7f0b001e
 int layout custom_dialog 0x7f0b001f
