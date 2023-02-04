@@ -2,6 +2,7 @@
 Android project for SIM (2021 second semester course)  
   
 Data inizio (primo commit): 14/11/22  
+[Coggle organizzativo](https://coggle.it/diagram/Y956keV5GurAx0LT/t/karatepassport)  
   
 ## Login activity  
 campi per numeroTessera e password, pulsante login, pulsante registrati, avviso di errore se l'utente non esiste, la pw è sbagliata o se l'utente esiste già  
