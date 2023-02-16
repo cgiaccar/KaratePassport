@@ -32,7 +32,7 @@ android {
 dependencies {
     // added because it couldn't find DatabaseReference (found online)
     implementation 'com.google.firebase:firebase-database:20.1.0'
-
+    implementation 'com.google.firebase:firebase-firestore:24.4.3'
     // Import the Firebase BoM
     implementation platform('com.google.firebase:firebase-bom:31.1.0')
     // When using the BoM, you don't specify versions in Firebase library dependencies
