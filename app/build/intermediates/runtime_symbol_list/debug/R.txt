@@ -2940,6 +2940,9 @@ int id linear 0x7f0a00f7
 int id listMode 0x7f0a00f8
 int id list_item 0x7f0a00f9
 int id loginBtn 0x7f0a00fa
+int id mainEmail 0x7f0a01f5
+int id mainPassportNumber 0x7f0a01f6
+int id mainUserName 0x7f0a01f7
 int id marquee 0x7f0a00fb
 int id masked 0x7f0a00fc
 int id match_constraint 0x7f0a00fd
@@ -3180,6 +3183,7 @@ int id view_tree_saved_state_registry_owner 0x7f0a01e7
 int id view_tree_view_model_store_owner 0x7f0a01e8
 int id visible 0x7f0a01e9
 int id visible_removing_fragment_view_tag 0x7f0a01ea
+int id welcomeTitle 0x7f0a01f8
 int id west 0x7f0a01eb
 int id wide 0x7f0a01ec
 int id withText 0x7f0a01ed

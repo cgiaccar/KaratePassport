@@ -19,6 +19,9 @@ font bigshot_one
 id button
 id email
 id loginBtn
+id mainEmail
+id mainPassportNumber
+id mainUserName
 id passportNumber
 id password
 id progressBar
@@ -30,6 +33,7 @@ id textView
 id textView2
 id textView3
 id username
+id welcomeTitle
 layout activity_login
 layout activity_main
 layout activity_register

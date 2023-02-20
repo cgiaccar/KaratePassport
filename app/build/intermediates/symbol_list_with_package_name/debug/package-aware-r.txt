@@ -2941,6 +2941,9 @@ id linear
 id listMode
 id list_item
 id loginBtn
+id mainEmail
+id mainPassportNumber
+id mainUserName
 id marquee
 id masked
 id match_constraint
@@ -3181,6 +3184,7 @@ id view_tree_saved_state_registry_owner
 id view_tree_view_model_store_owner
 id visible
 id visible_removing_fragment_view_tag
+id welcomeTitle
 id west
 id wide
 id withText
