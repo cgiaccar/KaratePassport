@@ -66,43 +66,48 @@ public class Register extends AppCompatActivity {
             String userName = mUsername.getText().toString();
             String passportNumber = mPassportNumber.getText().toString();
 
-    // check if user inputs are valid
-    if (TextUtils.isEmpty(email)) {
-        mEmail.setError("Email is required.");
-        return;
+            // check if user inputs are valid
+            if (TextUtils.isEmpty(email)) {
+                mEmail.setError("Email is required.");
+                return;
+            }
+
+            if (TextUtils.isEmpty(password)) {
+                mPassword.setError("Password is required.");
+                return;
+            }
+
+            if (password.length() < 6) {
+                mPassword.setError("Password must be at least six characters long");
+            }
+
+            progressBar.setVisibility(View.VISIBLE);
+
+            // register the new user in Firebase
+            fAuth.createUserWithEmailAndPassword(email, password).addOnCompleteListener(task -> {
+                if (task.isSuccessful()) {
+                    Toast.makeText(Register.this, "User created successfully!", Toast.LENGTH_SHORT).show();
+                    // as soon as the user is created, we save the user data into the Firebase Firestore Database
+                    userID = fAuth.getCurrentUser().getUid(); // get current user (currently registering user) unique ID
+                    DocumentReference documentReference = fStore.collection("users").document(userID); // creates a new user inside the collection of users using their unique ID
+                    Map<String,Object> user = new HashMap<>(); // the most popular method to create new data is by using an hashmap
+                    user.put("userName", userName);
+                    user.put("passportNumber", passportNumber);
+                    user.put("email", email);
+                    // for debug
+                    documentReference.set(user).addOnSuccessListener(unused -> {
+                        Log.d(TAG, "onSuccess: user profile is created for " + userID); // log the success message in our logcat
+                    }).addOnFailureListener(e -> Log.d(TAG, "onFailure: " + e));
+                    startActivity(new Intent(getApplicationContext(), MainActivity.class));
+                } else {
+                    Toast.makeText(Register.this, "Error! " + task.getException().getMessage(), Toast.LENGTH_SHORT).show();
+                    progressBar.setVisibility(View.GONE);
+                }
+            });
+
+        });
+
+        mLoginHereBtn.setOnClickListener(view -> startActivity(new Intent(getApplicationContext(), Login.class)));
+
     }
-
-    if (TextUtils.isEmpty(password)) {
-        mPassword.setError("Password is required.");
-        return;
-    }
-
-    if (password.length() < 6) {
-        mPassword.setError("Password must be at least six characters long");
-    }
-
-    progressBar.setVisibility(View.VISIBLE);
-
-    // register the new user in Firebase
-    fAuth.createUserWithEmailAndPassword(email, password).addOnCompleteListener(task -> {
-        if (task.isSuccessful()) {
-            Toast.makeText(Register.this, "User created successfully!", Toast.LENGTH_SHORT).show();
-            // as soon as the user is created, we save the user data into the Firebase Firestore Database
-            userID = fAuth.getCurrentUser().getUid(); // get current user (currently registering user) unique ID
-            DocumentReference documentReference = fStore.collection("users").document(userID); // creates a new user inside the collection of users using their unique ID
-            Map<String, Object> user = new HashMap<>(); // the most popular method to create new data is by using an hashmap
-            user.put("userName", userName);
-            user.put("passportNumber", passportNumber);
-            user.put("email", email);
-            // for debug
-            documentReference.set(user).addOnSuccessListener(unused -> {
-                Log.d(TAG, "onSuccess: user profile is created for " + userID); // log the success message in our logcat
-            }).addOnFailureListener(e -> Log.d(TAG, "onFailure: " + e));
-            startActivity(new Intent(getApplicationContext(), MainActivity.class));
-        } else {
-            Toast.makeText(Register.this, "Error! " + task.getException().getMessage(), Toast.LENGTH_SHORT).show();
-            progressBar.setVisibility(View.GONE);
-        }
-    });
-
 }
