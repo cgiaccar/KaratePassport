@@ -39,49 +39,38 @@ public class Login extends AppCompatActivity {
 
         fAuth = FirebaseAuth.getInstance();
 
-        mLoginBtn.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                String email = mEmail.getText().toString().trim();
-                String password = mPassword.getText().toString().trim();
+        mLoginBtn.setOnClickListener(view -> {
+            String email = mEmail.getText().toString().trim();
+            String password = mPassword.getText().toString().trim();
 
-                // check if user inputs are valid
-                if (TextUtils.isEmpty(email)) {
-                    mEmail.setError("Email is required.");
-                    return;
-                }
-
-                if (TextUtils.isEmpty(password)) {
-                    mPassword.setError("Password is required.");
-                    return;
-                }
-
-                if (password.length() < 6) {
-                    mPassword.setError("Password must be at least six characters long");
-                }
-
-                progressBar.setVisibility(View.VISIBLE);
-
-                // authenticate the user
-                fAuth.signInWithEmailAndPassword(email, password).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
-                    @Override
-                    public void onComplete(@NonNull Task<AuthResult> task) {
-                        if (task.isSuccessful()) {
-                            Toast.makeText(Login.this, "Logged in successfully!", Toast.LENGTH_SHORT).show();
-                            startActivity(new Intent(getApplicationContext(), MainActivity.class));
-                        } else {
-                            Toast.makeText(Login.this, "Error! " + task.getException().getMessage(), Toast.LENGTH_SHORT).show();
-                            progressBar.setVisibility(View.GONE);
-                        }
-                    }
-                });
+            // check if user inputs are valid
+            if (TextUtils.isEmpty(email)) {
+                mEmail.setError("Email is required.");
+                return;
             }
-        });
-        mRegisterHereBtn.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                startActivity(new Intent(getApplicationContext(), Register.class));
+
+            if (TextUtils.isEmpty(password)) {
+                mPassword.setError("Password is required.");
+                return;
             }
+
+            if (password.length() < 6) {
+                mPassword.setError("Password must be at least six characters long");
+            }
+
+            progressBar.setVisibility(View.VISIBLE);
+
+            // authenticate the user
+            fAuth.signInWithEmailAndPassword(email, password).addOnCompleteListener(task -> {
+                if (task.isSuccessful()) {
+                    Toast.makeText(Login.this, "Logged in successfully!", Toast.LENGTH_SHORT).show();
+                    startActivity(new Intent(getApplicationContext(), MainActivity.class));
+                } else {
+                    Toast.makeText(Login.this, "Error! " + task.getException().getMessage(), Toast.LENGTH_SHORT).show();
+                    progressBar.setVisibility(View.GONE);
+                }
+            });
         });
+        mRegisterHereBtn.setOnClickListener(view -> startActivity(new Intent(getApplicationContext(), Register.class)));
     }
 }

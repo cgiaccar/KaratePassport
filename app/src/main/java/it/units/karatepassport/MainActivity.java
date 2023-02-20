@@ -44,14 +44,11 @@ public class MainActivity extends AppCompatActivity {
         // this is the reference to what we want to retrieve, to the specific user
         DocumentReference documentReference = fStore.collection("users").document(userID);
 
-        documentReference.addSnapshotListener(this, new EventListener<DocumentSnapshot>() {
-            @Override
-            public void onEvent(@Nullable DocumentSnapshot documentSnapshot, @Nullable FirebaseFirestoreException e) {
-                //using the names assigned in Register.java, visible also in the FirestoreDB
-                number.setText(documentSnapshot.getString("passportNumber"));
-                name.setText(documentSnapshot.getString("userName"));
-                email.setText(documentSnapshot.getString("email"));
-            }
+        documentReference.addSnapshotListener(this, (documentSnapshot, e) -> {
+            //using the names assigned in Register.java, visible also in the FirestoreDB
+            number.setText(documentSnapshot.getString("passportNumber"));
+            name.setText(documentSnapshot.getString("userName"));
+            email.setText(documentSnapshot.getString("email"));
         });
     }
 
