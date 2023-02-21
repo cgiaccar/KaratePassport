@@ -18,6 +18,7 @@ font aclonica
 font bigshot_one
 id button
 id email
+id forgotPassword
 id loginBtn
 id mainEmail
 id mainPassportNumber
@@ -31,7 +32,6 @@ id textLoginHere
 id textRegisterHere
 id textView
 id textView2
-id textView3
 id username
 id welcomeTitle
 layout activity_login

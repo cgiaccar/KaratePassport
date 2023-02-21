@@ -2894,6 +2894,7 @@ id fixed
 id flip
 id floating
 id forever
+id forgotPassword
 id fragment_container_view_tag
 id frost
 id fullscreen_header
@@ -3143,7 +3144,6 @@ id textStart
 id textTop
 id textView
 id textView2
-id textView3
 id text_input_end_icon
 id text_input_error_icon
 id text_input_start_icon

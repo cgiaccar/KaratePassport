@@ -2893,6 +2893,7 @@ int id fixed 0x7f0a00c8
 int id flip 0x7f0a00c9
 int id floating 0x7f0a00ca
 int id forever 0x7f0a00cb
+int id forgotPassword 0x7f0a01f9
 int id fragment_container_view_tag 0x7f0a00cc
 int id frost 0x7f0a00cd
 int id fullscreen_header 0x7f0a00ce
@@ -3142,7 +3143,6 @@ int id textStart 0x7f0a01be
 int id textTop 0x7f0a01bf
 int id textView 0x7f0a01c0
 int id textView2 0x7f0a01c1
-int id textView3 0x7f0a01c2
 int id text_input_end_icon 0x7f0a01c3
 int id text_input_error_icon 0x7f0a01c4
 int id text_input_start_icon 0x7f0a01c5
