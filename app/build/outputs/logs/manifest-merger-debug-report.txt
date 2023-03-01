@@ -7,7 +7,7 @@ INJECTED from /Users/Camilla/AndroidStudioProjects/KaratePassport/app/src/main/A
 MERGED from [com.google.firebase:firebase-database:20.1.0] /Users/Camilla/.gradle/caches/transforms-3/dfce8d4ed39b5cc083e399b9c62bbe41/transformed/firebase-database-20.1.0/AndroidManifest.xml:15:1-37:12
 MERGED from [com.google.firebase:firebase-firestore:24.4.3] /Users/Camilla/.gradle/caches/transforms-3/794b3bcdc048ab9bdd97cbeafeb9b49d/transformed/firebase-firestore-24.4.3/AndroidManifest.xml:2:1-25:12
 MERGED from [com.google.firebase:firebase-auth:21.1.0] /Users/Camilla/.gradle/caches/transforms-3/59326511f3575d1df62d1bb875db26d1/transformed/firebase-auth-21.1.0/AndroidManifest.xml:17:1-73:12
-MERGED from [com.google.android.material:material:1.7.0] /Users/Camilla/.gradle/caches/transforms-3/bfd5500fa7bb0f52f72cbd3f5053327d/transformed/material-1.7.0/AndroidManifest.xml:17:1-26:12
+MERGED from [com.google.android.material:material:1.8.0] /Users/Camilla/.gradle/caches/transforms-3/8b694135bbf5674a1aef341fecc936ca/transformed/material-1.8.0/AndroidManifest.xml:17:1-26:12
 MERGED from [androidx.constraintlayout:constraintlayout:2.1.4] /Users/Camilla/.gradle/caches/transforms-3/b1febdd7b1e97181aff3d03ff317c6c7/transformed/constraintlayout-2.1.4/AndroidManifest.xml:2:1-11:12
 MERGED from [androidx.appcompat:appcompat-resources:1.5.1] /Users/Camilla/.gradle/caches/transforms-3/6306b143ccad39048a1d32012a3bde1a/transformed/appcompat-resources-1.5.1/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.appcompat:appcompat:1.5.1] /Users/Camilla/.gradle/caches/transforms-3/96bc8e65af43731f4418db6acb627fd7/transformed/appcompat-1.5.1/AndroidManifest.xml:17:1-22:12
@@ -95,8 +95,8 @@ MERGED from [com.google.firebase:firebase-firestore:24.4.3] /Users/Camilla/.grad
 MERGED from [com.google.firebase:firebase-firestore:24.4.3] /Users/Camilla/.gradle/caches/transforms-3/794b3bcdc048ab9bdd97cbeafeb9b49d/transformed/firebase-firestore-24.4.3/AndroidManifest.xml:15:5-23:19
 MERGED from [com.google.firebase:firebase-auth:21.1.0] /Users/Camilla/.gradle/caches/transforms-3/59326511f3575d1df62d1bb875db26d1/transformed/firebase-auth-21.1.0/AndroidManifest.xml:26:5-71:19
 MERGED from [com.google.firebase:firebase-auth:21.1.0] /Users/Camilla/.gradle/caches/transforms-3/59326511f3575d1df62d1bb875db26d1/transformed/firebase-auth-21.1.0/AndroidManifest.xml:26:5-71:19
-MERGED from [com.google.android.material:material:1.7.0] /Users/Camilla/.gradle/caches/transforms-3/bfd5500fa7bb0f52f72cbd3f5053327d/transformed/material-1.7.0/AndroidManifest.xml:24:5-20
-MERGED from [com.google.android.material:material:1.7.0] /Users/Camilla/.gradle/caches/transforms-3/bfd5500fa7bb0f52f72cbd3f5053327d/transformed/material-1.7.0/AndroidManifest.xml:24:5-20
+MERGED from [com.google.android.material:material:1.8.0] /Users/Camilla/.gradle/caches/transforms-3/8b694135bbf5674a1aef341fecc936ca/transformed/material-1.8.0/AndroidManifest.xml:24:5-20
+MERGED from [com.google.android.material:material:1.8.0] /Users/Camilla/.gradle/caches/transforms-3/8b694135bbf5674a1aef341fecc936ca/transformed/material-1.8.0/AndroidManifest.xml:24:5-20
 MERGED from [androidx.constraintlayout:constraintlayout:2.1.4] /Users/Camilla/.gradle/caches/transforms-3/b1febdd7b1e97181aff3d03ff317c6c7/transformed/constraintlayout-2.1.4/AndroidManifest.xml:9:5-20
 MERGED from [androidx.constraintlayout:constraintlayout:2.1.4] /Users/Camilla/.gradle/caches/transforms-3/b1febdd7b1e97181aff3d03ff317c6c7/transformed/constraintlayout-2.1.4/AndroidManifest.xml:9:5-20
 MERGED from [com.google.firebase:firebase-appcheck-interop:16.1.0] /Users/Camilla/.gradle/caches/transforms-3/073697aecdc1822a9368e4af9f7b4c25/transformed/firebase-appcheck-interop-16.1.0/AndroidManifest.xml:23:5-20
@@ -181,8 +181,8 @@ MERGED from [com.google.firebase:firebase-firestore:24.4.3] /Users/Camilla/.grad
 MERGED from [com.google.firebase:firebase-firestore:24.4.3] /Users/Camilla/.gradle/caches/transforms-3/794b3bcdc048ab9bdd97cbeafeb9b49d/transformed/firebase-firestore-24.4.3/AndroidManifest.xml:6:5-8:41
 MERGED from [com.google.firebase:firebase-auth:21.1.0] /Users/Camilla/.gradle/caches/transforms-3/59326511f3575d1df62d1bb875db26d1/transformed/firebase-auth-21.1.0/AndroidManifest.xml:21:5-44
 MERGED from [com.google.firebase:firebase-auth:21.1.0] /Users/Camilla/.gradle/caches/transforms-3/59326511f3575d1df62d1bb875db26d1/transformed/firebase-auth-21.1.0/AndroidManifest.xml:21:5-44
-MERGED from [com.google.android.material:material:1.7.0] /Users/Camilla/.gradle/caches/transforms-3/bfd5500fa7bb0f52f72cbd3f5053327d/transformed/material-1.7.0/AndroidManifest.xml:20:5-22:41
-MERGED from [com.google.android.material:material:1.7.0] /Users/Camilla/.gradle/caches/transforms-3/bfd5500fa7bb0f52f72cbd3f5053327d/transformed/material-1.7.0/AndroidManifest.xml:20:5-22:41
+MERGED from [com.google.android.material:material:1.8.0] /Users/Camilla/.gradle/caches/transforms-3/8b694135bbf5674a1aef341fecc936ca/transformed/material-1.8.0/AndroidManifest.xml:20:5-22:41
+MERGED from [com.google.android.material:material:1.8.0] /Users/Camilla/.gradle/caches/transforms-3/8b694135bbf5674a1aef341fecc936ca/transformed/material-1.8.0/AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.constraintlayout:constraintlayout:2.1.4] /Users/Camilla/.gradle/caches/transforms-3/b1febdd7b1e97181aff3d03ff317c6c7/transformed/constraintlayout-2.1.4/AndroidManifest.xml:5:5-7:41
 MERGED from [androidx.constraintlayout:constraintlayout:2.1.4] /Users/Camilla/.gradle/caches/transforms-3/b1febdd7b1e97181aff3d03ff317c6c7/transformed/constraintlayout-2.1.4/AndroidManifest.xml:5:5-7:41
 MERGED from [androidx.appcompat:appcompat-resources:1.5.1] /Users/Camilla/.gradle/caches/transforms-3/6306b143ccad39048a1d32012a3bde1a/transformed/appcompat-resources-1.5.1/AndroidManifest.xml:20:5-44
