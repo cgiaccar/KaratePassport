@@ -2859,7 +2859,6 @@ id ALT
 id BOTTOM_END
 id BOTTOM_START
 id CTRL
-id DrawerLayout
 id FUNCTION
 id META
 id NO_DEBUG
@@ -3031,6 +3030,7 @@ id dragLeft
 id dragRight
 id dragStart
 id dragUp
+id drawer_layout
 id dropdown_menu
 id easeIn
 id easeInOut
@@ -3183,6 +3183,7 @@ id navigation_bar_item_icon_view
 id navigation_bar_item_labels_group
 id navigation_bar_item_large_label_view
 id navigation_bar_item_small_label_view
+id navigation_header
 id navigation_header_container
 id never
 id neverCompleteToEnd
@@ -3566,7 +3567,7 @@ layout mtrl_picker_text_input_date
 layout mtrl_picker_text_input_date_range
 layout mtrl_search_bar
 layout mtrl_search_view
-layout navigation_layout
+layout navigation_header
 layout notification_action
 layout notification_action_tombstone
 layout notification_template_custom_big

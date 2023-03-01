@@ -17,9 +17,9 @@ drawable ic_launcher_foreground
 drawable ic_navigationicon
 font aclonica
 font bigshot_one
-id DrawerLayout
 id app_bar
 id button
+id drawer_layout
 id email
 id forgotPassword
 id home_content
@@ -32,6 +32,7 @@ id nav_gallery
 id nav_home
 id nav_slideshow
 id nav_view
+id navigation_header
 id passportNumber
 id password
 id progressBar
@@ -49,7 +50,7 @@ layout activity_main
 layout activity_register
 layout app_bar
 layout home_content
-layout navigation_layout
+layout navigation_header
 menu nav_item_list
 mipmap ic_launcher
 mipmap ic_launcher_round

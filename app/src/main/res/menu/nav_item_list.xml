@@ -6,12 +6,13 @@
     <group android:checkableBehavior="single">
         <item
             android:id="@+id/nav_home"
-            android:title="Home" />
+            android:title="Home"
+            android:icon="@drawable/ic_navigationicon"/>
         <item
-            android:id="@+id/nav_gallery"
-            android:title="Login" />
+            android:id="@+id/nav_belts_log"
+            android:title="Belts Log" />
         <item
-            android:id="@+id/nav_slideshow"
-            android:title="Register" />
+            android:id="@+id/nav_grant_belt"
+            android:title="Grant a new belt!" />
     </group>
 </menu>
