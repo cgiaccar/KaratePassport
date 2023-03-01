@@ -20,7 +20,7 @@
         android:layout_height="match_parent"
         android:layout_gravity="start"
         android:fitsSystemWindows="true"
-        app:headerLayout="@layout/navigation_layout"
+        app:headerLayout="@layout/navigation_header"
         app:layout_constraintStart_toStartOf="parent"
         app:menu="@menu/nav_item_list"
         tools:layout_editor_absoluteY="0dp" />
