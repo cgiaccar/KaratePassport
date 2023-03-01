@@ -69,4 +69,15 @@
         app:layout_constraintTop_toBottomOf="@+id/mainPassportNumber"
         app:layout_constraintVertical_bias="0.15" />
 
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/nav_view"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:fitsSystemWindows="true"
+        app:headerLayout="@layout/navigation_layout"
+        app:layout_constraintStart_toStartOf="parent"
+        app:menu="@menu/nav_item_list"
+        tools:layout_editor_absoluteY="0dp" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
