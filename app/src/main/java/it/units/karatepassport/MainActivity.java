@@ -1,6 +1,7 @@
 package it.units.karatepassport;
 
 import androidx.annotation.NonNull;
+import androidx.appcompat.app.ActionBarDrawerToggle;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.drawerlayout.widget.DrawerLayout;
 
@@ -15,6 +16,7 @@ import com.google.android.material.navigation.NavigationView;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.firestore.DocumentReference;
 import com.google.firebase.firestore.FirebaseFirestore;
+import com.google.firebase.firestore.MetadataChanges;
 
 public class MainActivity extends AppCompatActivity {
     TextView name,email,number,loggedAs;
@@ -52,10 +54,7 @@ public class MainActivity extends AppCompatActivity {
             }
             return true;
         });
-        loggedAs = findViewById(R.id.loggedAs);
-        headerView = navigationView.getHeaderView(0);
-        loggedAs = headerView.findViewById(R.id.loggedAs);
-        loggedAs.setText("Logged in as PROVA");
+
 
 
         userID = fAuth.getCurrentUser().getUid();
@@ -65,9 +64,15 @@ public class MainActivity extends AppCompatActivity {
 
         documentReference.addSnapshotListener(this, (documentSnapshot, e) -> {
             //using the names assigned in Register.java, visible also in the FirestoreDB
+            String nameString = documentSnapshot.getString("userName");
             number.setText(documentSnapshot.getString("passportNumber"));
-            name.setText(documentSnapshot.getString("userName"));
+            name.setText(nameString);
             email.setText(documentSnapshot.getString("email"));
+
+            //change the "Logged in as ..." message in navigation header
+            headerView = navigationView.getHeaderView(0);
+            loggedAs = headerView.findViewById(R.id.loggedAs);
+            loggedAs.setText("Logged in as " + nameString); //should put "Logged in as " in a constant in values>strings so that we can automatically translate
         });
     }
 
