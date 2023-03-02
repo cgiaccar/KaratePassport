@@ -11,7 +11,7 @@
             android:title="Home"
             android:icon="@drawable/ic_navigationicon"/>
         <item
-            android:id="@+id/nav_belts_log"
+            android:id="@+id/nav_belt_log"
             android:title="Your belts" />
         <item
             android:id="@+id/nav_grant_belt"

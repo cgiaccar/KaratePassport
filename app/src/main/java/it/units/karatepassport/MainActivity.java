@@ -1,14 +1,10 @@
 package it.units.karatepassport;
 
-import androidx.annotation.NonNull;
-import androidx.appcompat.app.ActionBarDrawerToggle;
-import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.drawerlayout.widget.DrawerLayout;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.view.MenuItem;
 import android.view.View;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -17,7 +13,6 @@ import com.google.android.material.navigation.NavigationView;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.firestore.DocumentReference;
 import com.google.firebase.firestore.FirebaseFirestore;
-import com.google.firebase.firestore.MetadataChanges;
 
 public class MainActivity extends AppCompatActivity {
     TextView name,email,number,loggedAs;
@@ -46,12 +41,14 @@ public class MainActivity extends AppCompatActivity {
         navigationView.setNavigationItemSelectedListener(menuItem -> {
                     switch (menuItem.getItemId()) {
                         case R.id.nav_home:
-                            Toast.makeText(MainActivity.this, "The home is clicked!", Toast.LENGTH_SHORT).show();
+                            startActivity(new Intent(getApplicationContext(), MainActivity.class));
                             return true;
-                        case R.id.nav_belts_log:
+                        case R.id.nav_belt_log:
+                            startActivity(new Intent(getApplicationContext(), BeltLog.class));
                             return true;
                         case R.id.nav_grant_belt:
-                            return false;
+                            startActivity(new Intent(getApplicationContext(), GrantBelt.class));
+                            return true;
                     }
             return true;
         });
