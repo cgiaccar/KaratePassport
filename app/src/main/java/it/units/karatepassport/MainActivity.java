@@ -72,7 +72,7 @@ public class MainActivity extends AppCompatActivity {
             //change the "Logged in as ..." message in navigation header
             headerView = navigationView.getHeaderView(0);
             loggedAs = headerView.findViewById(R.id.loggedAs);
-            loggedAs.setText("Logged in as " + nameString); //should put "Logged in as " in a constant in values>strings so that we can automatically translate
+            loggedAs.setText(getString(R.string.logged_as, nameString));
         });
     }
 
