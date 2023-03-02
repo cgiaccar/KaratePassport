@@ -39,21 +39,19 @@ public class MainActivity extends AppCompatActivity {
         // navigationView handling
         drawerLayout = findViewById(R.id.drawer_layout);
         navigationView = findViewById(R.id.nav_view);
-        navigationView.setNavigationItemSelectedListener(new NavigationView.OnNavigationItemSelectedListener() {
-            @Override
-            public boolean onNavigationItemSelected(@NonNull MenuItem menuItem) {
-                switch (menuItem.getItemId()) {
-                    case R.id.nav_home:
-                        Toast.makeText(MainActivity.this, "The home is clicked!", Toast.LENGTH_SHORT).show();
-                        return true;
-                    case R.id.nav_belts_log:
-                        return true;
-                    case R.id.nav_grant_belt:
-                        return false;
-                }
-                return true;
+        navigationView.setNavigationItemSelectedListener(menuItem -> {
+            switch (menuItem.getItemId()) {
+                case R.id.nav_home:
+                    Toast.makeText(MainActivity.this, "The home is clicked!", Toast.LENGTH_SHORT).show();
+                    return true;
+                case R.id.nav_belts_log:
+                    return true;
+                case R.id.nav_grant_belt:
+                    return false;
             }
+            return true;
         });
+        
 
 
         userID = fAuth.getCurrentUser().getUid();
