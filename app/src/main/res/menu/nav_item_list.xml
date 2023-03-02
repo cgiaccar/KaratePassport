@@ -3,16 +3,25 @@
     xmlns:tools="http://schemas.android.com/tools"
     tools:showIn="navigation_view">
 
-    <group android:checkableBehavior="single">
+    <group
+        android:id="@+id/menu_items"
+        android:checkableBehavior="single">
         <item
             android:id="@+id/nav_home"
             android:title="Home"
             android:icon="@drawable/ic_navigationicon"/>
         <item
             android:id="@+id/nav_belts_log"
-            android:title="Belts Log" />
+            android:title="Your belts" />
         <item
             android:id="@+id/nav_grant_belt"
             android:title="Grant a new belt!" />
+    </group>
+    <group
+        android:id="@+id/logout_item"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/logout"
+            android:title="Logout" />
     </group>
 </menu>
