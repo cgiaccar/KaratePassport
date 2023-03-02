@@ -31,6 +31,12 @@ int anim linear_indeterminate_line1_head_interpolator 0x7f01001d
 int anim linear_indeterminate_line1_tail_interpolator 0x7f01001e
 int anim linear_indeterminate_line2_head_interpolator 0x7f01001f
 int anim linear_indeterminate_line2_tail_interpolator 0x7f010020
+int anim m3_bottom_sheet_slide_in 0x7f010024
+int anim m3_bottom_sheet_slide_out 0x7f010025
+int anim m3_motion_fade_enter 0x7f010026
+int anim m3_motion_fade_exit 0x7f010027
+int anim m3_side_sheet_slide_in 0x7f010028
+int anim m3_side_sheet_slide_out 0x7f010029
 int anim mtrl_bottom_sheet_slide_in 0x7f010021
 int anim mtrl_bottom_sheet_slide_out 0x7f010022
 int anim mtrl_card_lowers_interpolator 0x7f010023
@@ -49,6 +55,8 @@ int animator m3_card_elevated_state_list_anim 0x7f02000b
 int animator m3_card_state_list_anim 0x7f02000c
 int animator m3_chip_state_list_anim 0x7f02000d
 int animator m3_elevated_chip_state_list_anim 0x7f02000e
+int animator m3_extended_fab_change_size_collapse_motion_spec 0x7f02001f
+int animator m3_extended_fab_change_size_expand_motion_spec 0x7f020020
 int animator m3_extended_fab_hide_motion_spec 0x7f02000f
 int animator m3_extended_fab_show_motion_spec 0x7f020010
 int animator m3_extended_fab_state_list_animator 0x7f020011
@@ -108,6 +116,7 @@ int attr actionProviderClass 0x7f040023
 int attr actionTextColorAlpha 0x7f040024
 int attr actionViewClass 0x7f040025
 int attr activityChooserViewStyle 0x7f040026
+int attr addElevationShadow 0x7f040493
 int attr alertDialogButtonGroupStyle 0x7f040027
 int attr alertDialogCenterButtons 0x7f040028
 int attr alertDialogStyle 0x7f040029
@@ -117,6 +126,8 @@ int attr alpha 0x7f04002c
 int attr alphabeticModifiers 0x7f04002d
 int attr altSrc 0x7f04002e
 int attr animateCircleAngleTo 0x7f04002f
+int attr animateMenuItems 0x7f040494
+int attr animateNavigationIcon 0x7f040495
 int attr animateRelativeTo 0x7f040030
 int attr animationMode 0x7f040031
 int attr appBarLayoutStyle 0x7f040032
@@ -127,6 +138,7 @@ int attr arrowShaftLength 0x7f040036
 int attr attributeName 0x7f040037
 int attr autoCompleteMode 0x7f040038
 int attr autoCompleteTextViewStyle 0x7f040039
+int attr autoShowKeyboard 0x7f040496
 int attr autoSizeMaxTextSize 0x7f04003a
 int attr autoSizeMinTextSize 0x7f04003b
 int attr autoSizePresetSizes 0x7f04003c
@@ -164,6 +176,7 @@ int attr behavior_hideable 0x7f04005b
 int attr behavior_overlapTop 0x7f04005c
 int attr behavior_peekHeight 0x7f04005d
 int attr behavior_saveFlags 0x7f04005e
+int attr behavior_significantVelocityThreshold 0x7f040497
 int attr behavior_skipCollapsed 0x7f04005f
 int attr blendSrc 0x7f040060
 int attr borderRound 0x7f040061
@@ -319,6 +332,7 @@ int attr colorOnSurfaceVariant 0x7f0400f6
 int attr colorOnTertiary 0x7f0400f7
 int attr colorOnTertiaryContainer 0x7f0400f8
 int attr colorOutline 0x7f0400f9
+int attr colorOutlineVariant 0x7f040498
 int attr colorPrimary 0x7f0400fa
 int attr colorPrimaryContainer 0x7f0400fb
 int attr colorPrimaryDark 0x7f0400fc
@@ -336,6 +350,7 @@ int attr colorSwitchThumbNormal 0x7f040107
 int attr colorTertiary 0x7f040108
 int attr colorTertiaryContainer 0x7f040109
 int attr commitIcon 0x7f04010a
+int attr compatShadowEnabled 0x7f040499
 int attr constraintRotate 0x7f04010b
 int attr constraintSet 0x7f04010c
 int attr constraintSetEnd 0x7f04010d
@@ -362,6 +377,7 @@ int attr contentScrim 0x7f040121
 int attr contrast 0x7f040122
 int attr controlBackground 0x7f040123
 int attr coordinatorLayoutStyle 0x7f040124
+int attr coplanarSiblingViewId 0x7f04049a
 int attr cornerFamily 0x7f040125
 int attr cornerFamilyBottomLeft 0x7f040126
 int attr cornerFamilyBottomRight 0x7f040127
@@ -397,7 +413,9 @@ int attr daySelectedStyle 0x7f040144
 int attr dayStyle 0x7f040145
 int attr dayTodayStyle 0x7f040146
 int attr defaultDuration 0x7f040147
+int attr defaultMarginsEnabled 0x7f04049b
 int attr defaultQueryHint 0x7f040148
+int attr defaultScrollFlagsEnabled 0x7f04049c
 int attr defaultState 0x7f040149
 int attr deltaPolarAngle 0x7f04014a
 int attr deltaPolarRadius 0x7f04014b
@@ -446,13 +464,16 @@ int attr enableEdgeToEdge 0x7f040175
 int attr endIconCheckable 0x7f040176
 int attr endIconContentDescription 0x7f040177
 int attr endIconDrawable 0x7f040178
+int attr endIconMinSize 0x7f04049d
 int attr endIconMode 0x7f040179
+int attr endIconScaleType 0x7f04049e
 int attr endIconTint 0x7f04017a
 int attr endIconTintMode 0x7f04017b
 int attr enforceMaterialTheme 0x7f04017c
 int attr enforceTextAppearance 0x7f04017d
 int attr ensureMinTouchTargetSize 0x7f04017e
 int attr errorAccessibilityLabel 0x7f04017f
+int attr errorAccessibilityLiveRegion 0x7f04049f
 int attr errorContentDescription 0x7f040180
 int attr errorEnabled 0x7f040181
 int attr errorIconDrawable 0x7f040182
@@ -473,6 +494,7 @@ int attr expandedTitleMarginTop 0x7f040190
 int attr expandedTitleTextAppearance 0x7f040191
 int attr expandedTitleTextColor 0x7f040192
 int attr extendMotionSpec 0x7f040193
+int attr extendStrategy 0x7f0404a0
 int attr extendedFloatingActionButtonPrimaryStyle 0x7f040194
 int attr extendedFloatingActionButtonSecondaryStyle 0x7f040195
 int attr extendedFloatingActionButtonStyle 0x7f040196
@@ -541,6 +563,7 @@ int attr fontStyle 0x7f0401d4
 int attr fontVariationSettings 0x7f0401d5
 int attr fontWeight 0x7f0401d6
 int attr forceApplySystemWindowInsetTop 0x7f0401d7
+int attr forceDefaultNavigationOnClickListener 0x7f0404a1
 int attr foregroundInsidePadding 0x7f0401d8
 int attr framePosition 0x7f0401d9
 int attr gapBetweenBars 0x7f0401da
@@ -557,6 +580,7 @@ int attr helperTextTextAppearance 0x7f0401e4
 int attr helperTextTextColor 0x7f0401e5
 int attr hideAnimationBehavior 0x7f0401e6
 int attr hideMotionSpec 0x7f0401e7
+int attr hideNavigationIcon 0x7f0404a2
 int attr hideOnContentScroll 0x7f0401e8
 int attr hideOnScroll 0x7f0401e9
 int attr hintAnimationEnabled 0x7f0401ea
@@ -711,6 +735,7 @@ int attr layout_scrollFlags 0x7f04027e
 int attr layout_scrollInterpolator 0x7f04027f
 int attr layout_wrapBehaviorInParent 0x7f040280
 int attr liftOnScroll 0x7f040281
+int attr liftOnScrollColor 0x7f0404a3
 int attr liftOnScrollTargetViewId 0x7f040282
 int attr limitBoundsTo 0x7f040283
 int attr lineHeight 0x7f040284
@@ -776,6 +801,9 @@ int attr materialIconButtonFilledStyle 0x7f0402bf
 int attr materialIconButtonFilledTonalStyle 0x7f0402c0
 int attr materialIconButtonOutlinedStyle 0x7f0402c1
 int attr materialIconButtonStyle 0x7f0402c2
+int attr materialSearchBarStyle 0x7f0404a4
+int attr materialSearchViewPrefixStyle 0x7f0404a5
+int attr materialSearchViewStyle 0x7f0404a6
 int attr materialSwitchStyle 0x7f0402c3
 int attr materialThemeOverlay 0x7f0402c4
 int attr materialTimePickerStyle 0x7f0402c5
@@ -947,6 +975,7 @@ int attr scrimBackground 0x7f04036a
 int attr scrimVisibleHeightTrigger 0x7f04036b
 int attr searchHintIcon 0x7f04036c
 int attr searchIcon 0x7f04036d
+int attr searchPrefixText 0x7f0404a7
 int attr searchViewStyle 0x7f04036e
 int attr seekBarStyle 0x7f04036f
 int attr selectableItemBackground 0x7f040370
@@ -966,6 +995,7 @@ int attr shapeAppearanceOverlay 0x7f04037d
 int attr shapeAppearanceSmallComponent 0x7f04037e
 int attr shapeCornerFamily 0x7f04037f
 int attr shortcutMatchRequired 0x7f040380
+int attr shouldRemoveExpandedCorners 0x7f0404a8
 int attr showAnimationBehavior 0x7f040381
 int attr showAsAction 0x7f040382
 int attr showDelay 0x7f040383
@@ -975,6 +1005,8 @@ int attr showPaths 0x7f040386
 int attr showText 0x7f040387
 int attr showTitle 0x7f040388
 int attr shrinkMotionSpec 0x7f040389
+int attr sideSheetDialogTheme 0x7f0404a9
+int attr sideSheetModalStyle 0x7f0404aa
 int attr simpleItemLayout 0x7f04038a
 int attr simpleItemSelectedColor 0x7f04038b
 int attr simpleItemSelectedRippleColor 0x7f04038c
@@ -1003,6 +1035,8 @@ int attr staggered 0x7f0403a2
 int attr startIconCheckable 0x7f0403a3
 int attr startIconContentDescription 0x7f0403a4
 int attr startIconDrawable 0x7f0403a5
+int attr startIconMinSize 0x7f0404ab
+int attr startIconScaleType 0x7f0404ac
 int attr startIconTint 0x7f0403a6
 int attr startIconTintMode 0x7f0403a7
 int attr state_above_anchor 0x7f0403a8
@@ -1061,6 +1095,7 @@ int attr tabPaddingStart 0x7f0403dc
 int attr tabPaddingTop 0x7f0403dd
 int attr tabRippleColor 0x7f0403de
 int attr tabSecondaryStyle 0x7f0403df
+int attr tabSelectedTextAppearance 0x7f0404ad
 int attr tabSelectedTextColor 0x7f0403e0
 int attr tabStyle 0x7f0403e1
 int attr tabTextAppearance 0x7f0403e2
@@ -1157,6 +1192,7 @@ int attr tickMarkTintMode 0x7f04043c
 int attr tickVisible 0x7f04043d
 int attr tint 0x7f04043e
 int attr tintMode 0x7f04043f
+int attr tintNavigationIcon 0x7f0404ae
 int attr title 0x7f040440
 int attr titleCentered 0x7f040441
 int attr titleCollapseMode 0x7f040442
@@ -1209,6 +1245,7 @@ int attr triggerSlack 0x7f040470
 int attr ttcIndex 0x7f040471
 int attr upDuration 0x7f040472
 int attr useCompatPadding 0x7f040473
+int attr useDrawerArrowDrawable 0x7f0404af
 int attr useMaterialThemeColors 0x7f040474
 int attr values 0x7f040475
 int attr verticalOffset 0x7f040476
@@ -1580,6 +1617,7 @@ int color m3_sys_color_dark_on_surface_variant 0x7f06014d
 int color m3_sys_color_dark_on_tertiary 0x7f06014e
 int color m3_sys_color_dark_on_tertiary_container 0x7f06014f
 int color m3_sys_color_dark_outline 0x7f060150
+int color m3_sys_color_dark_outline_variant 0x7f060271
 int color m3_sys_color_dark_primary 0x7f060151
 int color m3_sys_color_dark_primary_container 0x7f060152
 int color m3_sys_color_dark_secondary 0x7f060153
@@ -1602,6 +1640,7 @@ int color m3_sys_color_dynamic_dark_on_surface_variant 0x7f060163
 int color m3_sys_color_dynamic_dark_on_tertiary 0x7f060164
 int color m3_sys_color_dynamic_dark_on_tertiary_container 0x7f060165
 int color m3_sys_color_dynamic_dark_outline 0x7f060166
+int color m3_sys_color_dynamic_dark_outline_variant 0x7f060272
 int color m3_sys_color_dynamic_dark_primary 0x7f060167
 int color m3_sys_color_dynamic_dark_primary_container 0x7f060168
 int color m3_sys_color_dynamic_dark_secondary 0x7f060169
@@ -1624,6 +1663,7 @@ int color m3_sys_color_dynamic_light_on_surface_variant 0x7f060179
 int color m3_sys_color_dynamic_light_on_tertiary 0x7f06017a
 int color m3_sys_color_dynamic_light_on_tertiary_container 0x7f06017b
 int color m3_sys_color_dynamic_light_outline 0x7f06017c
+int color m3_sys_color_dynamic_light_outline_variant 0x7f060273
 int color m3_sys_color_dynamic_light_primary 0x7f06017d
 int color m3_sys_color_dynamic_light_primary_container 0x7f06017e
 int color m3_sys_color_dynamic_light_secondary 0x7f06017f
@@ -1650,6 +1690,7 @@ int color m3_sys_color_light_on_surface_variant 0x7f060193
 int color m3_sys_color_light_on_tertiary 0x7f060194
 int color m3_sys_color_light_on_tertiary_container 0x7f060195
 int color m3_sys_color_light_outline 0x7f060196
+int color m3_sys_color_light_outline_variant 0x7f060274
 int color m3_sys_color_light_primary 0x7f060197
 int color m3_sys_color_light_primary_container 0x7f060198
 int color m3_sys_color_light_secondary 0x7f060199
@@ -1659,7 +1700,11 @@ int color m3_sys_color_light_surface_variant 0x7f06019c
 int color m3_sys_color_light_tertiary 0x7f06019d
 int color m3_sys_color_light_tertiary_container 0x7f06019e
 int color m3_tabs_icon_color 0x7f06019f
+int color m3_tabs_icon_color_secondary 0x7f060275
 int color m3_tabs_ripple_color 0x7f0601a0
+int color m3_tabs_ripple_color_secondary 0x7f060276
+int color m3_tabs_text_color 0x7f060277
+int color m3_tabs_text_color_secondary 0x7f060278
 int color m3_text_button_background_color_selector 0x7f0601a1
 int color m3_text_button_foreground_color_selector 0x7f0601a2
 int color m3_text_button_ripple_color_selector 0x7f0601a3
@@ -1772,6 +1817,32 @@ int color material_on_surface_disabled 0x7f06020d
 int color material_on_surface_emphasis_high_type 0x7f06020e
 int color material_on_surface_emphasis_medium 0x7f06020f
 int color material_on_surface_stroke 0x7f060210
+int color material_personalized_color_background 0x7f060279
+int color material_personalized_color_error 0x7f06027a
+int color material_personalized_color_error_container 0x7f06027b
+int color material_personalized_color_on_background 0x7f06027c
+int color material_personalized_color_on_error 0x7f06027d
+int color material_personalized_color_on_error_container 0x7f06027e
+int color material_personalized_color_on_primary 0x7f06027f
+int color material_personalized_color_on_primary_container 0x7f060280
+int color material_personalized_color_on_secondary 0x7f060281
+int color material_personalized_color_on_secondary_container 0x7f060282
+int color material_personalized_color_on_surface 0x7f060283
+int color material_personalized_color_on_surface_inverse 0x7f060284
+int color material_personalized_color_on_surface_variant 0x7f060285
+int color material_personalized_color_on_tertiary 0x7f060286
+int color material_personalized_color_on_tertiary_container 0x7f060287
+int color material_personalized_color_primary 0x7f060288
+int color material_personalized_color_primary_container 0x7f060289
+int color material_personalized_color_primary_inverse 0x7f06028a
+int color material_personalized_color_secondary 0x7f06028b
+int color material_personalized_color_secondary_container 0x7f06028c
+int color material_personalized_color_surface 0x7f06028d
+int color material_personalized_color_surface_inverse 0x7f06028e
+int color material_personalized_color_surface_outline 0x7f06028f
+int color material_personalized_color_surface_variant 0x7f060290
+int color material_personalized_color_tertiary 0x7f060291
+int color material_personalized_color_tertiary_container 0x7f060292
 int color material_slider_active_tick_marks_color 0x7f060211
 int color material_slider_active_track_color 0x7f060212
 int color material_slider_halo_color 0x7f060213
@@ -2102,8 +2173,18 @@ int dimen m3_chip_dragged_translation_z 0x7f0700e6
 int dimen m3_chip_elevated_elevation 0x7f0700e7
 int dimen m3_chip_hovered_translation_z 0x7f0700e8
 int dimen m3_chip_icon_size 0x7f0700e9
+int dimen m3_comp_assist_chip_container_height 0x7f07026d
+int dimen m3_comp_assist_chip_elevated_container_elevation 0x7f07026e
+int dimen m3_comp_assist_chip_flat_container_elevation 0x7f07026f
+int dimen m3_comp_assist_chip_flat_outline_width 0x7f070270
+int dimen m3_comp_assist_chip_with_icon_icon_size 0x7f070271
 int dimen m3_comp_bottom_app_bar_container_elevation 0x7f0700ea
 int dimen m3_comp_bottom_app_bar_container_height 0x7f0700eb
+int dimen m3_comp_checkbox_selected_disabled_container_opacity 0x7f070272
+int dimen m3_comp_circular_progress_indicator_active_indicator_width 0x7f070273
+int dimen m3_comp_divider_thickness 0x7f070274
+int dimen m3_comp_elevated_button_container_elevation 0x7f070275
+int dimen m3_comp_elevated_button_disabled_container_elevation 0x7f070276
 int dimen m3_comp_extended_fab_primary_container_elevation 0x7f0700ec
 int dimen m3_comp_extended_fab_primary_container_height 0x7f0700ed
 int dimen m3_comp_extended_fab_primary_focus_container_elevation 0x7f0700ee
@@ -2125,14 +2206,71 @@ int dimen m3_comp_fab_primary_pressed_container_elevation 0x7f0700fd
 int dimen m3_comp_fab_primary_pressed_state_layer_opacity 0x7f0700fe
 int dimen m3_comp_fab_primary_small_container_height 0x7f0700ff
 int dimen m3_comp_fab_primary_small_icon_size 0x7f070100
-int dimen m3_comp_switch_disabled_handle_elevation 0x7f070101
-int dimen m3_comp_switch_disabled_handle_opacity 0x7f070102
+int dimen m3_comp_filled_autocomplete_menu_container_elevation 0x7f070277
+int dimen m3_comp_filled_button_container_elevation 0x7f070278
+int dimen m3_comp_filled_button_with_icon_icon_size 0x7f070279
+int dimen m3_comp_filled_text_field_disabled_active_indicator_opacity 0x7f07027a
+int dimen m3_comp_filter_chip_container_height 0x7f07027b
+int dimen m3_comp_filter_chip_elevated_container_elevation 0x7f07027c
+int dimen m3_comp_filter_chip_flat_container_elevation 0x7f07027d
+int dimen m3_comp_filter_chip_flat_unselected_outline_width 0x7f07027e
+int dimen m3_comp_filter_chip_with_icon_icon_size 0x7f07027f
+int dimen m3_comp_input_chip_container_elevation 0x7f070280
+int dimen m3_comp_input_chip_container_height 0x7f070281
+int dimen m3_comp_input_chip_unselected_outline_width 0x7f070282
+int dimen m3_comp_input_chip_with_avatar_avatar_size 0x7f070283
+int dimen m3_comp_input_chip_with_leading_icon_leading_icon_size 0x7f070284
+int dimen m3_comp_linear_progress_indicator_active_indicator_height 0x7f070285
+int dimen m3_comp_navigation_rail_active_indicator_height 0x7f070286
+int dimen m3_comp_navigation_rail_active_indicator_width 0x7f070287
+int dimen m3_comp_navigation_rail_container_elevation 0x7f070288
+int dimen m3_comp_navigation_rail_container_width 0x7f070289
+int dimen m3_comp_navigation_rail_icon_size 0x7f07028a
+int dimen m3_comp_outlined_autocomplete_menu_container_elevation 0x7f07028b
+int dimen m3_comp_outlined_button_disabled_outline_opacity 0x7f07028c
+int dimen m3_comp_outlined_button_outline_width 0x7f07028d
+int dimen m3_comp_outlined_text_field_disabled_input_text_opacity 0x7f07028e
+int dimen m3_comp_outlined_text_field_disabled_label_text_opacity 0x7f07028f
+int dimen m3_comp_outlined_text_field_disabled_supporting_text_opacity 0x7f070290
+int dimen m3_comp_outlined_text_field_focus_outline_width 0x7f070291
+int dimen m3_comp_outlined_text_field_outline_width 0x7f070292
+int dimen m3_comp_primary_navigation_tab_active_focus_state_layer_opacity 0x7f070293
+int dimen m3_comp_primary_navigation_tab_active_hover_state_layer_opacity 0x7f070294
+int dimen m3_comp_primary_navigation_tab_active_indicator_height 0x7f070295
+int dimen m3_comp_primary_navigation_tab_active_pressed_state_layer_opacity 0x7f070296
+int dimen m3_comp_primary_navigation_tab_divider_height 0x7f070297
+int dimen m3_comp_primary_navigation_tab_inactive_focus_state_layer_opacity 0x7f070298
+int dimen m3_comp_primary_navigation_tab_inactive_hover_state_layer_opacity 0x7f070299
+int dimen m3_comp_primary_navigation_tab_inactive_pressed_state_layer_opacity 0x7f07029a
+int dimen m3_comp_primary_navigation_tab_with_icon_icon_size 0x7f07029b
+int dimen m3_comp_search_bar_avatar_size 0x7f07029c
+int dimen m3_comp_search_bar_container_elevation 0x7f07029d
+int dimen m3_comp_search_bar_container_height 0x7f07029e
+int dimen m3_comp_search_bar_hover_state_layer_opacity 0x7f07029f
+int dimen m3_comp_search_bar_pressed_state_layer_opacity 0x7f0702a0
+int dimen m3_comp_search_view_container_elevation 0x7f0702a1
+int dimen m3_comp_search_view_docked_header_container_height 0x7f0702a2
+int dimen m3_comp_search_view_full_screen_header_container_height 0x7f0702a3
+int dimen m3_comp_secondary_navigation_tab_active_indicator_height 0x7f0702a4
+int dimen m3_comp_secondary_navigation_tab_focus_state_layer_opacity 0x7f0702a5
+int dimen m3_comp_secondary_navigation_tab_hover_state_layer_opacity 0x7f0702a6
+int dimen m3_comp_secondary_navigation_tab_pressed_state_layer_opacity 0x7f0702a7
+int dimen m3_comp_sheet_bottom_docked_modal_container_elevation 0x7f0702a8
+int dimen m3_comp_sheet_bottom_docked_standard_container_elevation 0x7f0702a9
+int dimen m3_comp_slider_disabled_active_track_opacity 0x7f0702aa
+int dimen m3_comp_slider_disabled_handle_opacity 0x7f0702ab
+int dimen m3_comp_slider_disabled_inactive_track_opacity 0x7f0702ac
+int dimen m3_comp_slider_inactive_track_height 0x7f0702ad
+int dimen m3_comp_suggestion_chip_container_height 0x7f0702ae
+int dimen m3_comp_suggestion_chip_elevated_container_elevation 0x7f0702af
+int dimen m3_comp_suggestion_chip_flat_container_elevation 0x7f0702b0
+int dimen m3_comp_suggestion_chip_flat_outline_width 0x7f0702b1
+int dimen m3_comp_suggestion_chip_with_leading_icon_leading_icon_size 0x7f0702b2
 int dimen m3_comp_switch_disabled_selected_handle_opacity 0x7f070103
 int dimen m3_comp_switch_disabled_selected_icon_opacity 0x7f070104
 int dimen m3_comp_switch_disabled_track_opacity 0x7f070105
 int dimen m3_comp_switch_disabled_unselected_handle_opacity 0x7f070106
 int dimen m3_comp_switch_disabled_unselected_icon_opacity 0x7f070107
-int dimen m3_comp_switch_handle_elevation 0x7f070108
 int dimen m3_comp_switch_selected_focus_state_layer_opacity 0x7f070109
 int dimen m3_comp_switch_selected_hover_state_layer_opacity 0x7f07010a
 int dimen m3_comp_switch_selected_pressed_state_layer_opacity 0x7f07010b
@@ -2141,9 +2279,11 @@ int dimen m3_comp_switch_track_width 0x7f07010d
 int dimen m3_comp_switch_unselected_focus_state_layer_opacity 0x7f07010e
 int dimen m3_comp_switch_unselected_hover_state_layer_opacity 0x7f07010f
 int dimen m3_comp_switch_unselected_pressed_state_layer_opacity 0x7f070110
+int dimen m3_comp_text_button_focus_state_layer_opacity 0x7f0702b3
+int dimen m3_comp_text_button_hover_state_layer_opacity 0x7f0702b4
+int dimen m3_comp_text_button_pressed_state_layer_opacity 0x7f0702b5
 int dimen m3_datepicker_elevation 0x7f070111
 int dimen m3_divider_heavy_thickness 0x7f070112
-int dimen m3_exposed_dropdown_menu_popup_elevation 0x7f070113
 int dimen m3_extended_fab_bottom_padding 0x7f070114
 int dimen m3_extended_fab_end_padding 0x7f070115
 int dimen m3_extended_fab_icon_padding 0x7f070116
@@ -2168,6 +2308,8 @@ int dimen m3_navigation_item_vertical_padding 0x7f070128
 int dimen m3_navigation_menu_divider_horizontal_padding 0x7f070129
 int dimen m3_navigation_menu_headline_horizontal_padding 0x7f07012a
 int dimen m3_navigation_rail_default_width 0x7f07012b
+int dimen m3_navigation_rail_elevation 0x7f0702b6
+int dimen m3_navigation_rail_icon_size 0x7f0702b7
 int dimen m3_navigation_rail_item_active_indicator_height 0x7f07012c
 int dimen m3_navigation_rail_item_active_indicator_margin_horizontal 0x7f07012d
 int dimen m3_navigation_rail_item_active_indicator_width 0x7f07012e
@@ -2179,8 +2321,23 @@ int dimen m3_ripple_focused_alpha 0x7f070133
 int dimen m3_ripple_hovered_alpha 0x7f070134
 int dimen m3_ripple_pressed_alpha 0x7f070135
 int dimen m3_ripple_selectable_pressed_alpha 0x7f070136
+int dimen m3_searchbar_elevation 0x7f0702b8
+int dimen m3_searchbar_height 0x7f0702b9
+int dimen m3_searchbar_margin_horizontal 0x7f0702ba
+int dimen m3_searchbar_margin_vertical 0x7f0702bb
+int dimen m3_searchbar_outlined_stroke_width 0x7f0702bc
+int dimen m3_searchbar_padding_start 0x7f0702bd
+int dimen m3_searchbar_text_margin_start_no_navigation_icon 0x7f0702be
+int dimen m3_searchbar_text_size 0x7f0702bf
+int dimen m3_searchview_divider_size 0x7f0702c0
+int dimen m3_searchview_elevation 0x7f0702c1
+int dimen m3_searchview_height 0x7f0702c2
+int dimen m3_side_sheet_modal_elevation 0x7f0702c3
+int dimen m3_side_sheet_standard_elevation 0x7f0702c4
+int dimen m3_side_sheet_width 0x7f0702c5
 int dimen m3_simple_item_color_hovered_alpha 0x7f070137
 int dimen m3_simple_item_color_selected_alpha 0x7f070138
+int dimen m3_slider_inactive_track_height 0x7f0702c6
 int dimen m3_slider_thumb_elevation 0x7f070139
 int dimen m3_small_fab_max_image_size 0x7f07013a
 int dimen m3_small_fab_size 0x7f07013b
@@ -2234,20 +2391,22 @@ int dimen m3_sys_state_hover_state_layer_opacity 0x7f07016a
 int dimen m3_sys_state_pressed_state_layer_opacity 0x7f07016b
 int dimen m3_timepicker_display_stroke_width 0x7f07016c
 int dimen m3_timepicker_window_elevation 0x7f07016d
+int dimen m3_toolbar_text_size_title 0x7f0702c7
 int dimen material_bottom_sheet_max_width 0x7f07016e
+int dimen material_clock_display_height 0x7f0702c8
 int dimen material_clock_display_padding 0x7f07016f
+int dimen material_clock_display_width 0x7f0702c9
 int dimen material_clock_face_margin_top 0x7f070170
 int dimen material_clock_hand_center_dot_radius 0x7f070171
 int dimen material_clock_hand_padding 0x7f070172
 int dimen material_clock_hand_stroke_width 0x7f070173
-int dimen material_clock_number_text_padding 0x7f070174
 int dimen material_clock_number_text_size 0x7f070175
 int dimen material_clock_period_toggle_height 0x7f070176
-int dimen material_clock_period_toggle_margin_left 0x7f070177
+int dimen material_clock_period_toggle_horizontal_gap 0x7f0702ca
+int dimen material_clock_period_toggle_vertical_gap 0x7f0702cb
 int dimen material_clock_period_toggle_width 0x7f070178
 int dimen material_clock_size 0x7f070179
-int dimen material_cursor_inset_bottom 0x7f07017a
-int dimen material_cursor_inset_top 0x7f07017b
+int dimen material_cursor_inset 0x7f0702cc
 int dimen material_cursor_width 0x7f07017c
 int dimen material_divider_thickness 0x7f07017d
 int dimen material_emphasis_disabled 0x7f07017e
@@ -2267,7 +2426,6 @@ int dimen material_input_text_to_prefix_suffix_padding 0x7f07018b
 int dimen material_textinput_default_width 0x7f07018c
 int dimen material_textinput_max_width 0x7f07018d
 int dimen material_textinput_min_width 0x7f07018e
-int dimen material_time_input_padding_bottom 0x7f07018f
 int dimen material_time_picker_minimum_screen_height 0x7f070190
 int dimen material_time_picker_minimum_screen_width 0x7f070191
 int dimen material_timepicker_dialog_buttons_margin_top 0x7f070192
@@ -2605,6 +2763,8 @@ int drawable design_snackbar_background 0x7f080093
 int drawable googleg_disabled_color_18 0x7f080094
 int drawable googleg_standard_color_18 0x7f080095
 int drawable gradient_background 0x7f080096
+int drawable ic_arrow_back_black_24 0x7f0800ef
+int drawable ic_clear_black_24 0x7f0800f0
 int drawable ic_clock_black_24dp 0x7f080097
 int drawable ic_keyboard_black_24dp 0x7f080098
 int drawable ic_launcher_background 0x7f080099
@@ -2616,7 +2776,12 @@ int drawable ic_mtrl_checked_circle 0x7f08009e
 int drawable ic_mtrl_chip_checked_black 0x7f08009f
 int drawable ic_mtrl_chip_checked_circle 0x7f0800a0
 int drawable ic_mtrl_chip_close_circle 0x7f0800a1
+int drawable ic_navigationicon 0x7f0800f1
+int drawable ic_search_black_24 0x7f0800f2
 int drawable m3_appbar_background 0x7f0800a2
+int drawable m3_avd_hide_password 0x7f0800f3
+int drawable m3_avd_show_password 0x7f0800f4
+int drawable m3_password_eye 0x7f0800f5
 int drawable m3_popupmenu_background_overlay 0x7f0800a3
 int drawable m3_radiobutton_ripple 0x7f0800a4
 int drawable m3_selection_control_ripple 0x7f0800a5
@@ -2771,6 +2936,7 @@ int id animateToEnd 0x7f0a004e
 int id animateToStart 0x7f0a004f
 int id antiClockwise 0x7f0a0050
 int id anticipate 0x7f0a0051
+int id app_bar 0x7f0a01fb
 int id arc 0x7f0a0052
 int id asConfigured 0x7f0a0053
 int id async 0x7f0a0054
@@ -2863,6 +3029,7 @@ int id dragLeft 0x7f0a00aa
 int id dragRight 0x7f0a00ab
 int id dragStart 0x7f0a00ac
 int id dragUp 0x7f0a00ad
+int id drawer_layout 0x7f0a0213
 int id dropdown_menu 0x7f0a00ae
 int id easeIn 0x7f0a00af
 int id easeInOut 0x7f0a00b0
@@ -2905,11 +3072,11 @@ int id graph_wrap 0x7f0a00d3
 int id group_divider 0x7f0a00d4
 int id grouping 0x7f0a00d5
 int id groups 0x7f0a00d6
-int id guideline 0x7f0a00d7
 int id header_title 0x7f0a00d8
 int id hideable 0x7f0a00d9
 int id home 0x7f0a00da
 int id homeAsUp 0x7f0a00db
+int id home_content 0x7f0a01fc
 int id honorRequest 0x7f0a00dc
 int id horizontal_only 0x7f0a00dd
 int id icon 0x7f0a00de
@@ -2919,6 +3086,7 @@ int id ifRoom 0x7f0a00e1
 int id ignore 0x7f0a00e2
 int id ignoreRequest 0x7f0a00e3
 int id image 0x7f0a00e4
+int id imageView 0x7f0a01fd
 int id immediateStop 0x7f0a00e5
 int id included 0x7f0a00e6
 int id indeterminate 0x7f0a00e7
@@ -2940,7 +3108,11 @@ int id line3 0x7f0a00f6
 int id linear 0x7f0a00f7
 int id listMode 0x7f0a00f8
 int id list_item 0x7f0a00f9
+int id loggedAs 0x7f0a0215
 int id loginBtn 0x7f0a00fa
+int id logout 0x7f0a0218
+int id logout_item 0x7f0a0219
+int id m3_side_sheet 0x7f0a01fe
 int id mainEmail 0x7f0a01f5
 int id mainPassportNumber 0x7f0a01f6
 int id mainUserName 0x7f0a01f7
@@ -2949,8 +3121,10 @@ int id masked 0x7f0a00fc
 int id match_constraint 0x7f0a00fd
 int id match_parent 0x7f0a00fe
 int id material_clock_display 0x7f0a00ff
+int id material_clock_display_and_toggle 0x7f0a01ff
 int id material_clock_face 0x7f0a0100
 int id material_clock_hand 0x7f0a0101
+int id material_clock_level 0x7f0a0200
 int id material_clock_period_am_button 0x7f0a0102
 int id material_clock_period_pm_button 0x7f0a0103
 int id material_clock_period_toggle 0x7f0a0104
@@ -2967,6 +3141,7 @@ int id material_timepicker_ok_button 0x7f0a010e
 int id material_timepicker_view 0x7f0a010f
 int id material_value_index 0x7f0a0110
 int id matrix 0x7f0a0111
+int id menu_items 0x7f0a021a
 int id message 0x7f0a0112
 int id middle 0x7f0a0113
 int id mini 0x7f0a0114
@@ -3001,12 +3176,17 @@ int id mtrl_picker_text_input_range_start 0x7f0a0130
 int id mtrl_picker_title_text 0x7f0a0131
 int id mtrl_view_tag_bottom_padding 0x7f0a0132
 int id multiply 0x7f0a0133
+int id nav_belt_log 0x7f0a021c
+int id nav_grant_belt 0x7f0a0217
+int id nav_home 0x7f0a0202
+int id nav_view 0x7f0a0204
 int id navigation_bar_item_active_indicator_view 0x7f0a0134
 int id navigation_bar_item_icon_container 0x7f0a0135
 int id navigation_bar_item_icon_view 0x7f0a0136
 int id navigation_bar_item_labels_group 0x7f0a0137
 int id navigation_bar_item_large_label_view 0x7f0a0138
 int id navigation_bar_item_small_label_view 0x7f0a0139
+int id navigation_header 0x7f0a0214
 int id navigation_header_container 0x7f0a013a
 int id never 0x7f0a013b
 int id neverCompleteToEnd 0x7f0a013c
@@ -3069,6 +3249,7 @@ int id scrollView 0x7f0a0174
 int id scrollable 0x7f0a0175
 int id search_badge 0x7f0a0176
 int id search_bar 0x7f0a0177
+int id search_bar_text_view 0x7f0a0205
 int id search_button 0x7f0a0178
 int id search_close_btn 0x7f0a0179
 int id search_edit_frame 0x7f0a017a
@@ -3076,6 +3257,19 @@ int id search_go_btn 0x7f0a017b
 int id search_mag_icon 0x7f0a017c
 int id search_plate 0x7f0a017d
 int id search_src_text 0x7f0a017e
+int id search_view_background 0x7f0a0206
+int id search_view_clear_button 0x7f0a0207
+int id search_view_content_container 0x7f0a0208
+int id search_view_divider 0x7f0a0209
+int id search_view_dummy_toolbar 0x7f0a020a
+int id search_view_edit_text 0x7f0a020b
+int id search_view_header_container 0x7f0a020c
+int id search_view_root 0x7f0a020d
+int id search_view_scrim 0x7f0a020e
+int id search_view_search_prefix 0x7f0a020f
+int id search_view_status_bar_spacer 0x7f0a0210
+int id search_view_toolbar 0x7f0a0211
+int id search_view_toolbar_container 0x7f0a0212
 int id search_voice_btn 0x7f0a017f
 int id select_dialog_listview 0x7f0a0180
 int id selected 0x7f0a0181
@@ -3143,6 +3337,9 @@ int id textStart 0x7f0a01be
 int id textTop 0x7f0a01bf
 int id textView 0x7f0a01c0
 int id textView2 0x7f0a01c1
+int id textView3 0x7f0a01c2
+int id textView4 0x7f0a021b
+int id textView5 0x7f0a021d
 int id text_input_end_icon 0x7f0a01c3
 int id text_input_error_icon 0x7f0a01c4
 int id text_input_start_icon 0x7f0a01c5
@@ -3209,22 +3406,6 @@ int integer m3_btn_anim_duration_ms 0x7f0b000b
 int integer m3_card_anim_delay_ms 0x7f0b000c
 int integer m3_card_anim_duration_ms 0x7f0b000d
 int integer m3_chip_anim_duration 0x7f0b000e
-int integer m3_sys_motion_duration_100 0x7f0b000f
-int integer m3_sys_motion_duration_1000 0x7f0b0010
-int integer m3_sys_motion_duration_150 0x7f0b0011
-int integer m3_sys_motion_duration_200 0x7f0b0012
-int integer m3_sys_motion_duration_250 0x7f0b0013
-int integer m3_sys_motion_duration_300 0x7f0b0014
-int integer m3_sys_motion_duration_350 0x7f0b0015
-int integer m3_sys_motion_duration_400 0x7f0b0016
-int integer m3_sys_motion_duration_450 0x7f0b0017
-int integer m3_sys_motion_duration_50 0x7f0b0018
-int integer m3_sys_motion_duration_500 0x7f0b0019
-int integer m3_sys_motion_duration_550 0x7f0b001a
-int integer m3_sys_motion_duration_600 0x7f0b001b
-int integer m3_sys_motion_duration_700 0x7f0b001c
-int integer m3_sys_motion_duration_800 0x7f0b001d
-int integer m3_sys_motion_duration_900 0x7f0b001e
 int integer m3_sys_motion_duration_extra_long1 0x7f0b001f
 int integer m3_sys_motion_duration_extra_long2 0x7f0b0020
 int integer m3_sys_motion_duration_extra_long3 0x7f0b0021
@@ -3317,9 +3498,12 @@ int layout abc_search_dropdown_item_icons_2line 0x7f0d0018
 int layout abc_search_view 0x7f0d0019
 int layout abc_select_dialog_material 0x7f0d001a
 int layout abc_tooltip 0x7f0d001b
+int layout activity_belt_log 0x7f0d0072
+int layout activity_grant_belt 0x7f0d0073
 int layout activity_login 0x7f0d001c
 int layout activity_main 0x7f0d001d
 int layout activity_register 0x7f0d001e
+int layout app_bar 0x7f0d006b
 int layout browser_actions_context_menu_page 0x7f0d001f
 int layout browser_actions_context_menu_row 0x7f0d0020
 int layout custom_dialog 0x7f0d0021
@@ -3338,10 +3522,12 @@ int layout design_navigation_menu 0x7f0d002d
 int layout design_navigation_menu_item 0x7f0d002e
 int layout design_text_input_end_icon 0x7f0d002f
 int layout design_text_input_start_icon 0x7f0d0030
+int layout home_content 0x7f0d006c
 int layout m3_alert_dialog 0x7f0d0031
 int layout m3_alert_dialog_actions 0x7f0d0032
 int layout m3_alert_dialog_title 0x7f0d0033
 int layout m3_auto_complete_simple_item 0x7f0d0034
+int layout m3_side_sheet_dialog 0x7f0d006d
 int layout material_chip_input_combo 0x7f0d0035
 int layout material_clock_display 0x7f0d0036
 int layout material_clock_display_divider 0x7f0d0037
@@ -3386,6 +3572,9 @@ int layout mtrl_picker_header_title_text 0x7f0d005d
 int layout mtrl_picker_header_toggle 0x7f0d005e
 int layout mtrl_picker_text_input_date 0x7f0d005f
 int layout mtrl_picker_text_input_date_range 0x7f0d0060
+int layout mtrl_search_bar 0x7f0d006e
+int layout mtrl_search_view 0x7f0d006f
+int layout navigation_header 0x7f0d0071
 int layout notification_action 0x7f0d0061
 int layout notification_action_tombstone 0x7f0d0062
 int layout notification_template_custom_big 0x7f0d0063
@@ -3396,6 +3585,7 @@ int layout select_dialog_item_material 0x7f0d0067
 int layout select_dialog_multichoice_material 0x7f0d0068
 int layout select_dialog_singlechoice_material 0x7f0d0069
 int layout support_simple_spinner_dropdown_item 0x7f0d006a
+int menu nav_item_list 0x7f160000
 int mipmap ic_launcher 0x7f0f0000
 int mipmap ic_launcher_round 0x7f0f0001
 int plurals mtrl_badge_content_description 0x7f100000
@@ -3477,6 +3667,7 @@ int string google_storage_bucket 0x7f120049
 int string hide_bottom_view_on_scroll_behavior 0x7f12004a
 int string icon_content_description 0x7f12004b
 int string item_view_role_description 0x7f12004c
+int string logged_as 0x7f1200b9
 int string m3_sys_motion_easing_emphasized 0x7f12004d
 int string m3_sys_motion_easing_emphasized_accelerate 0x7f12004e
 int string m3_sys_motion_easing_emphasized_decelerate 0x7f12004f
@@ -3490,6 +3681,7 @@ int string m3_sys_motion_easing_standard_accelerate 0x7f120056
 int string m3_sys_motion_easing_standard_decelerate 0x7f120057
 int string material_clock_display_divider 0x7f120058
 int string material_clock_toggle_content_description 0x7f120059
+int string material_hour_24h_suffix 0x7f1200ac
 int string material_hour_selection 0x7f12005a
 int string material_hour_suffix 0x7f12005b
 int string material_minute_selection 0x7f12005c
@@ -3501,6 +3693,7 @@ int string material_motion_easing_linear 0x7f120061
 int string material_motion_easing_standard 0x7f120062
 int string material_slider_range_end 0x7f120063
 int string material_slider_range_start 0x7f120064
+int string material_slider_value 0x7f1200ad
 int string material_timepicker_am 0x7f120065
 int string material_timepicker_clock_mode_description 0x7f120066
 int string material_timepicker_hour 0x7f120067
@@ -3525,17 +3718,21 @@ int string mtrl_exceed_max_badge_number_content_description 0x7f120079
 int string mtrl_exceed_max_badge_number_suffix 0x7f12007a
 int string mtrl_picker_a11y_next_month 0x7f12007b
 int string mtrl_picker_a11y_prev_month 0x7f12007c
+int string mtrl_picker_announce_current_range_selection 0x7f1200ae
 int string mtrl_picker_announce_current_selection 0x7f12007d
+int string mtrl_picker_announce_current_selection_none 0x7f1200af
 int string mtrl_picker_cancel 0x7f12007e
 int string mtrl_picker_confirm 0x7f12007f
 int string mtrl_picker_date_header_selected 0x7f120080
 int string mtrl_picker_date_header_title 0x7f120081
 int string mtrl_picker_date_header_unselected 0x7f120082
 int string mtrl_picker_day_of_week_column_header 0x7f120083
+int string mtrl_picker_end_date_description 0x7f1200b0
 int string mtrl_picker_invalid_format 0x7f120084
 int string mtrl_picker_invalid_format_example 0x7f120085
 int string mtrl_picker_invalid_format_use 0x7f120086
 int string mtrl_picker_invalid_range 0x7f120087
+int string mtrl_picker_navigate_to_current_year_description 0x7f1200b1
 int string mtrl_picker_navigate_to_year_description 0x7f120088
 int string mtrl_picker_out_of_range 0x7f120089
 int string mtrl_picker_range_header_only_end_selected 0x7f12008a
@@ -3544,12 +3741,14 @@ int string mtrl_picker_range_header_selected 0x7f12008c
 int string mtrl_picker_range_header_title 0x7f12008d
 int string mtrl_picker_range_header_unselected 0x7f12008e
 int string mtrl_picker_save 0x7f12008f
+int string mtrl_picker_start_date_description 0x7f1200b2
 int string mtrl_picker_text_input_date_hint 0x7f120090
 int string mtrl_picker_text_input_date_range_end_hint 0x7f120091
 int string mtrl_picker_text_input_date_range_start_hint 0x7f120092
 int string mtrl_picker_text_input_day_abbr 0x7f120093
 int string mtrl_picker_text_input_month_abbr 0x7f120094
 int string mtrl_picker_text_input_year_abbr 0x7f120095
+int string mtrl_picker_today_description 0x7f1200b3
 int string mtrl_picker_toggle_to_calendar_input_mode 0x7f120096
 int string mtrl_picker_toggle_to_day_selection 0x7f120097
 int string mtrl_picker_toggle_to_text_input_mode 0x7f120098
@@ -3571,6 +3770,11 @@ int string path_password_eye_mask_visible 0x7f1200a7
 int string path_password_strike_through 0x7f1200a8
 int string project_id 0x7f1200a9
 int string search_menu_title 0x7f1200aa
+int string searchbar_scrolling_view_behavior 0x7f1200b4
+int string searchview_clear_text_content_description 0x7f1200b5
+int string searchview_navigation_content_description 0x7f1200b6
+int string side_sheet_accessibility_pane_title 0x7f1200b7
+int string side_sheet_behavior 0x7f1200b8
 int string status_bar_notification_info_overflow 0x7f1200ab
 int style AlertDialog_AppCompat 0x7f130000
 int style AlertDialog_AppCompat_Light 0x7f130001
@@ -3578,6 +3782,8 @@ int style Animation_AppCompat_Dialog 0x7f130002
 int style Animation_AppCompat_DropDownUp 0x7f130003
 int style Animation_AppCompat_Tooltip 0x7f130004
 int style Animation_Design_BottomSheetDialog 0x7f130005
+int style Animation_Material3_BottomSheetDialog 0x7f13041b
+int style Animation_Material3_SideSheetDialog 0x7f13041c
 int style Animation_MaterialComponents_BottomSheetDialog 0x7f130006
 int style Base_AlertDialog_AppCompat 0x7f130007
 int style Base_AlertDialog_AppCompat_Light 0x7f130008
@@ -3635,6 +3841,7 @@ int style Base_TextAppearance_AppCompat_Widget_PopupMenu_Large 0x7f13003b
 int style Base_TextAppearance_AppCompat_Widget_PopupMenu_Small 0x7f13003c
 int style Base_TextAppearance_AppCompat_Widget_Switch 0x7f13003d
 int style Base_TextAppearance_AppCompat_Widget_TextView_SpinnerItem 0x7f13003e
+int style Base_TextAppearance_Material3_Search 0x7f13041d
 int style Base_TextAppearance_MaterialComponents_Badge 0x7f13003f
 int style Base_TextAppearance_MaterialComponents_Button 0x7f130040
 int style Base_TextAppearance_MaterialComponents_Headline6 0x7f130041
@@ -3659,9 +3866,11 @@ int style Base_Theme_AppCompat_Light_DialogWhenLarge 0x7f130053
 int style Base_Theme_Material3_Dark 0x7f130054
 int style Base_Theme_Material3_Dark_BottomSheetDialog 0x7f130055
 int style Base_Theme_Material3_Dark_Dialog 0x7f130056
+int style Base_Theme_Material3_Dark_SideSheetDialog 0x7f13041e
 int style Base_Theme_Material3_Light 0x7f130057
 int style Base_Theme_Material3_Light_BottomSheetDialog 0x7f130058
 int style Base_Theme_Material3_Light_Dialog 0x7f130059
+int style Base_Theme_Material3_Light_SideSheetDialog 0x7f13041f
 int style Base_Theme_MaterialComponents 0x7f13005a
 int style Base_Theme_MaterialComponents_Bridge 0x7f13005b
 int style Base_Theme_MaterialComponents_CompactMenu 0x7f13005c
@@ -3691,6 +3900,7 @@ int style Base_ThemeOverlay_AppCompat_Light 0x7f130073
 int style Base_ThemeOverlay_Material3_AutoCompleteTextView 0x7f130074
 int style Base_ThemeOverlay_Material3_BottomSheetDialog 0x7f130075
 int style Base_ThemeOverlay_Material3_Dialog 0x7f130076
+int style Base_ThemeOverlay_Material3_SideSheetDialog 0x7f130420
 int style Base_ThemeOverlay_Material3_TextInputEditText 0x7f130077
 int style Base_ThemeOverlay_MaterialComponents_Dialog 0x7f130078
 int style Base_ThemeOverlay_MaterialComponents_Dialog_Alert 0x7f130079
@@ -3700,9 +3910,11 @@ int style Base_ThemeOverlay_MaterialComponents_MaterialAlertDialog 0x7f13007c
 int style Base_V14_Theme_Material3_Dark 0x7f13007d
 int style Base_V14_Theme_Material3_Dark_BottomSheetDialog 0x7f13007e
 int style Base_V14_Theme_Material3_Dark_Dialog 0x7f13007f
+int style Base_V14_Theme_Material3_Dark_SideSheetDialog 0x7f130421
 int style Base_V14_Theme_Material3_Light 0x7f130080
 int style Base_V14_Theme_Material3_Light_BottomSheetDialog 0x7f130081
 int style Base_V14_Theme_Material3_Light_Dialog 0x7f130082
+int style Base_V14_Theme_Material3_Light_SideSheetDialog 0x7f130422
 int style Base_V14_Theme_MaterialComponents 0x7f130083
 int style Base_V14_Theme_MaterialComponents_Bridge 0x7f130084
 int style Base_V14_Theme_MaterialComponents_Dialog 0x7f130085
@@ -3713,6 +3925,7 @@ int style Base_V14_Theme_MaterialComponents_Light_DarkActionBar_Bridge 0x7f13008
 int style Base_V14_Theme_MaterialComponents_Light_Dialog 0x7f13008a
 int style Base_V14_Theme_MaterialComponents_Light_Dialog_Bridge 0x7f13008b
 int style Base_V14_ThemeOverlay_Material3_BottomSheetDialog 0x7f13008c
+int style Base_V14_ThemeOverlay_Material3_SideSheetDialog 0x7f130423
 int style Base_V14_ThemeOverlay_MaterialComponents_BottomSheetDialog 0x7f13008d
 int style Base_V14_ThemeOverlay_MaterialComponents_Dialog 0x7f13008e
 int style Base_V14_ThemeOverlay_MaterialComponents_Dialog_Alert 0x7f13008f
@@ -3728,6 +3941,7 @@ int style Base_V21_Theme_MaterialComponents_Light 0x7f130098
 int style Base_V21_Theme_MaterialComponents_Light_Dialog 0x7f130099
 int style Base_V21_ThemeOverlay_AppCompat_Dialog 0x7f13009a
 int style Base_V21_ThemeOverlay_Material3_BottomSheetDialog 0x7f13009b
+int style Base_V21_ThemeOverlay_Material3_SideSheetDialog 0x7f130424
 int style Base_V21_ThemeOverlay_MaterialComponents_BottomSheetDialog 0x7f13009c
 int style Base_V22_Theme_AppCompat 0x7f13009d
 int style Base_V22_Theme_AppCompat_Light 0x7f13009e
@@ -3811,6 +4025,7 @@ int style Base_Widget_AppCompat_Toolbar_Button_Navigation 0x7f1300eb
 int style Base_Widget_Design_TabLayout 0x7f1300ec
 int style Base_Widget_Material3_ActionBar_Solid 0x7f1300ed
 int style Base_Widget_Material3_ActionMode 0x7f1300ee
+int style Base_Widget_Material3_BottomNavigationView 0x7f130425
 int style Base_Widget_Material3_CardView 0x7f1300ef
 int style Base_Widget_Material3_Chip 0x7f1300f0
 int style Base_Widget_Material3_CollapsingToolbar 0x7f1300f1
@@ -3846,6 +4061,7 @@ int style CardView 0x7f13010e
 int style CardView_Dark 0x7f13010f
 int style CardView_Light 0x7f130110
 int style MaterialAlertDialog_Material3 0x7f130111
+int style MaterialAlertDialog_Material3_Animation 0x7f130426
 int style MaterialAlertDialog_Material3_Body_Text 0x7f130112
 int style MaterialAlertDialog_Material3_Body_Text_CenterStacked 0x7f130113
 int style MaterialAlertDialog_Material3_Title_Icon 0x7f130114
@@ -3896,9 +4112,15 @@ int style RtlOverlay_Widget_AppCompat_SearchView_MagIcon 0x7f130140
 int style RtlUnderlay_Widget_AppCompat_ActionButton 0x7f130141
 int style RtlUnderlay_Widget_AppCompat_ActionButton_Overflow 0x7f130142
 int style ShapeAppearance_M3_Comp_BottomAppBar_Container_Shape 0x7f130143
+int style ShapeAppearance_M3_Comp_FilledButton_Container_Shape 0x7f130427
+int style ShapeAppearance_M3_Comp_NavigationRail_ActiveIndicator_Shape 0x7f130428
+int style ShapeAppearance_M3_Comp_SearchBar_Avatar_Shape 0x7f130429
+int style ShapeAppearance_M3_Comp_SearchBar_Container_Shape 0x7f13042a
+int style ShapeAppearance_M3_Comp_SearchView_FullScreen_Container_Shape 0x7f13042b
 int style ShapeAppearance_M3_Comp_Switch_Handle_Shape 0x7f130144
 int style ShapeAppearance_M3_Comp_Switch_StateLayer_Shape 0x7f130145
 int style ShapeAppearance_M3_Comp_Switch_Track_Shape 0x7f130146
+int style ShapeAppearance_M3_Comp_TextButton_Container_Shape 0x7f13042c
 int style ShapeAppearance_M3_Sys_Shape_Corner_ExtraLarge 0x7f130147
 int style ShapeAppearance_M3_Sys_Shape_Corner_ExtraSmall 0x7f130148
 int style ShapeAppearance_M3_Sys_Shape_Corner_Full 0x7f130149
@@ -3931,6 +4153,8 @@ int style ShapeAppearanceOverlay_Material3_Corner_Right 0x7f130163
 int style ShapeAppearanceOverlay_Material3_Corner_Top 0x7f130164
 int style ShapeAppearanceOverlay_Material3_FloatingActionButton 0x7f130165
 int style ShapeAppearanceOverlay_Material3_NavigationView_Item 0x7f130166
+int style ShapeAppearanceOverlay_Material3_SearchBar 0x7f13042d
+int style ShapeAppearanceOverlay_Material3_SearchView 0x7f13042e
 int style ShapeAppearanceOverlay_MaterialAlertDialog_Material3 0x7f130167
 int style ShapeAppearanceOverlay_MaterialComponents_BottomSheet 0x7f130168
 int style ShapeAppearanceOverlay_MaterialComponents_Chip 0x7f130169
@@ -4034,6 +4258,9 @@ int style TextAppearance_Material3_LabelLarge 0x7f1301ca
 int style TextAppearance_Material3_LabelMedium 0x7f1301cb
 int style TextAppearance_Material3_LabelSmall 0x7f1301cc
 int style TextAppearance_Material3_MaterialTimePicker_Title 0x7f1301cd
+int style TextAppearance_Material3_SearchBar 0x7f13042f
+int style TextAppearance_Material3_SearchView 0x7f130430
+int style TextAppearance_Material3_SearchView_Prefix 0x7f130431
 int style TextAppearance_Material3_TitleLarge 0x7f1301ce
 int style TextAppearance_Material3_TitleMedium 0x7f1301cf
 int style TextAppearance_Material3_TitleSmall 0x7f1301d0
@@ -4093,6 +4320,7 @@ int style Theme_Material3_Dark_Dialog_Alert 0x7f130205
 int style Theme_Material3_Dark_Dialog_MinWidth 0x7f130206
 int style Theme_Material3_Dark_DialogWhenLarge 0x7f130207
 int style Theme_Material3_Dark_NoActionBar 0x7f130208
+int style Theme_Material3_Dark_SideSheetDialog 0x7f130432
 int style Theme_Material3_DayNight 0x7f130209
 int style Theme_Material3_DayNight_BottomSheetDialog 0x7f13020a
 int style Theme_Material3_DayNight_Dialog 0x7f13020b
@@ -4100,6 +4328,7 @@ int style Theme_Material3_DayNight_Dialog_Alert 0x7f13020c
 int style Theme_Material3_DayNight_Dialog_MinWidth 0x7f13020d
 int style Theme_Material3_DayNight_DialogWhenLarge 0x7f13020e
 int style Theme_Material3_DayNight_NoActionBar 0x7f13020f
+int style Theme_Material3_DayNight_SideSheetDialog 0x7f130433
 int style Theme_Material3_DynamicColors_Dark 0x7f130210
 int style Theme_Material3_DynamicColors_DayNight 0x7f130211
 int style Theme_Material3_DynamicColors_Light 0x7f130212
@@ -4110,6 +4339,7 @@ int style Theme_Material3_Light_Dialog_Alert 0x7f130216
 int style Theme_Material3_Light_Dialog_MinWidth 0x7f130217
 int style Theme_Material3_Light_DialogWhenLarge 0x7f130218
 int style Theme_Material3_Light_NoActionBar 0x7f130219
+int style Theme_Material3_Light_SideSheetDialog 0x7f130434
 int style Theme_MaterialComponents 0x7f13021a
 int style Theme_MaterialComponents_BottomSheetDialog 0x7f13021b
 int style Theme_MaterialComponents_Bridge 0x7f13021c
@@ -4190,6 +4420,7 @@ int style ThemeOverlay_Material3_Chip_Assist 0x7f130266
 int style ThemeOverlay_Material3_Dark 0x7f130267
 int style ThemeOverlay_Material3_Dark_ActionBar 0x7f130268
 int style ThemeOverlay_Material3_DayNight_BottomSheetDialog 0x7f130269
+int style ThemeOverlay_Material3_DayNight_SideSheetDialog 0x7f130435
 int style ThemeOverlay_Material3_Dialog 0x7f13026a
 int style ThemeOverlay_Material3_Dialog_Alert 0x7f13026b
 int style ThemeOverlay_Material3_Dialog_Alert_Framework 0x7f13026c
@@ -4216,6 +4447,9 @@ int style ThemeOverlay_Material3_MaterialCalendar_HeaderCancelButton 0x7f130280
 int style ThemeOverlay_Material3_MaterialTimePicker 0x7f130281
 int style ThemeOverlay_Material3_MaterialTimePicker_Display_TextInputEditText 0x7f130282
 int style ThemeOverlay_Material3_NavigationView 0x7f130283
+int style ThemeOverlay_Material3_PersonalizedColors 0x7f130436
+int style ThemeOverlay_Material3_Search 0x7f130437
+int style ThemeOverlay_Material3_SideSheetDialog 0x7f130438
 int style ThemeOverlay_Material3_Snackbar 0x7f130284
 int style ThemeOverlay_Material3_TextInputEditText 0x7f130285
 int style ThemeOverlay_Material3_TextInputEditText_FilledBox 0x7f130286
@@ -4434,6 +4668,7 @@ int style Widget_Material3_FloatingActionButton_Surface 0x7f13035a
 int style Widget_Material3_FloatingActionButton_Tertiary 0x7f13035b
 int style Widget_Material3_Light_ActionBar_Solid 0x7f13035c
 int style Widget_Material3_LinearProgressIndicator 0x7f13035d
+int style Widget_Material3_MaterialButtonToggleGroup 0x7f130439
 int style Widget_Material3_MaterialCalendar 0x7f13035e
 int style Widget_Material3_MaterialCalendar_Day 0x7f13035f
 int style Widget_Material3_MaterialCalendar_Day_Invalid 0x7f130360
@@ -4445,6 +4680,7 @@ int style Widget_Material3_MaterialCalendar_Fullscreen 0x7f130365
 int style Widget_Material3_MaterialCalendar_HeaderCancelButton 0x7f130366
 int style Widget_Material3_MaterialCalendar_HeaderDivider 0x7f130367
 int style Widget_Material3_MaterialCalendar_HeaderLayout 0x7f130368
+int style Widget_Material3_MaterialCalendar_HeaderLayout_Fullscreen 0x7f13043a
 int style Widget_Material3_MaterialCalendar_HeaderSelection 0x7f130369
 int style Widget_Material3_MaterialCalendar_HeaderSelection_Fullscreen 0x7f13036a
 int style Widget_Material3_MaterialCalendar_HeaderTitle 0x7f13036b
@@ -4474,7 +4710,17 @@ int style Widget_Material3_PopupMenu 0x7f130382
 int style Widget_Material3_PopupMenu_ContextMenu 0x7f130383
 int style Widget_Material3_PopupMenu_ListPopupWindow 0x7f130384
 int style Widget_Material3_PopupMenu_Overflow 0x7f130385
+int style Widget_Material3_Search_ActionButton_Overflow 0x7f13043b
+int style Widget_Material3_Search_Toolbar_Button_Navigation 0x7f13043c
+int style Widget_Material3_SearchBar 0x7f13043d
+int style Widget_Material3_SearchBar_Outlined 0x7f13043e
+int style Widget_Material3_SearchView 0x7f13043f
+int style Widget_Material3_SearchView_Prefix 0x7f130440
+int style Widget_Material3_SearchView_Toolbar 0x7f130441
+int style Widget_Material3_SideSheet 0x7f130442
+int style Widget_Material3_SideSheet_Modal 0x7f130443
 int style Widget_Material3_Slider 0x7f130386
+int style Widget_Material3_Slider_Label 0x7f130444
 int style Widget_Material3_Snackbar 0x7f130387
 int style Widget_Material3_Snackbar_FullWidth 0x7f130388
 int style Widget_Material3_Snackbar_TextView 0x7f130389
@@ -4563,6 +4809,7 @@ int style Widget_MaterialComponents_MaterialCalendar_HeaderCancelButton 0x7f1303
 int style Widget_MaterialComponents_MaterialCalendar_HeaderConfirmButton 0x7f1303dc
 int style Widget_MaterialComponents_MaterialCalendar_HeaderDivider 0x7f1303dd
 int style Widget_MaterialComponents_MaterialCalendar_HeaderLayout 0x7f1303de
+int style Widget_MaterialComponents_MaterialCalendar_HeaderLayout_Fullscreen 0x7f130445
 int style Widget_MaterialComponents_MaterialCalendar_HeaderSelection 0x7f1303df
 int style Widget_MaterialComponents_MaterialCalendar_HeaderSelection_Fullscreen 0x7f1303e0
 int style Widget_MaterialComponents_MaterialCalendar_HeaderTitle 0x7f1303e1
@@ -4692,7 +4939,7 @@ int styleable AnimatedStateListDrawableTransition_android_drawable 0
 int styleable AnimatedStateListDrawableTransition_android_toId 1
 int styleable AnimatedStateListDrawableTransition_android_fromId 2
 int styleable AnimatedStateListDrawableTransition_android_reversible 3
-int[] styleable AppBarLayout { 0x010100d4, 0x0101048f, 0x01010540, 0x7f040170, 0x7f040189, 0x7f040281, 0x7f040282, 0x7f0403b2 }
+int[] styleable AppBarLayout { 0x010100d4, 0x0101048f, 0x01010540, 0x7f040170, 0x7f040189, 0x7f040281, 0x7f040282, 0x7f0403b2, 0x7f0404a3 }
 int styleable AppBarLayout_android_background 0
 int styleable AppBarLayout_android_touchscreenBlocksFocus 1
 int styleable AppBarLayout_android_keyboardNavigationCluster 2
@@ -4701,6 +4948,7 @@ int styleable AppBarLayout_expanded 4
 int styleable AppBarLayout_liftOnScroll 5
 int styleable AppBarLayout_liftOnScrollTargetViewId 6
 int styleable AppBarLayout_statusBarForeground 7
+int styleable AppBarLayout_liftOnScrollColor 8
 int[] styleable AppBarLayoutStates { 0x7f0403a9, 0x7f0403aa, 0x7f0403ae, 0x7f0403af }
 int styleable AppBarLayoutStates_state_collapsed 0
 int styleable AppBarLayoutStates_state_collapsible 1
@@ -4903,7 +5151,7 @@ int styleable BaseProgressIndicator_showDelay 5
 int styleable BaseProgressIndicator_trackColor 6
 int styleable BaseProgressIndicator_trackCornerRadius 7
 int styleable BaseProgressIndicator_trackThickness 8
-int[] styleable BottomAppBar { 0x7f040049, 0x7f040170, 0x7f04019a, 0x7f04019b, 0x7f04019c, 0x7f04019d, 0x7f04019e, 0x7f04019f, 0x7f0401a0, 0x7f0401e9, 0x7f0402d3, 0x7f040312, 0x7f040325, 0x7f040327, 0x7f040328, 0x7f040360 }
+int[] styleable BottomAppBar { 0x7f040049, 0x7f040170, 0x7f04019a, 0x7f04019b, 0x7f04019c, 0x7f04019d, 0x7f04019e, 0x7f04019f, 0x7f0401a0, 0x7f0401e9, 0x7f0402d3, 0x7f040312, 0x7f040325, 0x7f040327, 0x7f040328, 0x7f040360, 0x7f040493 }
 int styleable BottomAppBar_backgroundTint 0
 int styleable BottomAppBar_elevation 1
 int styleable BottomAppBar_fabAlignmentMode 2
@@ -4920,10 +5168,12 @@ int styleable BottomAppBar_paddingBottomSystemWindowInsets 12
 int styleable BottomAppBar_paddingLeftSystemWindowInsets 13
 int styleable BottomAppBar_paddingRightSystemWindowInsets 14
 int styleable BottomAppBar_removeEmbeddedFabElevation 15
-int[] styleable BottomNavigationView { 0x01010140, 0x7f040216 }
+int styleable BottomAppBar_addElevationShadow 16
+int[] styleable BottomNavigationView { 0x01010140, 0x7f040216, 0x7f040499 }
 int styleable BottomNavigationView_android_minHeight 0
 int styleable BottomNavigationView_itemHorizontalTranslationEnabled 1
-int[] styleable BottomSheetBehavior_Layout { 0x0101011f, 0x01010120, 0x01010440, 0x7f040049, 0x7f040057, 0x7f040058, 0x7f040059, 0x7f04005a, 0x7f04005b, 0x7f04005d, 0x7f04005e, 0x7f04005f, 0x7f0401db, 0x7f04029b, 0x7f04029c, 0x7f04029d, 0x7f040325, 0x7f040327, 0x7f040328, 0x7f04032b, 0x7f040375, 0x7f04037d }
+int styleable BottomNavigationView_compatShadowEnabled 2
+int[] styleable BottomSheetBehavior_Layout { 0x0101011f, 0x01010120, 0x01010440, 0x7f040049, 0x7f040057, 0x7f040058, 0x7f040059, 0x7f04005a, 0x7f04005b, 0x7f04005d, 0x7f04005e, 0x7f04005f, 0x7f0401db, 0x7f04029b, 0x7f04029c, 0x7f04029d, 0x7f040325, 0x7f040327, 0x7f040328, 0x7f04032b, 0x7f040375, 0x7f04037d, 0x7f040497, 0x7f0404a8 }
 int styleable BottomSheetBehavior_Layout_android_maxWidth 0
 int styleable BottomSheetBehavior_Layout_android_maxHeight 1
 int styleable BottomSheetBehavior_Layout_android_elevation 2
@@ -4946,6 +5196,8 @@ int styleable BottomSheetBehavior_Layout_paddingRightSystemWindowInsets 18
 int styleable BottomSheetBehavior_Layout_paddingTopSystemWindowInsets 19
 int styleable BottomSheetBehavior_Layout_shapeAppearance 20
 int styleable BottomSheetBehavior_Layout_shapeAppearanceOverlay 21
+int styleable BottomSheetBehavior_Layout_behavior_significantVelocityThreshold 22
+int styleable BottomSheetBehavior_Layout_shouldRemoveExpandedCorners 23
 int[] styleable ButtonBarLayout { 0x7f04002b }
 int styleable ButtonBarLayout_allowStacking 0
 int[] styleable Capability { 0x7f040351, 0x7f040380 }
@@ -5597,13 +5849,14 @@ int styleable DrawerArrowToggle_spinBars 6
 int styleable DrawerArrowToggle_thickness 7
 int[] styleable DrawerLayout { 0x7f040170 }
 int styleable DrawerLayout_elevation 0
-int[] styleable ExtendedFloatingActionButton { 0x7f0400d7, 0x7f040170, 0x7f040193, 0x7f0401e7, 0x7f040385, 0x7f040389 }
+int[] styleable ExtendedFloatingActionButton { 0x7f0400d7, 0x7f040170, 0x7f040193, 0x7f0401e7, 0x7f040385, 0x7f040389, 0x7f0404a0 }
 int styleable ExtendedFloatingActionButton_collapsedSize 0
 int styleable ExtendedFloatingActionButton_elevation 1
 int styleable ExtendedFloatingActionButton_extendMotionSpec 2
 int styleable ExtendedFloatingActionButton_hideMotionSpec 3
 int styleable ExtendedFloatingActionButton_showMotionSpec 4
 int styleable ExtendedFloatingActionButton_shrinkMotionSpec 5
+int styleable ExtendedFloatingActionButton_extendStrategy 6
 int[] styleable ExtendedFloatingActionButton_Behavior_Layout { 0x7f040055, 0x7f040056 }
 int styleable ExtendedFloatingActionButton_Behavior_Layout_behavior_autoHide 0
 int styleable ExtendedFloatingActionButton_Behavior_Layout_behavior_autoShrink 1
@@ -5937,10 +6190,11 @@ int styleable MaterialButton_shapeAppearanceOverlay 18
 int styleable MaterialButton_strokeColor 19
 int styleable MaterialButton_strokeWidth 20
 int styleable MaterialButton_toggleCheckedStateOnClick 21
-int[] styleable MaterialButtonToggleGroup { 0x7f0400a0, 0x7f040372, 0x7f040390 }
-int styleable MaterialButtonToggleGroup_checkedButton 0
-int styleable MaterialButtonToggleGroup_selectionRequired 1
-int styleable MaterialButtonToggleGroup_singleSelection 2
+int[] styleable MaterialButtonToggleGroup { 0x0101000e, 0x7f0400a0, 0x7f040372, 0x7f040390 }
+int styleable MaterialButtonToggleGroup_android_enabled 0
+int styleable MaterialButtonToggleGroup_checkedButton 1
+int styleable MaterialButtonToggleGroup_selectionRequired 2
+int styleable MaterialButtonToggleGroup_singleSelection 3
 int[] styleable MaterialCalendar { 0x0101020d, 0x7f040143, 0x7f040144, 0x7f040145, 0x7f040146, 0x7f040318, 0x7f040353, 0x7f040490, 0x7f040491, 0x7f040492 }
 int styleable MaterialCalendar_android_windowFullscreen 0
 int styleable MaterialCalendar_dayInvalidStyle 1
@@ -6262,24 +6516,47 @@ int[] styleable ScrimInsetsFrameLayout { 0x7f04020d }
 int styleable ScrimInsetsFrameLayout_insetForeground 0
 int[] styleable ScrollingViewBehavior_Layout { 0x7f04005c }
 int styleable ScrollingViewBehavior_Layout_behavior_overlapTop 0
-int[] styleable SearchView { 0x010100da, 0x0101011f, 0x01010220, 0x01010264, 0x7f0400cd, 0x7f04010a, 0x7f040148, 0x7f0401dc, 0x7f0401fb, 0x7f040238, 0x7f04034f, 0x7f040350, 0x7f04036c, 0x7f04036d, 0x7f0403bb, 0x7f0403c4, 0x7f04047e }
-int styleable SearchView_android_focusable 0
-int styleable SearchView_android_maxWidth 1
-int styleable SearchView_android_inputType 2
-int styleable SearchView_android_imeOptions 3
-int styleable SearchView_closeIcon 4
-int styleable SearchView_commitIcon 5
-int styleable SearchView_defaultQueryHint 6
-int styleable SearchView_goIcon 7
-int styleable SearchView_iconifiedByDefault 8
-int styleable SearchView_layout 9
-int styleable SearchView_queryBackground 10
-int styleable SearchView_queryHint 11
-int styleable SearchView_searchHintIcon 12
-int styleable SearchView_searchIcon 13
-int styleable SearchView_submitBackground 14
-int styleable SearchView_suggestionRowLayout 15
-int styleable SearchView_voiceIcon 16
+int[] styleable SearchBar { 0x01010034, 0x0101014f, 0x01010150, 0x7f040170, 0x7f040312, 0x7f0403b4, 0x7f0403b5, 0x7f04049b, 0x7f04049c, 0x7f0404a1, 0x7f0404a2, 0x7f0404ae }
+int styleable SearchBar_android_textAppearance 0
+int styleable SearchBar_android_text 1
+int styleable SearchBar_android_hint 2
+int styleable SearchBar_elevation 3
+int styleable SearchBar_navigationIconTint 4
+int styleable SearchBar_strokeColor 5
+int styleable SearchBar_strokeWidth 6
+int styleable SearchBar_defaultMarginsEnabled 7
+int styleable SearchBar_defaultScrollFlagsEnabled 8
+int styleable SearchBar_forceDefaultNavigationOnClickListener 9
+int styleable SearchBar_hideNavigationIcon 10
+int styleable SearchBar_tintNavigationIcon 11
+int[] styleable SearchView { 0x01010034, 0x010100da, 0x0101011f, 0x0101014f, 0x01010150, 0x01010220, 0x01010264, 0x7f0400cd, 0x7f04010a, 0x7f040148, 0x7f0401dc, 0x7f0401e0, 0x7f0401fb, 0x7f040238, 0x7f04034f, 0x7f040350, 0x7f04036c, 0x7f04036d, 0x7f0403bb, 0x7f0403c4, 0x7f04047e, 0x7f040494, 0x7f040495, 0x7f040496, 0x7f0404a2, 0x7f0404a7, 0x7f0404af }
+int styleable SearchView_android_textAppearance 0
+int styleable SearchView_android_focusable 1
+int styleable SearchView_android_maxWidth 2
+int styleable SearchView_android_text 3
+int styleable SearchView_android_hint 4
+int styleable SearchView_android_inputType 5
+int styleable SearchView_android_imeOptions 6
+int styleable SearchView_closeIcon 7
+int styleable SearchView_commitIcon 8
+int styleable SearchView_defaultQueryHint 9
+int styleable SearchView_goIcon 10
+int styleable SearchView_headerLayout 11
+int styleable SearchView_iconifiedByDefault 12
+int styleable SearchView_layout 13
+int styleable SearchView_queryBackground 14
+int styleable SearchView_queryHint 15
+int styleable SearchView_searchHintIcon 16
+int styleable SearchView_searchIcon 17
+int styleable SearchView_submitBackground 18
+int styleable SearchView_suggestionRowLayout 19
+int styleable SearchView_voiceIcon 20
+int styleable SearchView_animateMenuItems 21
+int styleable SearchView_animateNavigationIcon 22
+int styleable SearchView_autoShowKeyboard 23
+int styleable SearchView_hideNavigationIcon 24
+int styleable SearchView_searchPrefixText 25
+int styleable SearchView_useDrawerArrowDrawable 26
 int[] styleable ShapeAppearance { 0x7f040125, 0x7f040126, 0x7f040127, 0x7f040128, 0x7f040129, 0x7f04012b, 0x7f04012c, 0x7f04012d, 0x7f04012e, 0x7f04012f }
 int styleable ShapeAppearance_cornerFamily 0
 int styleable ShapeAppearance_cornerFamilyBottomLeft 1
@@ -6303,11 +6580,20 @@ int styleable ShapeableImageView_shapeAppearance 7
 int styleable ShapeableImageView_shapeAppearanceOverlay 8
 int styleable ShapeableImageView_strokeColor 9
 int styleable ShapeableImageView_strokeWidth 10
+int[] styleable SideSheetBehavior_Layout { 0x0101011f, 0x01010120, 0x01010440, 0x7f040049, 0x7f040057, 0x7f040375, 0x7f04037d, 0x7f04049a }
+int styleable SideSheetBehavior_Layout_android_maxWidth 0
+int styleable SideSheetBehavior_Layout_android_maxHeight 1
+int styleable SideSheetBehavior_Layout_android_elevation 2
+int styleable SideSheetBehavior_Layout_backgroundTint 3
+int styleable SideSheetBehavior_Layout_behavior_draggable 4
+int styleable SideSheetBehavior_Layout_shapeAppearance 5
+int styleable SideSheetBehavior_Layout_shapeAppearanceOverlay 6
+int styleable SideSheetBehavior_Layout_coplanarSiblingViewId 7
 int[] styleable SignInButton { 0x7f040083, 0x7f040100, 0x7f040368 }
 int styleable SignInButton_buttonSize 0
 int styleable SignInButton_colorScheme 1
 int styleable SignInButton_scopeUris 2
-int[] styleable Slider { 0x0101000e, 0x01010024, 0x01010146, 0x010102de, 0x010102df, 0x7f0401de, 0x7f0401df, 0x7f040233, 0x7f040234, 0x7f04042c, 0x7f04042d, 0x7f040431, 0x7f040432, 0x7f040433, 0x7f040437, 0x7f040438, 0x7f040439, 0x7f04043d, 0x7f04045d, 0x7f04045e, 0x7f04045f, 0x7f040464 }
+int[] styleable Slider { 0x0101000e, 0x01010024, 0x01010146, 0x010102de, 0x010102df, 0x7f0401de, 0x7f0401df, 0x7f040233, 0x7f040234, 0x7f0402d9, 0x7f04042c, 0x7f04042d, 0x7f040431, 0x7f040432, 0x7f040433, 0x7f040437, 0x7f040438, 0x7f040439, 0x7f04043d, 0x7f04045d, 0x7f04045e, 0x7f04045f, 0x7f040464 }
 int styleable Slider_android_enabled 0
 int styleable Slider_android_value 1
 int styleable Slider_android_stepSize 2
@@ -6317,19 +6603,20 @@ int styleable Slider_haloColor 5
 int styleable Slider_haloRadius 6
 int styleable Slider_labelBehavior 7
 int styleable Slider_labelStyle 8
-int styleable Slider_thumbColor 9
-int styleable Slider_thumbElevation 10
-int styleable Slider_thumbRadius 11
-int styleable Slider_thumbStrokeColor 12
-int styleable Slider_thumbStrokeWidth 13
-int styleable Slider_tickColor 14
-int styleable Slider_tickColorActive 15
-int styleable Slider_tickColorInactive 16
-int styleable Slider_tickVisible 17
-int styleable Slider_trackColor 18
-int styleable Slider_trackColorActive 19
-int styleable Slider_trackColorInactive 20
-int styleable Slider_trackHeight 21
+int styleable Slider_minTouchTargetSize 9
+int styleable Slider_thumbColor 10
+int styleable Slider_thumbElevation 11
+int styleable Slider_thumbRadius 12
+int styleable Slider_thumbStrokeColor 13
+int styleable Slider_thumbStrokeWidth 14
+int styleable Slider_tickColor 15
+int styleable Slider_tickColorActive 16
+int styleable Slider_tickColorInactive 17
+int styleable Slider_tickVisible 18
+int styleable Slider_trackColor 19
+int styleable Slider_trackColorActive 20
+int styleable Slider_trackColorInactive 21
+int styleable Slider_trackHeight 22
 int[] styleable Snackbar { 0x7f040393, 0x7f040394, 0x7f040395 }
 int styleable Snackbar_snackbarButtonStyle 0
 int styleable Snackbar_snackbarStyle 1
@@ -6386,7 +6673,7 @@ int[] styleable TabItem { 0x01010002, 0x010100f2, 0x0101014f }
 int styleable TabItem_android_icon 0
 int styleable TabItem_android_layout 1
 int styleable TabItem_android_text 2
-int[] styleable TabLayout { 0x7f0403c9, 0x7f0403ca, 0x7f0403cb, 0x7f0403cc, 0x7f0403cd, 0x7f0403ce, 0x7f0403cf, 0x7f0403d0, 0x7f0403d1, 0x7f0403d2, 0x7f0403d3, 0x7f0403d4, 0x7f0403d5, 0x7f0403d6, 0x7f0403d7, 0x7f0403d8, 0x7f0403d9, 0x7f0403da, 0x7f0403db, 0x7f0403dc, 0x7f0403dd, 0x7f0403de, 0x7f0403e0, 0x7f0403e2, 0x7f0403e3, 0x7f0403e4 }
+int[] styleable TabLayout { 0x7f0403c9, 0x7f0403ca, 0x7f0403cb, 0x7f0403cc, 0x7f0403cd, 0x7f0403ce, 0x7f0403cf, 0x7f0403d0, 0x7f0403d1, 0x7f0403d2, 0x7f0403d3, 0x7f0403d4, 0x7f0403d5, 0x7f0403d6, 0x7f0403d7, 0x7f0403d8, 0x7f0403d9, 0x7f0403da, 0x7f0403db, 0x7f0403dc, 0x7f0403dd, 0x7f0403de, 0x7f0403e0, 0x7f0403e2, 0x7f0403e3, 0x7f0403e4, 0x7f0404ad }
 int styleable TabLayout_tabBackground 0
 int styleable TabLayout_tabContentStart 1
 int styleable TabLayout_tabGravity 2
@@ -6413,6 +6700,7 @@ int styleable TabLayout_tabSelectedTextColor 22
 int styleable TabLayout_tabTextAppearance 23
 int styleable TabLayout_tabTextColor 24
 int styleable TabLayout_tabUnboundedRipple 25
+int styleable TabLayout_tabSelectedTextAppearance 26
 int[] styleable TextAppearance { 0x01010095, 0x01010096, 0x01010097, 0x01010098, 0x0101009a, 0x0101009b, 0x01010161, 0x01010162, 0x01010163, 0x01010164, 0x010103ac, 0x01010585, 0x7f0401cc, 0x7f0401d5, 0x7f0403e9, 0x7f040420 }
 int styleable TextAppearance_android_textSize 0
 int styleable TextAppearance_android_typeface 1
@@ -6447,7 +6735,7 @@ int styleable TextEffects_textOutlineColor 12
 int styleable TextEffects_textOutlineThickness 13
 int[] styleable TextInputEditText { 0x7f04041b }
 int styleable TextInputEditText_textInputLayoutFocusedRectEnabled 0
-int[] styleable TextInputLayout { 0x0101000e, 0x0101009a, 0x0101011f, 0x0101013f, 0x01010150, 0x01010157, 0x0101015a, 0x7f04006b, 0x7f04006c, 0x7f04006d, 0x7f04006e, 0x7f04006f, 0x7f040070, 0x7f040071, 0x7f040072, 0x7f040073, 0x7f040074, 0x7f040075, 0x7f040130, 0x7f040131, 0x7f040132, 0x7f040133, 0x7f040134, 0x7f040135, 0x7f040176, 0x7f040177, 0x7f040178, 0x7f040179, 0x7f04017a, 0x7f04017b, 0x7f040180, 0x7f040181, 0x7f040182, 0x7f040183, 0x7f040184, 0x7f040186, 0x7f040187, 0x7f04018a, 0x7f0401e2, 0x7f0401e3, 0x7f0401e4, 0x7f0401e5, 0x7f0401ea, 0x7f0401eb, 0x7f0401ec, 0x7f0401ed, 0x7f04032f, 0x7f040330, 0x7f040331, 0x7f040332, 0x7f040333, 0x7f04033c, 0x7f04033d, 0x7f04033e, 0x7f040345, 0x7f040346, 0x7f040347, 0x7f040375, 0x7f04037d, 0x7f0403a3, 0x7f0403a4, 0x7f0403a5, 0x7f0403a6, 0x7f0403a7, 0x7f0403c1, 0x7f0403c2, 0x7f0403c3 }
+int[] styleable TextInputLayout { 0x0101000e, 0x0101009a, 0x0101011f, 0x0101013f, 0x01010150, 0x01010157, 0x0101015a, 0x7f04006b, 0x7f04006c, 0x7f04006d, 0x7f04006e, 0x7f04006f, 0x7f040070, 0x7f040071, 0x7f040072, 0x7f040073, 0x7f040074, 0x7f040075, 0x7f040130, 0x7f040131, 0x7f040132, 0x7f040133, 0x7f040134, 0x7f040135, 0x7f040176, 0x7f040177, 0x7f040178, 0x7f040179, 0x7f04017a, 0x7f04017b, 0x7f040180, 0x7f040181, 0x7f040182, 0x7f040183, 0x7f040184, 0x7f040186, 0x7f040187, 0x7f04018a, 0x7f0401e2, 0x7f0401e3, 0x7f0401e4, 0x7f0401e5, 0x7f0401ea, 0x7f0401eb, 0x7f0401ec, 0x7f0401ed, 0x7f04032f, 0x7f040330, 0x7f040331, 0x7f040332, 0x7f040333, 0x7f04033c, 0x7f04033d, 0x7f04033e, 0x7f040345, 0x7f040346, 0x7f040347, 0x7f040375, 0x7f04037d, 0x7f0403a3, 0x7f0403a4, 0x7f0403a5, 0x7f0403a6, 0x7f0403a7, 0x7f0403c1, 0x7f0403c2, 0x7f0403c3, 0x7f04049d, 0x7f04049e, 0x7f04049f, 0x7f0404ab, 0x7f0404ac }
 int styleable TextInputLayout_android_enabled 0
 int styleable TextInputLayout_android_textColorHint 1
 int styleable TextInputLayout_android_maxWidth 2
@@ -6515,6 +6803,11 @@ int styleable TextInputLayout_startIconTintMode 63
 int styleable TextInputLayout_suffixText 64
 int styleable TextInputLayout_suffixTextAppearance 65
 int styleable TextInputLayout_suffixTextColor 66
+int styleable TextInputLayout_endIconMinSize 67
+int styleable TextInputLayout_endIconScaleType 68
+int styleable TextInputLayout_errorAccessibilityLiveRegion 69
+int styleable TextInputLayout_startIconMinSize 70
+int styleable TextInputLayout_startIconScaleType 71
 int[] styleable ThemeEnforcement { 0x01010034, 0x7f04017c, 0x7f04017d }
 int styleable ThemeEnforcement_android_textAppearance 0
 int styleable ThemeEnforcement_enforceMaterialTheme 1

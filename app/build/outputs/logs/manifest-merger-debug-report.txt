@@ -1,13 +1,13 @@
 -- Merging decision tree log ---
 manifest
-ADDED from /Users/Camilla/AndroidStudioProjects/KaratePassport/app/src/main/AndroidManifest.xml:2:1-36:12
-INJECTED from /Users/Camilla/AndroidStudioProjects/KaratePassport/app/src/main/AndroidManifest.xml:2:1-36:12
-INJECTED from /Users/Camilla/AndroidStudioProjects/KaratePassport/app/src/main/AndroidManifest.xml:2:1-36:12
-INJECTED from /Users/Camilla/AndroidStudioProjects/KaratePassport/app/src/main/AndroidManifest.xml:2:1-36:12
+ADDED from /Users/Camilla/AndroidStudioProjects/KaratePassport/app/src/main/AndroidManifest.xml:2:1-41:12
+INJECTED from /Users/Camilla/AndroidStudioProjects/KaratePassport/app/src/main/AndroidManifest.xml:2:1-41:12
+INJECTED from /Users/Camilla/AndroidStudioProjects/KaratePassport/app/src/main/AndroidManifest.xml:2:1-41:12
+INJECTED from /Users/Camilla/AndroidStudioProjects/KaratePassport/app/src/main/AndroidManifest.xml:2:1-41:12
 MERGED from [com.google.firebase:firebase-database:20.1.0] /Users/Camilla/.gradle/caches/transforms-3/dfce8d4ed39b5cc083e399b9c62bbe41/transformed/firebase-database-20.1.0/AndroidManifest.xml:15:1-37:12
 MERGED from [com.google.firebase:firebase-firestore:24.4.3] /Users/Camilla/.gradle/caches/transforms-3/794b3bcdc048ab9bdd97cbeafeb9b49d/transformed/firebase-firestore-24.4.3/AndroidManifest.xml:2:1-25:12
 MERGED from [com.google.firebase:firebase-auth:21.1.0] /Users/Camilla/.gradle/caches/transforms-3/59326511f3575d1df62d1bb875db26d1/transformed/firebase-auth-21.1.0/AndroidManifest.xml:17:1-73:12
-MERGED from [com.google.android.material:material:1.7.0] /Users/Camilla/.gradle/caches/transforms-3/bfd5500fa7bb0f52f72cbd3f5053327d/transformed/material-1.7.0/AndroidManifest.xml:17:1-26:12
+MERGED from [com.google.android.material:material:1.8.0] /Users/Camilla/.gradle/caches/transforms-3/8b694135bbf5674a1aef341fecc936ca/transformed/material-1.8.0/AndroidManifest.xml:17:1-26:12
 MERGED from [androidx.constraintlayout:constraintlayout:2.1.4] /Users/Camilla/.gradle/caches/transforms-3/b1febdd7b1e97181aff3d03ff317c6c7/transformed/constraintlayout-2.1.4/AndroidManifest.xml:2:1-11:12
 MERGED from [androidx.appcompat:appcompat-resources:1.5.1] /Users/Camilla/.gradle/caches/transforms-3/6306b143ccad39048a1d32012a3bde1a/transformed/appcompat-resources-1.5.1/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.appcompat:appcompat:1.5.1] /Users/Camilla/.gradle/caches/transforms-3/96bc8e65af43731f4418db6acb627fd7/transformed/appcompat-1.5.1/AndroidManifest.xml:17:1-22:12
@@ -60,25 +60,25 @@ MERGED from [androidx.print:print:1.0.0] /Users/Camilla/.gradle/caches/transform
 MERGED from [com.google.firebase:protolite-well-known-types:18.0.0] /Users/Camilla/.gradle/caches/transforms-3/ac52d689a15654dc06a7b0c9c418c471/transformed/protolite-well-known-types-18.0.0/AndroidManifest.xml:2:1-11:12
 MERGED from [io.grpc:grpc-android:1.50.2] /Users/Camilla/.gradle/caches/transforms-3/70b220c941c2b01e4c7e308bbd4e78c3/transformed/grpc-android-1.50.2/AndroidManifest.xml:2:1-11:12
 MERGED from [androidx.annotation:annotation-experimental:1.1.0] /Users/Camilla/.gradle/caches/transforms-3/c38d5d6525b9a71269c7103de505ad2d/transformed/annotation-experimental-1.1.0/AndroidManifest.xml:17:1-24:12
-INJECTED from /Users/Camilla/AndroidStudioProjects/KaratePassport/app/src/main/AndroidManifest.xml:2:1-36:12
-INJECTED from /Users/Camilla/AndroidStudioProjects/KaratePassport/app/src/main/AndroidManifest.xml:2:1-36:12
-INJECTED from /Users/Camilla/AndroidStudioProjects/KaratePassport/app/src/main/AndroidManifest.xml:2:1-36:12
+INJECTED from /Users/Camilla/AndroidStudioProjects/KaratePassport/app/src/main/AndroidManifest.xml:2:1-41:12
+INJECTED from /Users/Camilla/AndroidStudioProjects/KaratePassport/app/src/main/AndroidManifest.xml:2:1-41:12
+INJECTED from /Users/Camilla/AndroidStudioProjects/KaratePassport/app/src/main/AndroidManifest.xml:2:1-41:12
 	package
 		ADDED from /Users/Camilla/AndroidStudioProjects/KaratePassport/app/src/main/AndroidManifest.xml:3:5-38
 		INJECTED from /Users/Camilla/AndroidStudioProjects/KaratePassport/app/src/main/AndroidManifest.xml
 		INJECTED from /Users/Camilla/AndroidStudioProjects/KaratePassport/app/src/main/AndroidManifest.xml
 	android:versionName
 		INJECTED from /Users/Camilla/AndroidStudioProjects/KaratePassport/app/src/main/AndroidManifest.xml
-		ADDED from /Users/Camilla/AndroidStudioProjects/KaratePassport/app/src/main/AndroidManifest.xml:2:1-36:12
+		ADDED from /Users/Camilla/AndroidStudioProjects/KaratePassport/app/src/main/AndroidManifest.xml:2:1-41:12
 		INJECTED from /Users/Camilla/AndroidStudioProjects/KaratePassport/app/src/main/AndroidManifest.xml
 	android:versionCode
 		INJECTED from /Users/Camilla/AndroidStudioProjects/KaratePassport/app/src/main/AndroidManifest.xml
-		ADDED from /Users/Camilla/AndroidStudioProjects/KaratePassport/app/src/main/AndroidManifest.xml:2:1-36:12
+		ADDED from /Users/Camilla/AndroidStudioProjects/KaratePassport/app/src/main/AndroidManifest.xml:2:1-41:12
 		INJECTED from /Users/Camilla/AndroidStudioProjects/KaratePassport/app/src/main/AndroidManifest.xml
 	xmlns:android
 		ADDED from /Users/Camilla/AndroidStudioProjects/KaratePassport/app/src/main/AndroidManifest.xml:2:11-69
 uses-permission#android.permission.INTERNET
-ADDED from /Users/Camilla/AndroidStudioProjects/KaratePassport/app/src/main/AndroidManifest.xml:5:5-66
+ADDED from /Users/Camilla/AndroidStudioProjects/KaratePassport/app/src/main/AndroidManifest.xml:5:5-67
 MERGED from [com.google.firebase:firebase-database:20.1.0] /Users/Camilla/.gradle/caches/transforms-3/dfce8d4ed39b5cc083e399b9c62bbe41/transformed/firebase-database-20.1.0/AndroidManifest.xml:25:5-67
 MERGED from [com.google.firebase:firebase-database:20.1.0] /Users/Camilla/.gradle/caches/transforms-3/dfce8d4ed39b5cc083e399b9c62bbe41/transformed/firebase-database-20.1.0/AndroidManifest.xml:25:5-67
 MERGED from [com.google.firebase:firebase-firestore:24.4.3] /Users/Camilla/.gradle/caches/transforms-3/794b3bcdc048ab9bdd97cbeafeb9b49d/transformed/firebase-firestore-24.4.3/AndroidManifest.xml:13:5-67
@@ -88,15 +88,15 @@ MERGED from [com.google.firebase:firebase-auth:21.1.0] /Users/Camilla/.gradle/ca
 	android:name
 		ADDED from /Users/Camilla/AndroidStudioProjects/KaratePassport/app/src/main/AndroidManifest.xml:5:22-64
 application
-ADDED from /Users/Camilla/AndroidStudioProjects/KaratePassport/app/src/main/AndroidManifest.xml:7:5-34:19
+ADDED from /Users/Camilla/AndroidStudioProjects/KaratePassport/app/src/main/AndroidManifest.xml:7:5-39:19
 MERGED from [com.google.firebase:firebase-database:20.1.0] /Users/Camilla/.gradle/caches/transforms-3/dfce8d4ed39b5cc083e399b9c62bbe41/transformed/firebase-database-20.1.0/AndroidManifest.xml:27:5-35:19
 MERGED from [com.google.firebase:firebase-database:20.1.0] /Users/Camilla/.gradle/caches/transforms-3/dfce8d4ed39b5cc083e399b9c62bbe41/transformed/firebase-database-20.1.0/AndroidManifest.xml:27:5-35:19
 MERGED from [com.google.firebase:firebase-firestore:24.4.3] /Users/Camilla/.gradle/caches/transforms-3/794b3bcdc048ab9bdd97cbeafeb9b49d/transformed/firebase-firestore-24.4.3/AndroidManifest.xml:15:5-23:19
 MERGED from [com.google.firebase:firebase-firestore:24.4.3] /Users/Camilla/.gradle/caches/transforms-3/794b3bcdc048ab9bdd97cbeafeb9b49d/transformed/firebase-firestore-24.4.3/AndroidManifest.xml:15:5-23:19
 MERGED from [com.google.firebase:firebase-auth:21.1.0] /Users/Camilla/.gradle/caches/transforms-3/59326511f3575d1df62d1bb875db26d1/transformed/firebase-auth-21.1.0/AndroidManifest.xml:26:5-71:19
 MERGED from [com.google.firebase:firebase-auth:21.1.0] /Users/Camilla/.gradle/caches/transforms-3/59326511f3575d1df62d1bb875db26d1/transformed/firebase-auth-21.1.0/AndroidManifest.xml:26:5-71:19
-MERGED from [com.google.android.material:material:1.7.0] /Users/Camilla/.gradle/caches/transforms-3/bfd5500fa7bb0f52f72cbd3f5053327d/transformed/material-1.7.0/AndroidManifest.xml:24:5-20
-MERGED from [com.google.android.material:material:1.7.0] /Users/Camilla/.gradle/caches/transforms-3/bfd5500fa7bb0f52f72cbd3f5053327d/transformed/material-1.7.0/AndroidManifest.xml:24:5-20
+MERGED from [com.google.android.material:material:1.8.0] /Users/Camilla/.gradle/caches/transforms-3/8b694135bbf5674a1aef341fecc936ca/transformed/material-1.8.0/AndroidManifest.xml:24:5-20
+MERGED from [com.google.android.material:material:1.8.0] /Users/Camilla/.gradle/caches/transforms-3/8b694135bbf5674a1aef341fecc936ca/transformed/material-1.8.0/AndroidManifest.xml:24:5-20
 MERGED from [androidx.constraintlayout:constraintlayout:2.1.4] /Users/Camilla/.gradle/caches/transforms-3/b1febdd7b1e97181aff3d03ff317c6c7/transformed/constraintlayout-2.1.4/AndroidManifest.xml:9:5-20
 MERGED from [androidx.constraintlayout:constraintlayout:2.1.4] /Users/Camilla/.gradle/caches/transforms-3/b1febdd7b1e97181aff3d03ff317c6c7/transformed/constraintlayout-2.1.4/AndroidManifest.xml:9:5-20
 MERGED from [com.google.firebase:firebase-appcheck-interop:16.1.0] /Users/Camilla/.gradle/caches/transforms-3/073697aecdc1822a9368e4af9f7b4c25/transformed/firebase-appcheck-interop-16.1.0/AndroidManifest.xml:23:5-20
@@ -137,40 +137,52 @@ MERGED from [androidx.startup:startup-runtime:1.1.1] /Users/Camilla/.gradle/cach
 		ADDED from /Users/Camilla/AndroidStudioProjects/KaratePassport/app/src/main/AndroidManifest.xml:8:9-35
 	android:theme
 		ADDED from /Users/Camilla/AndroidStudioProjects/KaratePassport/app/src/main/AndroidManifest.xml:13:9-52
-activity#it.units.karatepassport.Login
+activity#it.units.karatepassport.GrantBelt
 ADDED from /Users/Camilla/AndroidStudioProjects/KaratePassport/app/src/main/AndroidManifest.xml:14:9-16:40
 	android:exported
 		ADDED from /Users/Camilla/AndroidStudioProjects/KaratePassport/app/src/main/AndroidManifest.xml:16:13-37
 	android:name
-		ADDED from /Users/Camilla/AndroidStudioProjects/KaratePassport/app/src/main/AndroidManifest.xml:15:13-34
+		ADDED from /Users/Camilla/AndroidStudioProjects/KaratePassport/app/src/main/AndroidManifest.xml:15:13-38
+activity#it.units.karatepassport.BeltLog
+ADDED from /Users/Camilla/AndroidStudioProjects/KaratePassport/app/src/main/AndroidManifest.xml:17:9-19:40
+	android:exported
+		ADDED from /Users/Camilla/AndroidStudioProjects/KaratePassport/app/src/main/AndroidManifest.xml:19:13-37
+	android:name
+		ADDED from /Users/Camilla/AndroidStudioProjects/KaratePassport/app/src/main/AndroidManifest.xml:18:13-36
+activity#it.units.karatepassport.Login
+ADDED from /Users/Camilla/AndroidStudioProjects/KaratePassport/app/src/main/AndroidManifest.xml:20:9-22:40
+	android:exported
+		ADDED from /Users/Camilla/AndroidStudioProjects/KaratePassport/app/src/main/AndroidManifest.xml:22:13-37
+	android:name
+		ADDED from /Users/Camilla/AndroidStudioProjects/KaratePassport/app/src/main/AndroidManifest.xml:21:13-34
 activity#it.units.karatepassport.Register
-ADDED from /Users/Camilla/AndroidStudioProjects/KaratePassport/app/src/main/AndroidManifest.xml:17:9-25:20
+ADDED from /Users/Camilla/AndroidStudioProjects/KaratePassport/app/src/main/AndroidManifest.xml:23:9-31:20
 	android:exported
-		ADDED from /Users/Camilla/AndroidStudioProjects/KaratePassport/app/src/main/AndroidManifest.xml:19:13-36
+		ADDED from /Users/Camilla/AndroidStudioProjects/KaratePassport/app/src/main/AndroidManifest.xml:25:13-36
 	android:name
-		ADDED from /Users/Camilla/AndroidStudioProjects/KaratePassport/app/src/main/AndroidManifest.xml:18:13-37
+		ADDED from /Users/Camilla/AndroidStudioProjects/KaratePassport/app/src/main/AndroidManifest.xml:24:13-37
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from /Users/Camilla/AndroidStudioProjects/KaratePassport/app/src/main/AndroidManifest.xml:20:13-24:29
+ADDED from /Users/Camilla/AndroidStudioProjects/KaratePassport/app/src/main/AndroidManifest.xml:26:13-30:29
 action#android.intent.action.MAIN
-ADDED from /Users/Camilla/AndroidStudioProjects/KaratePassport/app/src/main/AndroidManifest.xml:21:17-69
+ADDED from /Users/Camilla/AndroidStudioProjects/KaratePassport/app/src/main/AndroidManifest.xml:27:17-69
 	android:name
-		ADDED from /Users/Camilla/AndroidStudioProjects/KaratePassport/app/src/main/AndroidManifest.xml:21:25-66
+		ADDED from /Users/Camilla/AndroidStudioProjects/KaratePassport/app/src/main/AndroidManifest.xml:27:25-66
 category#android.intent.category.LAUNCHER
-ADDED from /Users/Camilla/AndroidStudioProjects/KaratePassport/app/src/main/AndroidManifest.xml:23:17-77
+ADDED from /Users/Camilla/AndroidStudioProjects/KaratePassport/app/src/main/AndroidManifest.xml:29:17-77
 	android:name
-		ADDED from /Users/Camilla/AndroidStudioProjects/KaratePassport/app/src/main/AndroidManifest.xml:23:27-74
+		ADDED from /Users/Camilla/AndroidStudioProjects/KaratePassport/app/src/main/AndroidManifest.xml:29:27-74
 activity#it.units.karatepassport.MainActivity
-ADDED from /Users/Camilla/AndroidStudioProjects/KaratePassport/app/src/main/AndroidManifest.xml:26:9-29:20
+ADDED from /Users/Camilla/AndroidStudioProjects/KaratePassport/app/src/main/AndroidManifest.xml:32:9-34:39
 	android:exported
-		ADDED from /Users/Camilla/AndroidStudioProjects/KaratePassport/app/src/main/AndroidManifest.xml:28:13-36
+		ADDED from /Users/Camilla/AndroidStudioProjects/KaratePassport/app/src/main/AndroidManifest.xml:34:13-36
 	android:name
-		ADDED from /Users/Camilla/AndroidStudioProjects/KaratePassport/app/src/main/AndroidManifest.xml:27:13-41
+		ADDED from /Users/Camilla/AndroidStudioProjects/KaratePassport/app/src/main/AndroidManifest.xml:33:13-41
 meta-data#preloaded_fonts
-ADDED from /Users/Camilla/AndroidStudioProjects/KaratePassport/app/src/main/AndroidManifest.xml:31:9-33:57
+ADDED from /Users/Camilla/AndroidStudioProjects/KaratePassport/app/src/main/AndroidManifest.xml:36:9-38:57
 	android:resource
-		ADDED from /Users/Camilla/AndroidStudioProjects/KaratePassport/app/src/main/AndroidManifest.xml:33:13-54
+		ADDED from /Users/Camilla/AndroidStudioProjects/KaratePassport/app/src/main/AndroidManifest.xml:38:13-54
 	android:name
-		ADDED from /Users/Camilla/AndroidStudioProjects/KaratePassport/app/src/main/AndroidManifest.xml:32:13-43
+		ADDED from /Users/Camilla/AndroidStudioProjects/KaratePassport/app/src/main/AndroidManifest.xml:37:13-43
 uses-sdk
 INJECTED from /Users/Camilla/AndroidStudioProjects/KaratePassport/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from /Users/Camilla/AndroidStudioProjects/KaratePassport/app/src/main/AndroidManifest.xml
@@ -181,8 +193,8 @@ MERGED from [com.google.firebase:firebase-firestore:24.4.3] /Users/Camilla/.grad
 MERGED from [com.google.firebase:firebase-firestore:24.4.3] /Users/Camilla/.gradle/caches/transforms-3/794b3bcdc048ab9bdd97cbeafeb9b49d/transformed/firebase-firestore-24.4.3/AndroidManifest.xml:6:5-8:41
 MERGED from [com.google.firebase:firebase-auth:21.1.0] /Users/Camilla/.gradle/caches/transforms-3/59326511f3575d1df62d1bb875db26d1/transformed/firebase-auth-21.1.0/AndroidManifest.xml:21:5-44
 MERGED from [com.google.firebase:firebase-auth:21.1.0] /Users/Camilla/.gradle/caches/transforms-3/59326511f3575d1df62d1bb875db26d1/transformed/firebase-auth-21.1.0/AndroidManifest.xml:21:5-44
-MERGED from [com.google.android.material:material:1.7.0] /Users/Camilla/.gradle/caches/transforms-3/bfd5500fa7bb0f52f72cbd3f5053327d/transformed/material-1.7.0/AndroidManifest.xml:20:5-22:41
-MERGED from [com.google.android.material:material:1.7.0] /Users/Camilla/.gradle/caches/transforms-3/bfd5500fa7bb0f52f72cbd3f5053327d/transformed/material-1.7.0/AndroidManifest.xml:20:5-22:41
+MERGED from [com.google.android.material:material:1.8.0] /Users/Camilla/.gradle/caches/transforms-3/8b694135bbf5674a1aef341fecc936ca/transformed/material-1.8.0/AndroidManifest.xml:20:5-22:41
+MERGED from [com.google.android.material:material:1.8.0] /Users/Camilla/.gradle/caches/transforms-3/8b694135bbf5674a1aef341fecc936ca/transformed/material-1.8.0/AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.constraintlayout:constraintlayout:2.1.4] /Users/Camilla/.gradle/caches/transforms-3/b1febdd7b1e97181aff3d03ff317c6c7/transformed/constraintlayout-2.1.4/AndroidManifest.xml:5:5-7:41
 MERGED from [androidx.constraintlayout:constraintlayout:2.1.4] /Users/Camilla/.gradle/caches/transforms-3/b1febdd7b1e97181aff3d03ff317c6c7/transformed/constraintlayout-2.1.4/AndroidManifest.xml:5:5-7:41
 MERGED from [androidx.appcompat:appcompat-resources:1.5.1] /Users/Camilla/.gradle/caches/transforms-3/6306b143ccad39048a1d32012a3bde1a/transformed/appcompat-resources-1.5.1/AndroidManifest.xml:20:5-44

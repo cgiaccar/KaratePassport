@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">Karate Passport</string>
+    <string name="logged_as">Logged in as %1$s</string>
 </resources>
