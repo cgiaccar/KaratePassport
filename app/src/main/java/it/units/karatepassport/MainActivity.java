@@ -17,12 +17,13 @@ import com.google.firebase.firestore.DocumentReference;
 import com.google.firebase.firestore.FirebaseFirestore;
 
 public class MainActivity extends AppCompatActivity {
-    TextView name,email,number;
+    TextView name,email,number,loggedAs;
     FirebaseAuth fAuth;
     FirebaseFirestore fStore;
     String userID;
     private DrawerLayout drawerLayout;  //the activity_main
     private NavigationView navigationView;
+    View headerView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -51,7 +52,10 @@ public class MainActivity extends AppCompatActivity {
             }
             return true;
         });
-        
+        loggedAs = findViewById(R.id.loggedAs);
+        headerView = navigationView.getHeaderView(0);
+        loggedAs = headerView.findViewById(R.id.loggedAs);
+        loggedAs.setText("Logged in as PROVA");
 
 
         userID = fAuth.getCurrentUser().getUid();
