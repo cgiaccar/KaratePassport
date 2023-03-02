@@ -25,6 +25,12 @@
         android:testOnly="true"
         android:theme="@style/Theme.KaratePassport" >
         <activity
+            android:name="it.units.karatepassport.GrantBelt"
+            android:exported="false" />
+        <activity
+            android:name="it.units.karatepassport.BeltLog"
+            android:exported="false" />
+        <activity
             android:name="it.units.karatepassport.Login"
             android:exported="false" />
         <activity
@@ -38,8 +44,7 @@
         </activity>
         <activity
             android:name="it.units.karatepassport.MainActivity"
-            android:exported="true" >
-        </activity>
+            android:exported="true" />
 
         <meta-data
             android:name="preloaded_fonts"

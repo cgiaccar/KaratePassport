@@ -3109,7 +3109,10 @@ id line3
 id linear
 id listMode
 id list_item
+id loggedAs
 id loginBtn
+id logout
+id logout_item
 id m3_side_sheet
 id mainEmail
 id mainPassportNumber
@@ -3139,6 +3142,7 @@ id material_timepicker_ok_button
 id material_timepicker_view
 id material_value_index
 id matrix
+id menu_items
 id message
 id middle
 id mini
@@ -3173,9 +3177,9 @@ id mtrl_picker_text_input_range_start
 id mtrl_picker_title_text
 id mtrl_view_tag_bottom_padding
 id multiply
-id nav_gallery
+id nav_belt_log
+id nav_grant_belt
 id nav_home
-id nav_slideshow
 id nav_view
 id navigation_bar_item_active_indicator_view
 id navigation_bar_item_icon_container
@@ -3335,6 +3339,8 @@ id textTop
 id textView
 id textView2
 id textView3
+id textView4
+id textView5
 id text_input_end_icon
 id text_input_error_icon
 id text_input_start_icon
@@ -3493,6 +3499,8 @@ layout abc_search_dropdown_item_icons_2line
 layout abc_search_view
 layout abc_select_dialog_material
 layout abc_tooltip
+layout activity_belt_log
+layout activity_grant_belt
 layout activity_login
 layout activity_main
 layout activity_register
@@ -3660,6 +3668,7 @@ string google_storage_bucket
 string hide_bottom_view_on_scroll_behavior
 string icon_content_description
 string item_view_role_description
+string logged_as
 string m3_sys_motion_easing_emphasized
 string m3_sys_motion_easing_emphasized_accelerate
 string m3_sys_motion_easing_emphasized_decelerate

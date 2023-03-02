@@ -33,6 +33,7 @@
     <string name="google_app_id" translatable="false">1:348949237298:android:40d4ade7c7a8de087db62b</string>
     <string name="google_crash_reporting_api_key" translatable="false">AIzaSyBPNbZAwTHViG1mjM9155412kbDy2v6IxQ</string>
     <string name="google_storage_bucket" translatable="false">karatepassport-bac6b.appspot.com</string>
+    <string name="logged_as">Logged in as %1$s</string>
     <string name="project_id" translatable="false">karatepassport-bac6b</string>
     <style name="Theme.KaratePassport" parent="Theme.MaterialComponents.DayNight.NoActionBar">
         <!-- Primary brand color. -->

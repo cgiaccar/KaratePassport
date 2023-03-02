@@ -1,11 +1,17 @@
 package it.units.karatepassport;
 
+import androidx.annotation.NonNull;
+import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.Toolbar;
+import androidx.core.view.GravityCompat;
 import androidx.drawerlayout.widget.DrawerLayout;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.MenuItem;
 import android.view.View;
+import android.widget.ActionMenuView;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -58,6 +64,12 @@ public class MainActivity extends AppCompatActivity {
             return false;
         });
 
+        // app bar handling
+        Toolbar toolbar = findViewById(R.id.app_bar);
+        setSupportActionBar(toolbar);
+        ActionBar actionBar = getSupportActionBar();
+        actionBar.setDisplayHomeAsUpEnabled(true);
+        actionBar.setHomeAsUpIndicator(R.drawable.ic_navigationicon);
 
 
         userID = fAuth.getCurrentUser().getUid();
@@ -80,6 +92,15 @@ public class MainActivity extends AppCompatActivity {
                 loggedAs.setText(getString(R.string.logged_as, nameString));
             }
         });
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(@NonNull MenuItem item) {
+        if (item.getItemId() == android.R.id.home) {
+            drawerLayout.openDrawer(GravityCompat.START);   // opens the navigation menu
+            return true;
+        }
+        return super.onOptionsItemSelected(item);
     }
 
     public void logout(View view) {

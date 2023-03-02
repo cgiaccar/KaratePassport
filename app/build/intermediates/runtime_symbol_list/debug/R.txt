@@ -3108,7 +3108,10 @@ int id line3 0x7f0a00f6
 int id linear 0x7f0a00f7
 int id listMode 0x7f0a00f8
 int id list_item 0x7f0a00f9
+int id loggedAs 0x7f0a0215
 int id loginBtn 0x7f0a00fa
+int id logout 0x7f0a0218
+int id logout_item 0x7f0a0219
 int id m3_side_sheet 0x7f0a01fe
 int id mainEmail 0x7f0a01f5
 int id mainPassportNumber 0x7f0a01f6
@@ -3138,6 +3141,7 @@ int id material_timepicker_ok_button 0x7f0a010e
 int id material_timepicker_view 0x7f0a010f
 int id material_value_index 0x7f0a0110
 int id matrix 0x7f0a0111
+int id menu_items 0x7f0a021a
 int id message 0x7f0a0112
 int id middle 0x7f0a0113
 int id mini 0x7f0a0114
@@ -3172,9 +3176,9 @@ int id mtrl_picker_text_input_range_start 0x7f0a0130
 int id mtrl_picker_title_text 0x7f0a0131
 int id mtrl_view_tag_bottom_padding 0x7f0a0132
 int id multiply 0x7f0a0133
-int id nav_gallery 0x7f0a0201
+int id nav_belt_log 0x7f0a021c
+int id nav_grant_belt 0x7f0a0217
 int id nav_home 0x7f0a0202
-int id nav_slideshow 0x7f0a0203
 int id nav_view 0x7f0a0204
 int id navigation_bar_item_active_indicator_view 0x7f0a0134
 int id navigation_bar_item_icon_container 0x7f0a0135
@@ -3334,6 +3338,8 @@ int id textTop 0x7f0a01bf
 int id textView 0x7f0a01c0
 int id textView2 0x7f0a01c1
 int id textView3 0x7f0a01c2
+int id textView4 0x7f0a021b
+int id textView5 0x7f0a021d
 int id text_input_end_icon 0x7f0a01c3
 int id text_input_error_icon 0x7f0a01c4
 int id text_input_start_icon 0x7f0a01c5
@@ -3492,6 +3498,8 @@ int layout abc_search_dropdown_item_icons_2line 0x7f0d0018
 int layout abc_search_view 0x7f0d0019
 int layout abc_select_dialog_material 0x7f0d001a
 int layout abc_tooltip 0x7f0d001b
+int layout activity_belt_log 0x7f0d0072
+int layout activity_grant_belt 0x7f0d0073
 int layout activity_login 0x7f0d001c
 int layout activity_main 0x7f0d001d
 int layout activity_register 0x7f0d001e
@@ -3659,6 +3667,7 @@ int string google_storage_bucket 0x7f120049
 int string hide_bottom_view_on_scroll_behavior 0x7f12004a
 int string icon_content_description 0x7f12004b
 int string item_view_role_description 0x7f12004c
+int string logged_as 0x7f1200b9
 int string m3_sys_motion_easing_emphasized 0x7f12004d
 int string m3_sys_motion_easing_emphasized_accelerate 0x7f12004e
 int string m3_sys_motion_easing_emphasized_decelerate 0x7f12004f
