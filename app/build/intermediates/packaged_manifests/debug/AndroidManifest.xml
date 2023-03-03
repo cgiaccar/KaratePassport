@@ -31,10 +31,10 @@
             android:name="it.units.karatepassport.BeltLog"
             android:exported="false" />
         <activity
-            android:name="it.units.karatepassport.Login"
+            android:name="it.units.karatepassport.Register"
             android:exported="false" />
         <activity
-            android:name="it.units.karatepassport.Register"
+            android:name="it.units.karatepassport.Login"
             android:exported="true" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

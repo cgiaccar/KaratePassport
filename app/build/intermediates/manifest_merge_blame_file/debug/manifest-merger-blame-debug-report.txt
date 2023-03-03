@@ -52,14 +52,14 @@
 32-->/Users/Camilla/AndroidStudioProjects/KaratePassport/app/src/main/AndroidManifest.xml:19:13-37
 33        <activity
 33-->/Users/Camilla/AndroidStudioProjects/KaratePassport/app/src/main/AndroidManifest.xml:20:9-22:40
-34            android:name="it.units.karatepassport.Login"
-34-->/Users/Camilla/AndroidStudioProjects/KaratePassport/app/src/main/AndroidManifest.xml:21:13-34
+34            android:name="it.units.karatepassport.Register"
+34-->/Users/Camilla/AndroidStudioProjects/KaratePassport/app/src/main/AndroidManifest.xml:21:13-37
 35            android:exported="false" />
 35-->/Users/Camilla/AndroidStudioProjects/KaratePassport/app/src/main/AndroidManifest.xml:22:13-37
 36        <activity
 36-->/Users/Camilla/AndroidStudioProjects/KaratePassport/app/src/main/AndroidManifest.xml:23:9-31:20
-37            android:name="it.units.karatepassport.Register"
-37-->/Users/Camilla/AndroidStudioProjects/KaratePassport/app/src/main/AndroidManifest.xml:24:13-37
+37            android:name="it.units.karatepassport.Login"
+37-->/Users/Camilla/AndroidStudioProjects/KaratePassport/app/src/main/AndroidManifest.xml:24:13-34
 38            android:exported="true" >
 38-->/Users/Camilla/AndroidStudioProjects/KaratePassport/app/src/main/AndroidManifest.xml:25:13-36
 39            <intent-filter>
