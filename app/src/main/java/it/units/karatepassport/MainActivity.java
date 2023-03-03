@@ -91,7 +91,7 @@ public class MainActivity extends AppCompatActivity {
                 loggedAs.setText(getString(R.string.logged_as, nameString));
 
                 //only master users can see the "Grant a Belt" option
-                Boolean isMaster = documentSnapshot.getBoolean("master");
+                Boolean isMaster = documentSnapshot.getBoolean("isMaster");
                 if (isMaster == Boolean.FALSE) {
                     navigationView.getMenu().findItem(R.id.nav_grant_belt).setVisible(false);
                 }
