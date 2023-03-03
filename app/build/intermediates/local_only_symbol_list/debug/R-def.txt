@@ -14,7 +14,7 @@ color white
 drawable gradient_background
 drawable ic_launcher_background
 drawable ic_launcher_foreground
-drawable ic_navigationicon
+drawable ic_navigation
 font aclonica
 font bigshot_one
 id app_bar
@@ -39,6 +39,7 @@ id nav_view
 id navigation_header
 id passportNumber
 id password
+id password_text
 id progressBar
 id progressBar2
 id registerBtn

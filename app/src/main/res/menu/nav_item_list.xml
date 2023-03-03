@@ -9,13 +9,14 @@
         <item
             android:id="@+id/nav_home"
             android:title="Home"
-            android:icon="@drawable/ic_navigationicon"/>
+            android:icon="@drawable/ic_navigation"/>
         <item
             android:id="@+id/nav_belt_log"
             android:title="Your belts" />
         <item
             android:id="@+id/nav_grant_belt"
-            android:title="Grant a new belt!" />
+            android:title="Grant a new belt!"
+            android:visible="false" />
     </group>
     <group
         android:id="@+id/logout_item"

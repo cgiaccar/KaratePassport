@@ -2777,7 +2777,7 @@ drawable ic_mtrl_checked_circle
 drawable ic_mtrl_chip_checked_black
 drawable ic_mtrl_chip_checked_circle
 drawable ic_mtrl_chip_close_circle
-drawable ic_navigationicon
+drawable ic_navigation
 drawable ic_search_black_24
 drawable m3_appbar_background
 drawable m3_avd_hide_password
@@ -3214,6 +3214,7 @@ id parentRelative
 id parent_matrix
 id passportNumber
 id password
+id password_text
 id password_toggle
 id path
 id pathRelative

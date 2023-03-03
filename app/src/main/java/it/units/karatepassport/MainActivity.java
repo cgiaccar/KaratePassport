@@ -68,7 +68,7 @@ public class MainActivity extends AppCompatActivity {
         setSupportActionBar(toolbar);
         ActionBar actionBar = getSupportActionBar();
         actionBar.setDisplayHomeAsUpEnabled(true);
-        actionBar.setHomeAsUpIndicator(R.drawable.ic_navigationicon);
+        actionBar.setHomeAsUpIndicator(R.drawable.ic_navigation);
 
 
         userID = fAuth.getCurrentUser().getUid();
