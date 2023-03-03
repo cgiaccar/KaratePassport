@@ -11,7 +11,6 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.MenuItem;
 import android.view.View;
-import android.widget.ActionMenuView;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -90,6 +89,12 @@ public class MainActivity extends AppCompatActivity {
                 headerView = navigationView.getHeaderView(0);
                 loggedAs = headerView.findViewById(R.id.loggedAs);
                 loggedAs.setText(getString(R.string.logged_as, nameString));
+
+                //only master users can see the "Grant a Belt" option
+                Boolean isMaster = documentSnapshot.getBoolean("master");
+                if (isMaster == Boolean.FALSE) {
+                    navigationView.getMenu().findItem(R.id.nav_grant_belt).setVisible(false);
+                }
             }
         });
     }
