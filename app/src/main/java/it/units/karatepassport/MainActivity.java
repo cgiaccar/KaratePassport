@@ -6,6 +6,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 import androidx.core.view.GravityCompat;
 import androidx.drawerlayout.widget.DrawerLayout;
+import androidx.fragment.app.Fragment;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -16,7 +17,6 @@ import android.widget.Toast;
 
 import com.google.android.material.navigation.NavigationView;
 import com.google.firebase.auth.FirebaseAuth;
-import com.google.firebase.firestore.DocumentReference;
 import com.google.firebase.firestore.FirebaseFirestore;
 
 public class MainActivity extends AppCompatActivity {
@@ -31,14 +31,15 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
-        number = findViewById(R.id.mainPassportNumber);
-        name = findViewById(R.id.mainUserName);
-        email = findViewById(R.id.mainEmail);
+        setContentView(R.layout.main_content);
 
-        // initialization of Auth e Firestore
-        fAuth = FirebaseAuth.getInstance();
-        fStore = FirebaseFirestore.getInstance();
+        if (savedInstanceState == null) {
+            Fragment fragment = new Fragment();
+            getSupportFragmentManager()
+                    .beginTransaction()
+                    .add(R.id.main_content, fragment)
+                    .commit();
+        }
 
         // navigationView handling
         drawerLayout = findViewById(R.id.drawer_layout);
@@ -69,34 +70,6 @@ public class MainActivity extends AppCompatActivity {
         ActionBar actionBar = getSupportActionBar();
         actionBar.setDisplayHomeAsUpEnabled(true);
         actionBar.setHomeAsUpIndicator(R.drawable.ic_navigation);
-
-
-        userID = fAuth.getCurrentUser().getUid();
-
-        // this is the reference to what we want to retrieve, to the specific user
-        DocumentReference documentReference = fStore.collection("users").document(userID);
-
-        documentReference.addSnapshotListener(this, (documentSnapshot, e) -> {
-            if ((e == null ) || (documentSnapshot !=null && documentSnapshot.exists())) {
-
-                //using the names assigned in Register.java, visible also in the FirestoreDB
-                String nameString = documentSnapshot.getString("userName");
-                number.setText(documentSnapshot.getString("passportNumber"));
-                name.setText(nameString);
-                email.setText(documentSnapshot.getString("email"));
-
-                //change the "Logged in as ..." message in navigation header
-                headerView = navigationView.getHeaderView(0);
-                loggedAs = headerView.findViewById(R.id.loggedAs);
-                loggedAs.setText(getString(R.string.logged_as, nameString));
-
-                //only master users can see the "Grant a Belt" option
-                Boolean isMaster = documentSnapshot.getBoolean("isMaster");
-                if (isMaster == Boolean.FALSE) {
-                    navigationView.getMenu().findItem(R.id.nav_grant_belt).setVisible(false);
-                }
-            }
-        });
     }
 
     @Override
