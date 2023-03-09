@@ -1,10 +1,8 @@
 package it.units.karatepassport;
 
-import androidx.annotation.NonNull;
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
-import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
 import android.text.TextUtils;
@@ -15,11 +13,6 @@ import android.widget.ProgressBar;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.google.android.gms.tasks.OnCompleteListener;
-import com.google.android.gms.tasks.OnFailureListener;
-import com.google.android.gms.tasks.OnSuccessListener;
-import com.google.android.gms.tasks.Task;
-import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 
 public class Login extends AppCompatActivity {
@@ -43,6 +36,12 @@ public class Login extends AppCompatActivity {
         progressBar = findViewById(R.id.progressBar2);
 
         fAuth = FirebaseAuth.getInstance();
+
+        // check if user is already logged in
+        if (fAuth.getCurrentUser() != null) {
+            startActivity(new Intent(getApplicationContext(), MainActivity.class));
+            finish();
+        }
 
         mLoginBtn.setOnClickListener(view -> {
             String email = mEmail.getText().toString().trim();
@@ -98,7 +97,7 @@ public class Login extends AppCompatActivity {
                 // do nothing (automatically closes the dialog)
             });
 
-            passwordResetDialog.create().show();    // actually creates the dialog
+            passwordResetDialog.show();    // actually creates and shows the dialog
         });
     }
 }

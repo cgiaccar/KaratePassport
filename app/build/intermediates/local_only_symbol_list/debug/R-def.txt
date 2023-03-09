@@ -22,11 +22,11 @@ id button
 id drawer_layout
 id email
 id forgotPassword
+id fragments_host
 id home_content
 id imageView
 id loggedAs
 id loginBtn
-id logout
 id logout_item
 id mainEmail
 id mainPassportNumber
@@ -35,7 +35,9 @@ id menu_items
 id nav_belt_log
 id nav_grant_belt
 id nav_home
+id nav_logout
 id nav_view
+id navigation_graph
 id navigation_header
 id passportNumber
 id password
@@ -58,11 +60,13 @@ layout activity_login
 layout activity_main
 layout activity_register
 layout app_bar
+layout fragments_host
 layout home_content
 layout navigation_header
 menu nav_item_list
 mipmap ic_launcher
 mipmap ic_launcher_round
+navigation navigation_graph
 string app_name
 string default_web_client_id
 string firebase_database_url

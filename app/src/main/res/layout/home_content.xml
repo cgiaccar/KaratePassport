@@ -5,7 +5,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity"
+    tools:context=".HomeFragment"
     android:id="@+id/home_content">
 
     <Button
@@ -70,13 +70,5 @@
         app:layout_constraintStart_toStartOf="@+id/mainPassportNumber"
         app:layout_constraintTop_toBottomOf="@+id/mainPassportNumber"
         app:layout_constraintVertical_bias="0.15" />
-
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        >
-        <include
-            layout="@layout/app_bar"/>
-    </RelativeLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
