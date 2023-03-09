@@ -12,20 +12,14 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.KaratePassport">
         <activity
-            android:name=".GrantBelt"
-            android:exported="false" />
+            android:name=".RegisterActivity"
+            android:exported="false">
+        </activity>
         <activity
-            android:name=".BeltLog"
-            android:exported="false" />
-        <activity
-            android:name=".Register"
-            android:exported="false" />
-        <activity
-            android:name=".Login"
+            android:name=".LoginActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>

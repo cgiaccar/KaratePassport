@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation_graph"
+    app:startDestination="@id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="it.units.karatepassport.HomeFragment"
+        android:label="Home"
+        tools:layout="@layout/fragment_home" />
+    <fragment
+        android:id="@+id/nav_belt_log"
+        android:name="it.units.karatepassport.BeltLogFragment"
+        android:label="Your Belts"
+        tools:layout="@layout/fragment_belt_log" />
+    <fragment
+        android:id="@+id/nav_grant_belt"
+        android:name="it.units.karatepassport.GrantBeltFragment"
+        android:label="Grant a Belt"
+        tools:layout="@layout/fragment_grant_belt" />
+
+</navigation>

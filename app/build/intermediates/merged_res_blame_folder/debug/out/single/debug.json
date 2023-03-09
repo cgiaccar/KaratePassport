@@ -8,12 +8,12 @@
         "source": "/Users/Camilla/AndroidStudioProjects/KaratePassport/app/src/main/res/mipmap-mdpi/ic_launcher.webp"
     },
     {
-        "merged": "/Users/Camilla/AndroidStudioProjects/KaratePassport/app/build/intermediates/merged_res/debug/mipmap-hdpi_ic_launcher_round.webp.flat",
-        "source": "/Users/Camilla/AndroidStudioProjects/KaratePassport/app/src/main/res/mipmap-hdpi/ic_launcher_round.webp"
-    },
-    {
         "merged": "/Users/Camilla/AndroidStudioProjects/KaratePassport/app/build/intermediates/merged_res/debug/layout_navigation_header.xml.flat",
         "source": "/Users/Camilla/AndroidStudioProjects/KaratePassport/app/src/main/res/layout/navigation_header.xml"
+    },
+    {
+        "merged": "/Users/Camilla/AndroidStudioProjects/KaratePassport/app/build/intermediates/merged_res/debug/mipmap-hdpi_ic_launcher_round.webp.flat",
+        "source": "/Users/Camilla/AndroidStudioProjects/KaratePassport/app/src/main/res/mipmap-hdpi/ic_launcher_round.webp"
     },
     {
         "merged": "/Users/Camilla/AndroidStudioProjects/KaratePassport/app/build/intermediates/merged_res/debug/font_bigshot_one.xml.flat",
@@ -22,6 +22,14 @@
     {
         "merged": "/Users/Camilla/AndroidStudioProjects/KaratePassport/app/build/intermediates/merged_res/debug/mipmap-xxhdpi_ic_launcher.webp.flat",
         "source": "/Users/Camilla/AndroidStudioProjects/KaratePassport/app/src/main/res/mipmap-xxhdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "/Users/Camilla/AndroidStudioProjects/KaratePassport/app/build/intermediates/merged_res/debug/layout_fragments_host.xml.flat",
+        "source": "/Users/Camilla/AndroidStudioProjects/KaratePassport/app/src/main/res/layout/fragments_host.xml"
+    },
+    {
+        "merged": "/Users/Camilla/AndroidStudioProjects/KaratePassport/app/build/intermediates/merged_res/debug/layout_fragment_home.xml.flat",
+        "source": "/Users/Camilla/AndroidStudioProjects/KaratePassport/app/src/main/res/layout/fragment_home.xml"
     },
     {
         "merged": "/Users/Camilla/AndroidStudioProjects/KaratePassport/app/build/intermediates/merged_res/debug/layout_app_bar.xml.flat",
@@ -40,10 +48,6 @@
         "source": "/Users/Camilla/AndroidStudioProjects/KaratePassport/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml"
     },
     {
-        "merged": "/Users/Camilla/AndroidStudioProjects/KaratePassport/app/build/intermediates/merged_res/debug/layout_activity_grant_belt.xml.flat",
-        "source": "/Users/Camilla/AndroidStudioProjects/KaratePassport/app/src/main/res/layout/activity_grant_belt.xml"
-    },
-    {
         "merged": "/Users/Camilla/AndroidStudioProjects/KaratePassport/app/build/intermediates/merged_res/debug/drawable_gradient_background.xml.flat",
         "source": "/Users/Camilla/AndroidStudioProjects/KaratePassport/app/src/main/res/drawable/gradient_background.xml"
     },
@@ -56,16 +60,16 @@
         "source": "/Users/Camilla/AndroidStudioProjects/KaratePassport/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml"
     },
     {
-        "merged": "/Users/Camilla/AndroidStudioProjects/KaratePassport/app/build/intermediates/merged_res/debug/layout_home_content.xml.flat",
-        "source": "/Users/Camilla/AndroidStudioProjects/KaratePassport/app/src/main/res/layout/home_content.xml"
-    },
-    {
         "merged": "/Users/Camilla/AndroidStudioProjects/KaratePassport/app/build/intermediates/merged_res/debug/font_aclonica.xml.flat",
         "source": "/Users/Camilla/AndroidStudioProjects/KaratePassport/app/src/main/res/font/aclonica.xml"
     },
     {
         "merged": "/Users/Camilla/AndroidStudioProjects/KaratePassport/app/build/intermediates/merged_res/debug/mipmap-hdpi_ic_launcher.webp.flat",
         "source": "/Users/Camilla/AndroidStudioProjects/KaratePassport/app/src/main/res/mipmap-hdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "/Users/Camilla/AndroidStudioProjects/KaratePassport/app/build/intermediates/merged_res/debug/layout_fragment_grant_belt.xml.flat",
+        "source": "/Users/Camilla/AndroidStudioProjects/KaratePassport/app/src/main/res/layout/fragment_grant_belt.xml"
     },
     {
         "merged": "/Users/Camilla/AndroidStudioProjects/KaratePassport/app/build/intermediates/merged_res/debug/mipmap-xxxhdpi_ic_launcher.webp.flat",
@@ -88,12 +92,16 @@
         "source": "/Users/Camilla/AndroidStudioProjects/KaratePassport/app/src/main/res/drawable/ic_navigation.xml"
     },
     {
-        "merged": "/Users/Camilla/AndroidStudioProjects/KaratePassport/app/build/intermediates/merged_res/debug/layout_activity_register.xml.flat",
-        "source": "/Users/Camilla/AndroidStudioProjects/KaratePassport/app/src/main/res/layout/activity_register.xml"
+        "merged": "/Users/Camilla/AndroidStudioProjects/KaratePassport/app/build/intermediates/merged_res/debug/navigation_navigation_graph.xml.flat",
+        "source": "/Users/Camilla/AndroidStudioProjects/KaratePassport/app/src/main/res/navigation/navigation_graph.xml"
     },
     {
-        "merged": "/Users/Camilla/AndroidStudioProjects/KaratePassport/app/build/intermediates/merged_res/debug/layout_activity_belt_log.xml.flat",
-        "source": "/Users/Camilla/AndroidStudioProjects/KaratePassport/app/src/main/res/layout/activity_belt_log.xml"
+        "merged": "/Users/Camilla/AndroidStudioProjects/KaratePassport/app/build/intermediates/merged_res/debug/layout_fragment_belt_log.xml.flat",
+        "source": "/Users/Camilla/AndroidStudioProjects/KaratePassport/app/src/main/res/layout/fragment_belt_log.xml"
+    },
+    {
+        "merged": "/Users/Camilla/AndroidStudioProjects/KaratePassport/app/build/intermediates/merged_res/debug/layout_activity_register.xml.flat",
+        "source": "/Users/Camilla/AndroidStudioProjects/KaratePassport/app/src/main/res/layout/activity_register.xml"
     },
     {
         "merged": "/Users/Camilla/AndroidStudioProjects/KaratePassport/app/build/intermediates/merged_res/debug/mipmap-xhdpi_ic_launcher_round.webp.flat",

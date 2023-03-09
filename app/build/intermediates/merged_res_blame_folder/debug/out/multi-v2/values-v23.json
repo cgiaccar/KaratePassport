@@ -4,7 +4,7 @@
             "outputFile": "/Users/Camilla/AndroidStudioProjects/KaratePassport/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-v23/values-v23.xml",
             "map": [
                 {
-                    "source": "/Users/Camilla/.gradle/caches/transforms-3/96bc8e65af43731f4418db6acb627fd7/transformed/appcompat-1.5.1/res/values-v23/values-v23.xml",
+                    "source": "/Users/Camilla/.gradle/caches/transforms-3/b27a95c5734b9559ce2c11b1cf88ef64/transformed/appcompat-1.6.1/res/values-v23/values-v23.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,20,34,35,36,39,43,44,45,46",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4",
