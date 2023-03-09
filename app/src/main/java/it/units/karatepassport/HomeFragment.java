@@ -6,10 +6,8 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
-import androidx.drawerlayout.widget.DrawerLayout;
 import androidx.fragment.app.Fragment;
 
-import com.google.android.material.navigation.NavigationView;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.firestore.DocumentReference;
 import com.google.firebase.firestore.FirebaseFirestore;
@@ -20,18 +18,16 @@ import javax.annotation.Nullable;
 
 public class HomeFragment extends Fragment {
 
-    TextView name,email,number,loggedAs;
+    TextView name,email,number;
     FirebaseAuth fAuth;
     FirebaseFirestore fStore;
     String userID;
-    private DrawerLayout drawerLayout;  //the activity_main
-    private NavigationView navigationView;
-    View headerView;
+
 
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        View view = inflater.inflate(R.layout.home_content, container,false);
+        View view = inflater.inflate(R.layout.fragment_home, container,false);
         return view;
     }
 

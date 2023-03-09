@@ -9,21 +9,21 @@
         android:id="@+id/nav_home"
         android:name="it.units.karatepassport.HomeFragment"
         android:label="Home"
-        tools:layout="@layout/home_content" />
+        tools:layout="@layout/fragment_home" />
     <fragment
         android:id="@+id/nav_belt_log"
-        android:name="it.units.karatepassport.BeltLog"
+        android:name="it.units.karatepassport.BeltLogFragment"
         android:label="Your Belts"
-        tools:layout="@layout/activity_belt_log" />
+        tools:layout="@layout/fragment_belt_log" />
     <fragment
         android:id="@+id/nav_grant_belt"
-        android:name="it.units.karatepassport.GrantBelt"
+        android:name="it.units.karatepassport.GrantBeltFragment"
         android:label="Grant a Belt"
-        tools:layout="@layout/activity_grant_belt" />
+        tools:layout="@layout/fragment_grant_belt" />
 
     <activity
         android:id="@+id/nav_logout"
-        android:name="it.units.karatepassport.Login"
+        android:name="it.units.karatepassport.LoginActivity"
         android:label="activity_login"
         tools:layout="@layout/activity_login" />
 

@@ -15,7 +15,7 @@ import android.widget.Toast;
 
 import com.google.firebase.auth.FirebaseAuth;
 
-public class Login extends AppCompatActivity {
+public class LoginActivity extends AppCompatActivity {
 
     EditText mEmail, mPassword;
     Button mLoginBtn;
@@ -67,16 +67,16 @@ public class Login extends AppCompatActivity {
             // authenticate the user
             fAuth.signInWithEmailAndPassword(email, password).addOnCompleteListener(task -> {
                 if (task.isSuccessful()) {
-                    Toast.makeText(Login.this, "Logged in successfully!", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(LoginActivity.this, "Logged in successfully!", Toast.LENGTH_SHORT).show();
                     startActivity(new Intent(getApplicationContext(), MainActivity.class));
                 } else {
-                    Toast.makeText(Login.this, "Error! " + task.getException().getMessage(), Toast.LENGTH_SHORT).show();
+                    Toast.makeText(LoginActivity.this, "Error! " + task.getException().getMessage(), Toast.LENGTH_SHORT).show();
                     progressBar.setVisibility(View.GONE);
                 }
             });
         });
 
-        mRegisterHereBtn.setOnClickListener(view -> startActivity(new Intent(getApplicationContext(), Register.class)));
+        mRegisterHereBtn.setOnClickListener(view -> startActivity(new Intent(getApplicationContext(), RegisterActivity.class)));
 
         mForgotPassword.setOnClickListener(view -> {
             EditText resetMail = new EditText(view.getContext());
@@ -89,8 +89,8 @@ public class Login extends AppCompatActivity {
                 // extract the email and send reset link
                 String mail = resetMail.getText().toString();
                 fAuth.sendPasswordResetEmail(mail).addOnSuccessListener(unused ->
-                        Toast.makeText(Login.this, "Reset link sent to your email.", Toast.LENGTH_SHORT).show()
-                ).addOnFailureListener(e -> Toast.makeText(Login.this, "Error! Reset link NOT sent. " + e.getMessage(), Toast.LENGTH_SHORT).show());
+                        Toast.makeText(LoginActivity.this, "Reset link sent to your email.", Toast.LENGTH_SHORT).show()
+                ).addOnFailureListener(e -> Toast.makeText(LoginActivity.this, "Error! Reset link NOT sent. " + e.getMessage(), Toast.LENGTH_SHORT).show());
             });
 
             passwordResetDialog.setNegativeButton("Cancel", (dialogInterface, i) -> {

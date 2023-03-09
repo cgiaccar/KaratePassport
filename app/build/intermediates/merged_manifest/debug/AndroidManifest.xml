@@ -31,11 +31,11 @@
         android:testOnly="true"
         android:theme="@style/Theme.KaratePassport" >
         <activity
-            android:name="it.units.karatepassport.Register"
+            android:name="it.units.karatepassport.RegisterActivity"
             android:exported="false" >
         </activity>
         <activity
-            android:name="it.units.karatepassport.Login"
+            android:name="it.units.karatepassport.LoginActivity"
             android:exported="true" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

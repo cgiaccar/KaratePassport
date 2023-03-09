@@ -54,7 +54,7 @@ public class MainActivity extends AppCompatActivity {
         NavigationUI.setupActionBarWithNavController(this, navController, mAppBarConfiguration);
         NavigationUI.setupWithNavController(navigationView, navController);
 
-        
+
         // personalize navigation header depending on user
         fAuth = FirebaseAuth.getInstance();
         fStore = FirebaseFirestore.getInstance();
@@ -88,7 +88,7 @@ public class MainActivity extends AppCompatActivity {
     public void logout(View view) {
         Toast.makeText(this, "Logging out", Toast.LENGTH_SHORT).show();
         FirebaseAuth.getInstance().signOut();
-        startActivity(new Intent(getApplicationContext(), Login.class));
+        startActivity(new Intent(getApplicationContext(), LoginActivity.class));
         finish();
     }
 }

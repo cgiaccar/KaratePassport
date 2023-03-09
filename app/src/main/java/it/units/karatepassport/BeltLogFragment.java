@@ -7,16 +7,15 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+import javax.annotation.Nullable;
 import org.checkerframework.checker.nullness.qual.NonNull;
 
-import javax.annotation.Nullable;
-
-public class GrantBelt extends Fragment {
+public class BeltLogFragment extends Fragment {
 
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        View view = inflater.inflate(R.layout.activity_grant_belt, container,false);
+        View view = inflater.inflate(R.layout.fragment_belt_log, container, false);
         return view;
     }
 }

@@ -20,7 +20,7 @@ import com.google.firebase.firestore.FirebaseFirestore;
 import java.util.HashMap;
 import java.util.Map;
 
-public class Register extends AppCompatActivity {
+public class RegisterActivity extends AppCompatActivity {
 
     public static final String TAG = "TAG";
     EditText mEmail, mUsername, mPassportNumber, mPassword;
@@ -80,7 +80,7 @@ public class Register extends AppCompatActivity {
             // register the new user in Firebase
             fAuth.createUserWithEmailAndPassword(email, password).addOnCompleteListener(task -> {
                 if (task.isSuccessful()) {
-                    Toast.makeText(Register.this, "User created successfully!", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(RegisterActivity.this, "User created successfully!", Toast.LENGTH_SHORT).show();
                     // as soon as the user is created, we save the user data into the Firebase Firestore Database
                     userID = fAuth.getCurrentUser().getUid(); // get current user (currently registering user) unique ID
                     DocumentReference documentReference = fStore.collection("users").document(userID); // creates a new user inside the collection of users using their unique ID
@@ -94,14 +94,14 @@ public class Register extends AppCompatActivity {
                     }).addOnFailureListener(e -> Log.d(TAG, "onFailure: " + e));
                     startActivity(new Intent(getApplicationContext(), MainActivity.class));
                 } else {
-                    Toast.makeText(Register.this, "Error! " + task.getException().getMessage(), Toast.LENGTH_SHORT).show();
+                    Toast.makeText(RegisterActivity.this, "Error! " + task.getException().getMessage(), Toast.LENGTH_SHORT).show();
                     progressBar.setVisibility(View.GONE);
                 }
             });
 
         });
 
-        mLoginHereBtn.setOnClickListener(view -> startActivity(new Intent(getApplicationContext(), Login.class)));
+        mLoginHereBtn.setOnClickListener(view -> startActivity(new Intent(getApplicationContext(), LoginActivity.class)));
 
     }
 }
