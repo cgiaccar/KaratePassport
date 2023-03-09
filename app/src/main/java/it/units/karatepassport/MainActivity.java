@@ -11,7 +11,6 @@ import androidx.navigation.ui.NavigationUI;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.view.Menu;
 import android.view.View;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -24,45 +23,39 @@ import com.google.firebase.firestore.FirebaseFirestore;
 import it.units.karatepassport.databinding.ActivityMainBinding;
 
 public class MainActivity extends AppCompatActivity {
-    TextView name,email,number,loggedAs;
+    TextView loggedAs;
     FirebaseAuth fAuth;
     FirebaseFirestore fStore;
     String userID;
-    private DrawerLayout drawerLayout;  //the activity_main
-    private NavigationView navigationView;
-    private NavController navController;
     private AppBarConfiguration mAppBarConfiguration;
-    private ActivityMainBinding binding;
     View headerView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        binding = ActivityMainBinding.inflate(getLayoutInflater());
+        ActivityMainBinding binding = ActivityMainBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
 
-        // app bar handling
+        // app bar and navigation handling
         Toolbar toolbar = findViewById(R.id.app_bar);
         setSupportActionBar(toolbar);
 
-        // navigation handling
         NavHostFragment navHostFragment = (NavHostFragment)
                 getSupportFragmentManager().findFragmentById(R.id.fragments_host);
-        navController = navHostFragment.getNavController();
-        DrawerLayout drawer = binding.drawerLayout;
+        NavController navController = navHostFragment.getNavController();
+        DrawerLayout drawerLayout = binding.drawerLayout; //the activity_main
         NavigationView navigationView = binding.navView;
-        // Passing each menu ID as a set of Ids because each
-        // menu should be considered as top level destinations.
+
         mAppBarConfiguration = new AppBarConfiguration.Builder(
                 R.id.nav_home, R.id.nav_belt_log, R.id.nav_grant_belt)
-                .setOpenableLayout(drawer)
+                .setOpenableLayout(drawerLayout)
                 .build();
         NavigationUI.setupActionBarWithNavController(this, navController, mAppBarConfiguration);
         NavigationUI.setupWithNavController(navigationView, navController);
 
-
-        // changing navigation header depending on user
+        
+        // personalize navigation header depending on user
         fAuth = FirebaseAuth.getInstance();
         fStore = FirebaseFirestore.getInstance();
 
