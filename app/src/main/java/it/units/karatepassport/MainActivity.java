@@ -47,6 +47,11 @@ public class MainActivity extends AppCompatActivity {
         DrawerLayout drawerLayout = binding.drawerLayout; //the activity_main
         NavigationView navigationView = binding.navView;
 
+        navigationView.getMenu().findItem(R.id.nav_logout).setOnMenuItemClickListener(menuItem -> {
+            logout(binding.getRoot());
+            return false;
+        });
+
         mAppBarConfiguration = new AppBarConfiguration.Builder(
                 R.id.nav_home, R.id.nav_belt_log, R.id.nav_grant_belt)
                 .setOpenableLayout(drawerLayout)

@@ -21,10 +21,4 @@
         android:label="Grant a Belt"
         tools:layout="@layout/fragment_grant_belt" />
 
-    <activity
-        android:id="@+id/nav_logout"
-        android:name="it.units.karatepassport.LoginActivity"
-        android:label="activity_login"
-        tools:layout="@layout/activity_login" />
-
 </navigation>
