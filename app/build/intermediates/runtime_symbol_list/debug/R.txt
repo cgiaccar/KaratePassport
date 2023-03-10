@@ -2812,17 +2812,20 @@ int drawable gradient_background 0x7f08009c
 int drawable ic_arrow_back_black_24 0x7f08009d
 int drawable ic_clear_black_24 0x7f08009e
 int drawable ic_clock_black_24dp 0x7f08009f
+int drawable ic_home 0x7f0800f6
 int drawable ic_keyboard_black_24dp 0x7f0800a0
 int drawable ic_launcher_background 0x7f0800a1
 int drawable ic_launcher_foreground 0x7f0800a2
+int drawable ic_list 0x7f0800f7
+int drawable ic_logout 0x7f0800f9
 int drawable ic_m3_chip_check 0x7f0800a3
 int drawable ic_m3_chip_checked_circle 0x7f0800a4
 int drawable ic_m3_chip_close 0x7f0800a5
+int drawable ic_medal 0x7f0800f8
 int drawable ic_mtrl_checked_circle 0x7f0800a6
 int drawable ic_mtrl_chip_checked_black 0x7f0800a7
 int drawable ic_mtrl_chip_checked_circle 0x7f0800a8
 int drawable ic_mtrl_chip_close_circle 0x7f0800a9
-int drawable ic_navigation 0x7f0800aa
 int drawable ic_search_black_24 0x7f0800ab
 int drawable m3_appbar_background 0x7f0800ac
 int drawable m3_avd_hide_password 0x7f0800ad
@@ -3111,7 +3114,6 @@ int id forever 0x7f0a00cf
 int id forgotPassword 0x7f0a00d0
 int id fragment_container_view_tag 0x7f0a00d1
 int id fragment_home 0x7f0a00d2
-int id fragments_host 0x7f0a00d3
 int id frost 0x7f0a00d4
 int id fullscreen_header 0x7f0a00d5
 int id ghost_view 0x7f0a00d6
@@ -3230,6 +3232,7 @@ int id nav_belt_log 0x7f0a0146
 int id nav_controller_view_tag 0x7f0a0147
 int id nav_grant_belt 0x7f0a0148
 int id nav_home 0x7f0a0149
+int id nav_host_fragment 0x7f0a0225
 int id nav_host_fragment_container 0x7f0a014a
 int id nav_logout 0x7f0a014b
 int id nav_view 0x7f0a014c
@@ -3582,7 +3585,6 @@ int layout design_text_input_start_icon 0x7f0d0031
 int layout fragment_belt_log 0x7f0d0032
 int layout fragment_grant_belt 0x7f0d0033
 int layout fragment_home 0x7f0d0034
-int layout fragments_host 0x7f0d0035
 int layout m3_alert_dialog 0x7f0d0036
 int layout m3_alert_dialog_actions 0x7f0d0037
 int layout m3_alert_dialog_title 0x7f0d0038
@@ -3635,6 +3637,7 @@ int layout mtrl_picker_text_input_date_range 0x7f0d0066
 int layout mtrl_search_bar 0x7f0d0067
 int layout mtrl_search_view 0x7f0d0068
 int layout navigation_header 0x7f0d0069
+int layout navigation_host 0x7f0d0074
 int layout notification_action 0x7f0d006a
 int layout notification_action_tombstone 0x7f0d006b
 int layout notification_template_custom_big 0x7f0d006c

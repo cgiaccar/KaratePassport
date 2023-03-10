@@ -19,6 +19,6 @@
         </androidx.appcompat.widget.Toolbar>
     </com.google.android.material.appbar.AppBarLayout>
 
-    <include layout="@layout/fragments_host" />
+    <include layout="@layout/navigation_host" />
 
 </androidx.coordinatorlayout.widget.CoordinatorLayout>

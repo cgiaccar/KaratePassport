@@ -42,14 +42,14 @@ public class MainActivity extends AppCompatActivity {
         setSupportActionBar(toolbar);
 
         NavHostFragment navHostFragment = (NavHostFragment)
-                getSupportFragmentManager().findFragmentById(R.id.fragments_host);
+                getSupportFragmentManager().findFragmentById(R.id.nav_host_fragment);
         NavController navController = navHostFragment.getNavController();
-        DrawerLayout drawerLayout = binding.drawerLayout; //the activity_main
+        DrawerLayout drawerLayout = binding.drawerLayout; //the activity_main.xml
         NavigationView navigationView = binding.navView;
 
         navigationView.getMenu().findItem(R.id.nav_logout).setOnMenuItemClickListener(menuItem -> {
             logout(binding.getRoot());
-            return false;
+            return true;
         });
 
         mAppBarConfiguration = new AppBarConfiguration.Builder(
@@ -85,7 +85,7 @@ public class MainActivity extends AppCompatActivity {
 
     @Override
     public boolean onSupportNavigateUp() {  // to make the menu icon work
-        NavController navController = Navigation.findNavController(this, R.id.fragments_host);
+        NavController navController = Navigation.findNavController(this, R.id.nav_host_fragment);
         return NavigationUI.navigateUp(navController, mAppBarConfiguration)
                 || super.onSupportNavigateUp();
     }
