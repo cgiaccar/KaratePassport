@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.text.TextUtils;
+import android.text.format.Time;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
@@ -15,8 +16,12 @@ import android.widget.Toast;
 
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.firestore.DocumentReference;
+import com.google.firebase.firestore.FieldValue;
 import com.google.firebase.firestore.FirebaseFirestore;
 
+import org.w3c.dom.Document;
+
+import java.util.Date;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -83,13 +88,20 @@ public class RegisterActivity extends AppCompatActivity {
                     Toast.makeText(RegisterActivity.this, "User created successfully!", Toast.LENGTH_SHORT).show();
                     // as soon as the user is created, we save the user data into the Firebase Firestore Database
                     userID = fAuth.getCurrentUser().getUid(); // get current user (currently registering user) unique ID
-                    DocumentReference documentReference = fStore.collection("users").document(userID); // creates a new user inside the collection of users using their unique ID
+                    DocumentReference usersReference = fStore.collection("users").document(userID); // creates a new user inside the collection of users using their unique ID
                     Map<String,Object> user = new HashMap<>(); // the most popular method to create new data is by using an hashmap
                     user.put("userName", userName);
                     user.put("passportNumber", passportNumber);
                     user.put("email", email);
+
+                    // automatically grants the white belt to a new user
+                    DocumentReference beltsReference = usersReference.collection("belts").document("belts");
+                    Map<String,Object> belt = new HashMap<>();
+                    belt.put("white", FieldValue.serverTimestamp());
+                    beltsReference.set(belt);
+
                     // for debug
-                    documentReference.set(user).addOnSuccessListener(unused -> {
+                    usersReference.set(user).addOnSuccessListener(unused -> {
                         Log.d(TAG, "onSuccess: user profile is created for " + userID); // log the success message in our logcat
                     }).addOnFailureListener(e -> Log.d(TAG, "onFailure: " + e));
                     startActivity(new Intent(getApplicationContext(), MainActivity.class));

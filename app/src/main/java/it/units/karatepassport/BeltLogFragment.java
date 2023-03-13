@@ -48,7 +48,7 @@ public class BeltLogFragment extends Fragment {
 
         documentReference.addSnapshotListener((documentSnapshot, e) -> {
             if ((e == null) || (documentSnapshot != null && documentSnapshot.exists())) {
-                Date timestamp = documentSnapshot.getTimestamp("fifth").toDate();
+                Date timestamp = documentSnapshot.getTimestamp("white").toDate();
                 String date = DateFormat.format("MMMM dd, yyyy", timestamp).toString();
                 beltHere.setText(date);
             }
