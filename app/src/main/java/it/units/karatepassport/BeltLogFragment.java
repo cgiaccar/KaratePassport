@@ -34,7 +34,7 @@ public class BeltLogFragment extends Fragment {
 
     @Override
     public void onViewCreated(View view, Bundle savedInstanceState) {
-        beltHere = getView().findViewById(R.id.write_the_belt_here);
+        beltHere = getView().findViewById(R.id.white_belt_date);
 
         // initialization of Auth e Firestore
         fAuth = FirebaseAuth.getInstance();
