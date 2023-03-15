@@ -61,7 +61,7 @@ public class BeltLogFragment extends Fragment {
     }
 
     @Override
-    public void onViewCreated(View view, Bundle savedInstanceState) {
+    public void onViewCreated(@NonNull View view, Bundle savedInstanceState) {
 
         // initialization of Auth e Firestore
         fAuth = FirebaseAuth.getInstance();
@@ -87,7 +87,7 @@ public class BeltLogFragment extends Fragment {
         try {
             Date timestamp = documentSnapshot.getTimestamp(rank).toDate();
             return DateFormat.format("MMMM dd, yyyy", timestamp).toString();
-        } catch(NullPointerException e){
+        } catch(NullPointerException e) {   // if rank not obtained yet, leave blank
             return "";
         }
     }

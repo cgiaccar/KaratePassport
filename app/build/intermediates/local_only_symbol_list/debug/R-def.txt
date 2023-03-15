@@ -26,6 +26,7 @@ id brown_belt_date
 id button
 id dan_table
 id drawer_layout
+id dropdown_list
 id eighth_dan_date
 id email
 id fifth_dan_date
@@ -58,6 +59,7 @@ id password
 id password_text
 id progressBar
 id progressBar2
+id progress_bar
 id registerBtn
 id second_dan_date
 id seventh_dan_date
@@ -78,6 +80,7 @@ layout activity_login
 layout activity_main
 layout activity_register
 layout app_bar
+layout dropdown_menu
 layout fragment_belt_log
 layout fragment_grant_belt
 layout fragment_home
