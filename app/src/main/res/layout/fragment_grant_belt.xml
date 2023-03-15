@@ -6,6 +6,18 @@
     android:layout_height="match_parent"
     tools:context=".GrantBeltFragment">
 
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="You are in the Grant a Belt fragment!"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.125" />
+
     <Spinner
         android:id="@+id/spinner"
         android:layout_width="match_parent"
@@ -20,17 +32,20 @@
         app:layout_constraintVertical_bias="0.245"
         android:visibility="invisible" />
 
-    <TextView
-        android:id="@+id/textView5"
+    <Button
+        android:id="@+id/grant_belt_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="You are in the Grant a Belt fragment!"
-        android:textSize="20sp"
+        android:backgroundTint="#8A9CF7"
+        android:textAllCaps="false"
+        android:text="Grant a belt!"
+        android:textColor="#002360"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.125" />
+        app:layout_constraintTop_toBottomOf="@+id/spinner"
+        app:layout_constraintVertical_bias="0.079" />
 
     <ProgressBar
         android:id="@+id/progress_bar"
@@ -39,7 +54,8 @@
         android:layout_height="wrap_content"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/spinner"
-        app:layout_constraintVertical_bias="0.22000003" />
+        app:layout_constraintVertical_bias="0.729" />
 </androidx.constraintlayout.widget.ConstraintLayout>

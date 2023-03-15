@@ -26,7 +26,6 @@ id brown_belt_date
 id button
 id dan_table
 id drawer_layout
-id dropdown_list
 id eighth_dan_date
 id email
 id fifth_dan_date
@@ -34,6 +33,7 @@ id first_dan_date
 id forgotPassword
 id fourth_dan_date
 id fragment_home
+id grant_belt_button
 id green_belt_date
 id imageView
 id kyu_table
@@ -64,6 +64,7 @@ id registerBtn
 id second_dan_date
 id seventh_dan_date
 id sixth_dan_date
+id spinner
 id tenth_dan_date
 id textLoginHere
 id textRegisterHere
@@ -80,12 +81,12 @@ layout activity_login
 layout activity_main
 layout activity_register
 layout app_bar
-layout dropdown_menu
 layout fragment_belt_log
 layout fragment_grant_belt
 layout fragment_home
 layout navigation_header
 layout navigation_host
+layout spinner_layout
 menu nav_item_list
 mipmap ic_launcher
 mipmap ic_launcher_round

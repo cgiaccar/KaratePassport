@@ -1,5 +1,9 @@
 [
     {
+        "merged": "/Users/Camilla/AndroidStudioProjects/KaratePassport/app/build/intermediates/merged_res/debug/layout_spinner_layout.xml.flat",
+        "source": "/Users/Camilla/AndroidStudioProjects/KaratePassport/app/src/main/res/layout/spinner_layout.xml"
+    },
+    {
         "merged": "/Users/Camilla/AndroidStudioProjects/KaratePassport/app/build/intermediates/merged_res/debug/layout_activity_main.xml.flat",
         "source": "/Users/Camilla/AndroidStudioProjects/KaratePassport/app/src/main/res/layout/activity_main.xml"
     },
@@ -18,10 +22,6 @@
     {
         "merged": "/Users/Camilla/AndroidStudioProjects/KaratePassport/app/build/intermediates/merged_res/debug/mipmap-hdpi_ic_launcher_round.webp.flat",
         "source": "/Users/Camilla/AndroidStudioProjects/KaratePassport/app/src/main/res/mipmap-hdpi/ic_launcher_round.webp"
-    },
-    {
-        "merged": "/Users/Camilla/AndroidStudioProjects/KaratePassport/app/build/intermediates/merged_res/debug/layout_dropdown_menu.xml.flat",
-        "source": "/Users/Camilla/AndroidStudioProjects/KaratePassport/app/src/main/res/layout/dropdown_menu.xml"
     },
     {
         "merged": "/Users/Camilla/AndroidStudioProjects/KaratePassport/app/build/intermediates/merged_res/debug/mipmap-xxhdpi_ic_launcher.webp.flat",

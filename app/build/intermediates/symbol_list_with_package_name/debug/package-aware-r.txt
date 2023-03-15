@@ -3085,7 +3085,6 @@ id dragRight
 id dragStart
 id dragUp
 id drawer_layout
-id dropdown_list
 id dropdown_menu
 id easeIn
 id easeInOut
@@ -3128,6 +3127,7 @@ id fullscreen_header
 id ghost_view
 id ghost_view_holder
 id gone
+id grant_belt_button
 id graph
 id graph_wrap
 id green_belt_date
@@ -3369,6 +3369,7 @@ id snapMargins
 id south
 id spacer
 id special_effects_controller_view_tag
+id spinner
 id spline
 id split_action_bar
 id spread
@@ -3602,7 +3603,6 @@ layout design_navigation_menu
 layout design_navigation_menu_item
 layout design_text_input_end_icon
 layout design_text_input_start_icon
-layout dropdown_menu
 layout fragment_belt_log
 layout fragment_grant_belt
 layout fragment_home
@@ -3668,6 +3668,7 @@ layout notification_template_part_time
 layout select_dialog_item_material
 layout select_dialog_multichoice_material
 layout select_dialog_singlechoice_material
+layout spinner_layout
 layout support_simple_spinner_dropdown_item
 menu nav_item_list
 mipmap ic_launcher

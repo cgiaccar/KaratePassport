@@ -88,20 +88,20 @@ public class RegisterActivity extends AppCompatActivity {
                     Toast.makeText(RegisterActivity.this, "User created successfully!", Toast.LENGTH_SHORT).show();
                     // as soon as the user is created, we save the user data into the Firebase Firestore Database
                     userID = fAuth.getCurrentUser().getUid(); // get current user (currently registering user) unique ID
-                    DocumentReference usersReference = fStore.collection("users").document(userID); // creates a new user inside the collection of users using their unique ID
+                    DocumentReference userReference = fStore.collection("users").document(userID); // creates a new user inside the collection of users using their unique ID
                     Map<String,Object> user = new HashMap<>(); // the most popular method to create new data is by using an hashmap
                     user.put("userName", userName);
                     user.put("passportNumber", passportNumber);
                     user.put("email", email);
 
                     // automatically grants the white belt to a new user
-                    DocumentReference beltsReference = usersReference.collection("belts").document("belts");
+                    DocumentReference beltsReference = userReference.collection("belts").document("belts");
                     Map<String,Object> belt = new HashMap<>();
                     belt.put("white", FieldValue.serverTimestamp());
                     beltsReference.set(belt);
 
                     // for debug
-                    usersReference.set(user).addOnSuccessListener(unused -> {
+                    userReference.set(user).addOnSuccessListener(unused -> {
                         Log.d(TAG, "onSuccess: user profile is created for " + userID); // log the success message in our logcat
                     }).addOnFailureListener(e -> Log.d(TAG, "onFailure: " + e));
                     startActivity(new Intent(getApplicationContext(), MainActivity.class));

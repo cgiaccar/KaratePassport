@@ -32,9 +32,9 @@ public class HomeFragment extends Fragment {
 
     @Override
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
-        number = getView().findViewById(R.id.mainPassportNumber);
-        name = getView().findViewById(R.id.mainUserName);
-        email = getView().findViewById(R.id.mainEmail);
+        number = view.findViewById(R.id.mainPassportNumber);
+        name = view.findViewById(R.id.mainUserName);
+        email = view.findViewById(R.id.mainEmail);
 
         // initialization of Auth e Firestore
         fAuth = FirebaseAuth.getInstance();
