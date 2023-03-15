@@ -24,14 +24,13 @@ public class GrantBeltFragment extends Fragment {
 
     FirebaseFirestore fStore;
     ProgressBar progressBar;
-    Spinner dropdown;
+    Spinner spinner;  //dropdown menu
     ArrayAdapter<String> adapter;
 
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        View view = inflater.inflate(R.layout.fragment_grant_belt, container, false);
-        return view;
+        return inflater.inflate(R.layout.fragment_grant_belt, container, false);
     }
 
     @Override
@@ -39,9 +38,9 @@ public class GrantBeltFragment extends Fragment {
         fStore = FirebaseFirestore.getInstance();
         progressBar = getView().findViewById(R.id.progress_bar);
 
-        dropdown = getView().findViewById(R.id.dropdown_list);
+        spinner = getView().findViewById(R.id.spinner);
         ArrayList<String> userNames = new ArrayList<>();
-        adapter = new ArrayAdapter<>(getActivity(), R.layout.dropdown_menu, userNames);
+        adapter = new ArrayAdapter<>(getActivity(), R.layout.spinner_layout, userNames);
 
         CollectionReference usersCollection = fStore.collection("users");
         usersCollection.get().addOnCompleteListener(task -> {
@@ -49,9 +48,9 @@ public class GrantBeltFragment extends Fragment {
                 for (QueryDocumentSnapshot document : task.getResult()) {
                     userNames.add(document.getString("userName"));
                 }
-                dropdown.setVisibility(View.VISIBLE);
+                spinner.setVisibility(View.VISIBLE);
                 progressBar.setVisibility(View.GONE);
-                dropdown.setAdapter(adapter);
+                spinner.setAdapter(adapter);
             }
         });
     }
