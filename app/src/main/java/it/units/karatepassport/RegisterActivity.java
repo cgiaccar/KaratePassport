@@ -100,6 +100,12 @@ public class RegisterActivity extends AppCompatActivity {
                     belt.put("white", FieldValue.serverTimestamp());
                     beltsReference.set(belt);
 
+                    // the passport number is stored in the collection for uniqueness checking
+                    DocumentReference passportReference = fStore.collection("passports").document(passportNumber);
+                    Map<String,Object> passport = new HashMap<>();
+                    passport.put("passportNumber", passportNumber);
+                    passportReference.set(passport);
+
                     // for debug
                     userReference.set(user).addOnSuccessListener(unused -> {
                         Log.d(TAG, "onSuccess: user profile is created for " + userID); // log the success message in our logcat
