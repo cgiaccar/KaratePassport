@@ -43,7 +43,7 @@ public class RegisterActivity extends AppCompatActivity {
         mEmail = findViewById(R.id.email);
         mUsername = findViewById(R.id.username);
         mPassportNumber = findViewById(R.id.passportNumber);
-        mPassword = findViewById(R.id.password);
+        mPassword = findViewById(R.id.password_text);
         mRegisterBtn = findViewById(R.id.registerBtn);
         mLoginHereBtn = findViewById(R.id.textLoginHere);
         progressBar = findViewById(R.id.progressBar);
