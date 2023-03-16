@@ -87,7 +87,7 @@ public class GrantBeltFragment extends Fragment {
                                     DocumentReference beltsReference = userReference.collection("belts").document("belts");
                                     Map<String,Object> belt = new HashMap<>();
                                     belt.put(rankField, FieldValue.serverTimestamp());
-                                    beltsReference.set(belt);
+                                    beltsReference.update(belt);
                                 }
                             } else {
                                 Log.d(TAG, "Error getting documents: ", task.getException());
