@@ -60,11 +60,12 @@ id password_text
 id progressBar
 id progressBar2
 id progress_bar
+id rank_spinner
 id registerBtn
 id second_dan_date
+id select_user_button
 id seventh_dan_date
 id sixth_dan_date
-id spinner
 id tenth_dan_date
 id textLoginHere
 id textRegisterHere
@@ -73,6 +74,7 @@ id textView2
 id textView3
 id textView5
 id third_dan_date
+id user_spinner
 id username
 id welcomeTitle
 id white_belt_date

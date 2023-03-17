@@ -3298,6 +3298,7 @@ int id progress_bar 0x7f0a0187
 int id progress_circular 0x7f0a0188
 int id progress_horizontal 0x7f0a0189
 int id radio 0x7f0a018a
+int id rank_spinner 0x7f0a023b
 int id ratio 0x7f0a018b
 int id rectangles 0x7f0a018c
 int id registerBtn 0x7f0a018d
@@ -3345,6 +3346,7 @@ int id search_view_toolbar_container 0x7f0a01b6
 int id search_voice_btn 0x7f0a01b7
 int id second_dan_date 0x7f0a01b8
 int id select_dialog_listview 0x7f0a01b9
+int id select_user_button 0x7f0a023c
 int id selected 0x7f0a01ba
 int id selection_type 0x7f0a01bb
 int id seventh_dan_date 0x7f0a01bc
@@ -3368,7 +3370,6 @@ int id snapMargins 0x7f0a01cd
 int id south 0x7f0a01ce
 int id spacer 0x7f0a01cf
 int id special_effects_controller_view_tag 0x7f0a01d0
-int id spinner 0x7f0a023a
 int id spline 0x7f0a01d1
 int id split_action_bar 0x7f0a01d2
 int id spread 0x7f0a01d3
@@ -3449,6 +3450,7 @@ int id uniform 0x7f0a021e
 int id unlabeled 0x7f0a021f
 int id up 0x7f0a0220
 int id useLogo 0x7f0a0221
+int id user_spinner 0x7f0a023d
 int id username 0x7f0a0222
 int id vertical_only 0x7f0a0223
 int id view_offset_helper 0x7f0a0224

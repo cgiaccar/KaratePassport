@@ -34,11 +34,11 @@ public class GrantBeltFragment extends Fragment {
 
     FirebaseFirestore fStore;
     ProgressBar progressBar;
-    Spinner spinner;  //dropdown menu
-    ArrayList<String> userNames;
-    ArrayAdapter<String> adapter;
-    Button grantBeltButton;
-    String selectedUser;
+    Spinner userSpinner, rankSpinner;  //dropdown menus
+    ArrayList<String> userNames, ranks;
+    ArrayAdapter<String> userAdapter, rankAdapter;
+    Button grantBeltButton, selectUserButton;
+    String selectedUser, selectedRank;
 
     @Nullable
     @Override
@@ -50,10 +50,17 @@ public class GrantBeltFragment extends Fragment {
     public void onViewCreated(@NonNull View view, Bundle savedInstanceState) {
         fStore = FirebaseFirestore.getInstance();
         progressBar = view.findViewById(R.id.progress_bar);
-        spinner = view.findViewById(R.id.spinner);
+        userSpinner = view.findViewById(R.id.user_spinner);
+        rankSpinner = view.findViewById(R.id.rank_spinner);
+        selectUserButton = view.findViewById(R.id.select_user_button);
         grantBeltButton = view.findViewById(R.id.grant_belt_button);
         userNames = new ArrayList<>();
-        adapter = new ArrayAdapter<>(getActivity(), R.layout.spinner_layout, userNames);
+        ranks = new ArrayList<>();
+        for (BeltLogFragment.Rank rank : BeltLogFragment.Rank.values()) {
+            ranks.add(rank.fieldDB);
+        }
+        userAdapter = new ArrayAdapter<>(getActivity(), R.layout.spinner_layout, userNames);
+        rankAdapter = new ArrayAdapter<>(getActivity(), R.layout.spinner_layout, ranks);
 
         CollectionReference usersCollection = fStore.collection("users");
         usersCollection.get().addOnCompleteListener(task -> {
@@ -61,38 +68,46 @@ public class GrantBeltFragment extends Fragment {
                 for (QueryDocumentSnapshot document : task.getResult()) {
                     userNames.add(document.getString("userName"));
                 }
-                spinner.setVisibility(View.VISIBLE);
+                userSpinner.setVisibility(View.VISIBLE);
                 progressBar.setVisibility(View.GONE);
-                spinner.setAdapter(adapter);
+                userSpinner.setAdapter(userAdapter);
             }
         });
 
-        spinner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
+        rankSpinner.setAdapter(rankAdapter);
+
+        userSpinner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
-                selectedUser = (String) parent.getItemAtPosition(position);
+                rankSpinner.setVisibility(View.GONE);
+                grantBeltButton.setVisibility(View.GONE);
             }
             public void onNothingSelected(AdapterView<?> parent) {
             }
         });
 
-        String rankField = "blue";  //TODO should let the master chose the rank (another spinner?)
+        selectUserButton.setOnClickListener(unused -> {
+            selectedUser = userSpinner.getSelectedItem().toString();
+            rankSpinner.setVisibility(View.VISIBLE);
+            grantBeltButton.setVisibility(View.VISIBLE);
+        });
 
-        grantBeltButton.setOnClickListener(unused ->
-                usersCollection.whereEqualTo("userName", selectedUser).get()    //TODO should be user passport number
-                        .addOnCompleteListener(task -> {
-                            if (task.isSuccessful()) {
-                                Toast.makeText(getActivity(), "Rank granted successfully!", Toast.LENGTH_SHORT).show();
-                                for (QueryDocumentSnapshot document : task.getResult()) {
-                                    DocumentReference userReference = usersCollection.document(document.getId());
-                                    DocumentReference beltsReference = userReference.collection("belts").document("belts");
-                                    Map<String,Object> belt = new HashMap<>();
-                                    belt.put(rankField, FieldValue.serverTimestamp());
-                                    beltsReference.update(belt);
-                                }
-                            } else {
-                                Log.d(TAG, "Error getting documents: ", task.getException());
+        grantBeltButton.setOnClickListener(unused -> {
+            selectedRank = rankSpinner.getSelectedItem().toString();
+            usersCollection.whereEqualTo("userName", selectedUser).get()    //TODO should be user passport number
+                    .addOnCompleteListener(task -> {
+                        if (task.isSuccessful()) {
+                            Toast.makeText(getActivity(), "Rank granted successfully!", Toast.LENGTH_SHORT).show();
+                            for (QueryDocumentSnapshot document : task.getResult()) {
+                                DocumentReference userReference = usersCollection.document(document.getId());
+                                DocumentReference beltsReference = userReference.collection("belts").document("belts");
+                                Map<String, Object> belt = new HashMap<>();
+                                belt.put(selectedRank, FieldValue.serverTimestamp());
+                                beltsReference.update(belt);
                             }
-                        })
-        );
+                        } else {
+                            Log.d(TAG, "Error getting documents: ", task.getException());
+                        }
+                    });
+        });
     }
 }

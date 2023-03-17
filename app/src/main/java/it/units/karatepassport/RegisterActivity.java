@@ -36,7 +36,7 @@ public class RegisterActivity extends AppCompatActivity {
     DocumentReference passportReference;
 
     @Override
-    protected synchronized void onCreate(Bundle savedInstanceState) {
+    protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_register);
 
