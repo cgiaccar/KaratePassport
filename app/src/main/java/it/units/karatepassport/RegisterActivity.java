@@ -110,6 +110,7 @@ public class RegisterActivity extends AppCompatActivity {
                                 user.put("userName", userName);
                                 user.put("passportNumber", passportNumber);
                                 user.put("email", email);
+                                userReference.set(user);
 
                                 // automatically grants the white belt to a new user
                                 DocumentReference beltsReference = userReference.collection("belts").document("belts");
@@ -118,9 +119,9 @@ public class RegisterActivity extends AppCompatActivity {
                                 beltsReference.set(belt);
 
                                 // the passport number is stored in the collection for uniqueness checking
-                                Map<String, Object> passport = new HashMap<>();
-                                passport.put("passportNumber", passportNumber);
-                                passportReference.set(passport);
+                                Map<String, Object> passportOwner = new HashMap<>();
+                                passportOwner.put("owner", userID);
+                                passportReference.set(passportOwner);
 
                                 startActivity(new Intent(getApplicationContext(), MainActivity.class));
                             } else {
