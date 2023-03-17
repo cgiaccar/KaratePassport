@@ -35,6 +35,7 @@ public class HomeFragment extends Fragment {
         number = view.findViewById(R.id.mainPassportNumber);
         name = view.findViewById(R.id.mainUserName);
         email = view.findViewById(R.id.mainEmail);
+        //TODO show newest rank?
 
         // initialization of Auth e Firestore
         fAuth = FirebaseAuth.getInstance();

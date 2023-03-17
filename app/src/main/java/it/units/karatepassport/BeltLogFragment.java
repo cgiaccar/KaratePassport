@@ -16,38 +16,10 @@ import com.google.firebase.firestore.FirebaseFirestore;
 
 import javax.annotation.Nullable;
 import org.checkerframework.checker.nullness.qual.NonNull;
-import org.w3c.dom.Text;
 
 import java.util.Date;
 
 public class BeltLogFragment extends Fragment {
-
-    enum Rank {
-        WHITE(R.id.white_belt_date, "white"),
-        YELLOW(R.id.yellow_belt_date, "yellow"),
-        ORANGE(R.id.orange_belt_date,"orange"),
-        GREEN(R.id.green_belt_date,"green"),
-        BLUE(R.id.blue_belt_date, "blue"),
-        BROWN(R.id.brown_belt_date,"brown"),
-        FIRST(R.id.first_dan_date,"first"),
-        SECOND(R.id.second_dan_date,"second"),
-        THIRD(R.id.third_dan_date,"third"),
-        FOURTH(R.id.fourth_dan_date, "fourth"),
-        FIFTH(R.id.fifth_dan_date,"fifth"),
-        SIXTH(R.id.sixth_dan_date,"sixth"),
-        SEVENTH(R.id.seventh_dan_date,"seventh"),
-        EIGHTH(R.id.eighth_dan_date,"eighth"),
-        NINTH(R.id.ninth_dan_date,"ninth"),
-        TENTH(R.id.tenth_dan_date,"tenth");
-
-        public final int date;
-        public final String fieldDB;
-
-        Rank(int date, String fieldDB) {
-            this.date = date;
-            this.fieldDB = fieldDB;
-        }
-    }
 
     FirebaseAuth fAuth;
     FirebaseFirestore fStore;
@@ -76,7 +48,7 @@ public class BeltLogFragment extends Fragment {
             if ((e == null) || (documentSnapshot != null && documentSnapshot.exists())) {
                 for(Rank rank : Rank.values()) {
                     TextView textView = view.findViewById(rank.date);
-                    textView.setText((getNonNullDate(documentSnapshot, rank.fieldDB)));
+                    textView.setText((getNonNullDate(documentSnapshot, rank.name)));
                 }
             }
         });
