@@ -46,9 +46,9 @@ public class BeltLogFragment extends Fragment {
 
         documentReference.addSnapshotListener((documentSnapshot, e) -> {
             if ((e == null) || (documentSnapshot != null && documentSnapshot.exists())) {
-                for(Rank rank : Rank.values()) {
-                    TextView textView = view.findViewById(rank.date);
-                    textView.setText((getNonNullDate(documentSnapshot, rank.name)));
+                for(Belt belt : Belt.values()) {
+                    TextView textView = view.findViewById(belt.date);
+                    textView.setText((getNonNullDate(documentSnapshot, belt.rank)));
                 }
             }
         });

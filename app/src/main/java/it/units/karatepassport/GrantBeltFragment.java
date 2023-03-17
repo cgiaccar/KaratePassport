@@ -56,8 +56,8 @@ public class GrantBeltFragment extends Fragment {
         grantBeltButton = view.findViewById(R.id.grant_belt_button);
         userNames = new ArrayList<>();
         ranks = new ArrayList<>();
-        for (Rank rank : Rank.values()) {
-            ranks.add(rank.name);
+        for (Belt belt : Belt.values()) {
+            ranks.add(belt.rank);
         }
         userAdapter = new ArrayAdapter<>(getActivity(), R.layout.spinner_layout, userNames);
         rankAdapter = new ArrayAdapter<>(getActivity(), R.layout.spinner_layout, ranks);

@@ -1,6 +1,6 @@
 package it.units.karatepassport;
 
-public enum Rank {
+public enum Belt {
     WHITE(R.id.white_belt_date, "White belt"),
     YELLOW(R.id.yellow_belt_date, "Yellow belt"),
     ORANGE(R.id.orange_belt_date, "Orange belt"),
@@ -19,10 +19,10 @@ public enum Rank {
     TENTH(R.id.tenth_dan_date, "Tenth dan");
 
     public final int date;
-    public final String name;
+    public final String rank;
 
-    Rank(int date, String name) {
+    Belt(int date, String rank) {
         this.date = date;
-        this.name = name;
+        this.rank = rank;
     }
 }

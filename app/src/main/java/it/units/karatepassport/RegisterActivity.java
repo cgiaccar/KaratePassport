@@ -21,7 +21,6 @@ import com.google.firebase.firestore.FirebaseFirestore;
 
 import java.util.HashMap;
 import java.util.Map;
-import java.util.concurrent.atomic.AtomicBoolean;
 
 public class RegisterActivity extends AppCompatActivity {
 
@@ -117,7 +116,7 @@ public class RegisterActivity extends AppCompatActivity {
                                 // automatically grants the white belt to a new user
                                 DocumentReference beltsReference = userReference.collection("belts").document("belts");
                                 Map<String, Object> belt = new HashMap<>();
-                                belt.put(Rank.WHITE.name, FieldValue.serverTimestamp());
+                                belt.put(Belt.WHITE.rank, FieldValue.serverTimestamp());
                                 beltsReference.set(belt);
 
                                 // the passport number is stored in the collection for uniqueness checking
