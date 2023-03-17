@@ -1,7 +1,5 @@
 package it.units.karatepassport;
 
-import static it.units.karatepassport.RegisterActivity.TAG;
-
 import androidx.fragment.app.Fragment;
 
 import android.os.Bundle;
@@ -32,6 +30,7 @@ import javax.annotation.Nullable;
 
 public class GrantBeltFragment extends Fragment {
 
+    private static final String TAG = "TAG" ;
     FirebaseFirestore fStore;
     ProgressBar progressBar;
     Spinner userSpinner, rankSpinner;  //dropdown menus
