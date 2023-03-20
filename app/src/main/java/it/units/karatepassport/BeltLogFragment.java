@@ -10,9 +10,9 @@ import android.view.ViewGroup;
 import android.widget.TextView;
 
 import com.google.firebase.auth.FirebaseAuth;
-import com.google.firebase.firestore.DocumentReference;
-import com.google.firebase.firestore.DocumentSnapshot;
+import com.google.firebase.firestore.CollectionReference;
 import com.google.firebase.firestore.FirebaseFirestore;
+import com.google.firebase.firestore.QueryDocumentSnapshot;
 
 import javax.annotation.Nullable;
 import org.checkerframework.checker.nullness.qual.NonNull;
@@ -34,32 +34,24 @@ public class BeltLogFragment extends Fragment {
     @Override
     public void onViewCreated(@NonNull View view, Bundle savedInstanceState) {
 
-        // initialization of Auth e Firestore
+        // initialization of Auth and Firestore
         fAuth = FirebaseAuth.getInstance();
         fStore = FirebaseFirestore.getInstance();
 
         userID = fAuth.getCurrentUser().getUid();
 
-        // this is the reference to what we want to retrieve, to the specific user
-        DocumentReference documentReference = fStore.collection("users")
-                .document(userID).collection("belts").document("belts");
-
-        documentReference.addSnapshotListener((documentSnapshot, e) -> {
-            if ((e == null) || (documentSnapshot != null && documentSnapshot.exists())) {
-                for(Belt belt : Belt.values()) {
-                    TextView textView = view.findViewById(belt.date);
-                    textView.setText((getNonNullDate(documentSnapshot, belt.rank)));
+        CollectionReference beltsReference = fStore.collection("users")
+                .document(userID).collection("belts");
+        beltsReference.get().addOnCompleteListener(task -> {
+            if (task.isSuccessful()) {
+                for (QueryDocumentSnapshot document : task.getResult()) {
+                    String rank = document.getId();
+                    Belt belt = Belt.getByRank(rank);
+                    TextView textView = view.findViewById(belt.textView);
+                    Date date = document.getTimestamp("timestamp").toDate();
+                    textView.setText(DateFormat.format("MMMM dd, yyyy", date).toString());
                 }
             }
         });
-    }
-
-    private String getNonNullDate(DocumentSnapshot documentSnapshot, String rank){
-        try {
-            Date timestamp = documentSnapshot.getTimestamp(rank).toDate();
-            return DateFormat.format("MMMM dd, yyyy", timestamp).toString();
-        } catch(NullPointerException e) {   // if rank not obtained yet, leave blank
-            return "";
-        }
     }
 }

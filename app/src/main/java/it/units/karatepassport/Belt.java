@@ -1,5 +1,8 @@
 package it.units.karatepassport;
 
+import java.util.HashMap;
+import java.util.Map;
+
 public enum Belt {
     WHITE(R.id.white_belt_date, "White belt"),
     YELLOW(R.id.yellow_belt_date, "Yellow belt"),
@@ -18,11 +21,22 @@ public enum Belt {
     NINTH(R.id.ninth_dan_date, "Ninth dan"),
     TENTH(R.id.tenth_dan_date, "Tenth dan");
 
-    public final int date;
+    public final int textView;
     public final String rank;
+    private static final Map<String, Belt> map;
+    static {
+        map = new HashMap<>();
+        for (Belt belt : values()) {
+            map.put(belt.rank, belt);
+        }
+    }
 
-    Belt(int date, String rank) {
-        this.date = date;
+    Belt(int textView, String rank) {
+        this.textView = textView;
         this.rank = rank;
+    }
+
+    public static Belt getByRank(String rank){
+        return map.get(rank);
     }
 }
