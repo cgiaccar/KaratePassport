@@ -38,6 +38,7 @@ id grant_belt_button
 id green_belt_date
 id imageView
 id kyu_table
+id log_progress_bar
 id loggedAs
 id loginBtn
 id logout_item

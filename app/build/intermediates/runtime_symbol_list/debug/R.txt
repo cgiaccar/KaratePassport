@@ -3171,6 +3171,7 @@ int id linear 0x7f0a0107
 int id listMode 0x7f0a0108
 int id list_item 0x7f0a0109
 int id locale 0x7f0a010a
+int id log_progress_bar 0x7f0a023f
 int id loggedAs 0x7f0a010b
 int id loginBtn 0x7f0a010c
 int id logout_item 0x7f0a010d

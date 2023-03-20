@@ -3172,6 +3172,7 @@ id linear
 id listMode
 id list_item
 id locale
+id log_progress_bar
 id loggedAs
 id loginBtn
 id logout_item

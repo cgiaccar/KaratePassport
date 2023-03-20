@@ -7,6 +7,8 @@ import android.text.format.DateFormat;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ProgressBar;
+import android.widget.TableLayout;
 import android.widget.TextView;
 
 import com.google.firebase.auth.FirebaseAuth;
@@ -24,6 +26,8 @@ public class BeltLogFragment extends Fragment {
     FirebaseAuth fAuth;
     FirebaseFirestore fStore;
     String userID;
+    ProgressBar progressBar;
+    TableLayout kyuTable, danTable;
 
     @Nullable
     @Override
@@ -39,6 +43,9 @@ public class BeltLogFragment extends Fragment {
         fStore = FirebaseFirestore.getInstance();
 
         userID = fAuth.getCurrentUser().getUid();
+        progressBar = view.findViewById(R.id.log_progress_bar);
+        kyuTable = view.findViewById(R.id.kyu_table);
+        danTable = view.findViewById(R.id.dan_table);
 
         CollectionReference beltsReference = fStore.collection("users")
                 .document(userID).collection("belts");
@@ -51,6 +58,9 @@ public class BeltLogFragment extends Fragment {
                     Date date = document.getTimestamp("timestamp").toDate();
                     textView.setText(DateFormat.format("MMMM dd, yyyy", date).toString());
                 }
+                progressBar.setVisibility(View.GONE);
+                kyuTable.setVisibility(View.VISIBLE);
+                danTable.setVisibility(View.VISIBLE);
             }
         });
     }
