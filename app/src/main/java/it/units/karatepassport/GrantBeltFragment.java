@@ -23,6 +23,7 @@ import com.google.firebase.firestore.QueryDocumentSnapshot;
 import org.checkerframework.checker.nullness.qual.NonNull;
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -67,6 +68,7 @@ public class GrantBeltFragment extends Fragment {
                 for (QueryDocumentSnapshot document : task.getResult()) {
                     userNames.add(document.getString("userName"));
                 }
+                Collections.sort(userNames);
                 userSpinner.setVisibility(View.VISIBLE);
                 progressBar.setVisibility(View.GONE);
                 userSpinner.setAdapter(userAdapter);
@@ -106,6 +108,8 @@ public class GrantBeltFragment extends Fragment {
                         } else {
                             Log.d(TAG, "Error getting documents: ", task.getException());
                         }
+                        rankSpinner.setVisibility(View.GONE);
+                        grantBeltButton.setVisibility(View.GONE);
                     });
         });
     }
