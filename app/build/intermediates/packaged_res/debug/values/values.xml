@@ -26,7 +26,7 @@
     <color name="teal_700">#FF018786</color>
     <color name="white">#FFFFFFFF</color>
     <string name="app_name">Karate Passport</string>
-    <string name="current_belt">Your current belt is %1$s</string>
+    <string name="current_belt">Current rank: %1$s</string>
     <string name="default_web_client_id" translatable="false">348949237298-9fe3tdun2da1unse6akckinsu5lqv02h.apps.googleusercontent.com</string>
     <string name="firebase_database_url" translatable="false">https://karatepassport-bac6b-default-rtdb.europe-west1.firebasedatabase.app</string>
     <string name="gcm_defaultSenderId" translatable="false">348949237298</string>

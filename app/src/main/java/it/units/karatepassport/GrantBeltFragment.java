@@ -98,6 +98,9 @@ public class GrantBeltFragment extends Fragment {
                             Toast.makeText(getActivity(), "Rank granted successfully!", Toast.LENGTH_SHORT).show();
                             for (QueryDocumentSnapshot document : task.getResult()) {
                                 DocumentReference userReference = usersCollection.document(document.getId());
+                                Map<String, Object> user = new HashMap<>(); // the most popular method to create new data is by using an hashmap
+                                user.put("currentBelt", selectedRank);
+                                userReference.update(user);
                                 DocumentReference beltsReference = userReference.collection("belts").document(selectedRank);
                                 Map<String, Object> belt = new HashMap<>();
                                 belt.put("timestamp", FieldValue.serverTimestamp());

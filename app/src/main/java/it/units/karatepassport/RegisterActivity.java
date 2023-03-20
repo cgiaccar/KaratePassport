@@ -110,6 +110,7 @@ public class RegisterActivity extends AppCompatActivity {
                                 user.put("userName", userName);
                                 user.put("passportNumber", passportNumber);
                                 user.put("email", email);
+                                user.put("currentBelt", Belt.WHITE.rank);
                                 userReference.set(user);
 
                                 // automatically grants the white belt to a new user

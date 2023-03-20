@@ -58,23 +58,10 @@ public class HomeFragment extends Fragment {
                 number.setText(documentSnapshot.getString("passportNumber"));
                 name.setText(documentSnapshot.getString("userName"));
                 email.setText(documentSnapshot.getString("email"));
+                String snapshotBelt = documentSnapshot.getString("currentBelt");
+                currentBelt.setText(getString(R.string.current_belt, snapshotBelt));
             }
         });
-
-        documentReference.collection("belts")
-                .orderBy("timestamp", Query.Direction.DESCENDING)
-                .limit(1)
-                .get()
-                .addOnCompleteListener(new OnCompleteListener<QuerySnapshot>() {
-                    @Override
-                    public void onComplete(@NonNull Task<QuerySnapshot> task) {
-                        if (task.isSuccessful()) {
-                            for (QueryDocumentSnapshot document : task.getResult()) {
-                                currentBelt.setText(getString(R.string.current_belt, document.getId()));
-                            }
-                        }
-                    }
-                });
     }
 
 }
