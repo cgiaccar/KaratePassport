@@ -3,7 +3,6 @@ package it.units.karatepassport;
 import androidx.fragment.app.Fragment;
 
 import android.os.Bundle;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -31,7 +30,6 @@ import javax.annotation.Nullable;
 
 public class GrantBeltFragment extends Fragment {
 
-    private static final String TAG = "TAG" ;
     FirebaseFirestore fStore;
     ProgressBar progressBar;
     Spinner passportsSpinner, ranksSpinner;  //dropdown menus
@@ -100,13 +98,13 @@ public class GrantBeltFragment extends Fragment {
                             Toast.makeText(getActivity(), "Rank granted successfully!", Toast.LENGTH_SHORT).show();
                             for (QueryDocumentSnapshot document : task.getResult()) {
                                 DocumentReference userReference = usersCollection.document(document.getId());
-                                DocumentReference beltsReference = userReference.collection("belts").document("belts");
+                                DocumentReference beltsReference = userReference.collection("belts").document(selectedRank);
                                 Map<String, Object> belt = new HashMap<>();
-                                belt.put(selectedRank, FieldValue.serverTimestamp());
-                                beltsReference.update(belt);
+                                belt.put("timestamp", FieldValue.serverTimestamp());
+                                beltsReference.set(belt);
                             }
                         } else {
-                            Log.d(TAG, "Error getting documents: ", task.getException());
+                            Toast.makeText(getActivity(), "Error getting documents: " + task.getException().getMessage(), Toast.LENGTH_SHORT).show();
                         }
                         ranksSpinner.setVisibility(View.GONE);
                         grantBeltButton.setVisibility(View.GONE);

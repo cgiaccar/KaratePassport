@@ -113,9 +113,9 @@ public class RegisterActivity extends AppCompatActivity {
                                 userReference.set(user);
 
                                 // automatically grants the white belt to a new user
-                                DocumentReference beltsReference = userReference.collection("belts").document("belts");
+                                DocumentReference beltsReference = userReference.collection("belts").document(Belt.WHITE.rank);
                                 Map<String, Object> belt = new HashMap<>();
-                                belt.put(Belt.WHITE.rank, FieldValue.serverTimestamp());
+                                belt.put("timestamp", FieldValue.serverTimestamp());
                                 beltsReference.set(belt);
 
                                 // the passport number is stored in the collection for uniqueness checking
