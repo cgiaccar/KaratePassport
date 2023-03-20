@@ -3049,6 +3049,7 @@ int id cos 0x7f0a008e
 int id counterclockwise 0x7f0a008f
 int id cradle 0x7f0a0090
 int id currentState 0x7f0a0091
+int id current_belt 0x7f0a023e
 int id custom 0x7f0a0092
 int id customPanel 0x7f0a0093
 int id cut 0x7f0a0094
@@ -3736,6 +3737,7 @@ int string common_open_on_phone 0x7f140037
 int string common_signin_button_text 0x7f140038
 int string common_signin_button_text_long 0x7f140039
 int string copy_toast_msg 0x7f14003a
+int string current_belt 0x7f1400bc
 int string default_web_client_id 0x7f14003b
 int string error_a11y_label 0x7f14003c
 int string error_icon_content_description 0x7f14003d

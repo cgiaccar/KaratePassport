@@ -24,6 +24,7 @@ id app_bar
 id blue_belt_date
 id brown_belt_date
 id button
+id current_belt
 id dan_table
 id drawer_layout
 id eighth_dan_date
@@ -94,6 +95,7 @@ mipmap ic_launcher
 mipmap ic_launcher_round
 navigation navigation_graph
 string app_name
+string current_belt
 string default_web_client_id
 string firebase_database_url
 string gcm_defaultSenderId

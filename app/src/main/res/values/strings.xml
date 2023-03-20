@@ -1,4 +1,5 @@
 <resources>
     <string name="app_name">Karate Passport</string>
     <string name="logged_as">Logged in as %1$s</string>
+    <string name="current_belt">Your current belt is %1$s</string>
 </resources>

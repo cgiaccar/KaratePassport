@@ -8,9 +8,14 @@ import android.widget.TextView;
 
 import androidx.fragment.app.Fragment;
 
+import com.google.android.gms.tasks.OnCompleteListener;
+import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.firestore.DocumentReference;
 import com.google.firebase.firestore.FirebaseFirestore;
+import com.google.firebase.firestore.Query;
+import com.google.firebase.firestore.QueryDocumentSnapshot;
+import com.google.firebase.firestore.QuerySnapshot;
 
 import org.checkerframework.checker.nullness.qual.NonNull;
 
@@ -18,7 +23,7 @@ import javax.annotation.Nullable;
 
 public class HomeFragment extends Fragment {
 
-    TextView name,email,number;
+    TextView name,email,number,currentBelt;
     FirebaseAuth fAuth;
     FirebaseFirestore fStore;
     String userID;
@@ -35,7 +40,7 @@ public class HomeFragment extends Fragment {
         number = view.findViewById(R.id.mainPassportNumber);
         name = view.findViewById(R.id.mainUserName);
         email = view.findViewById(R.id.mainEmail);
-        //TODO show newest rank?
+        currentBelt = view.findViewById(R.id.current_belt);
 
         // initialization of Auth e Firestore
         fAuth = FirebaseAuth.getInstance();
@@ -55,6 +60,21 @@ public class HomeFragment extends Fragment {
                 email.setText(documentSnapshot.getString("email"));
             }
         });
+
+        documentReference.collection("belts")
+                .orderBy("timestamp", Query.Direction.DESCENDING)
+                .limit(1)
+                .get()
+                .addOnCompleteListener(new OnCompleteListener<QuerySnapshot>() {
+                    @Override
+                    public void onComplete(@NonNull Task<QuerySnapshot> task) {
+                        if (task.isSuccessful()) {
+                            for (QueryDocumentSnapshot document : task.getResult()) {
+                                currentBelt.setText(getString(R.string.current_belt, document.getId()));
+                            }
+                        }
+                    }
+                });
     }
 
 }

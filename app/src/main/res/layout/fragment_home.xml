@@ -1,12 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/fragment_home"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".HomeFragment"
-    android:id="@+id/fragment_home">
+    tools:context=".HomeFragment">
 
     <Button
         android:id="@+id/button"
@@ -26,9 +25,9 @@
         android:text="Welcome to your Passport!"
         android:textSize="24sp"
         app:layout_constraintBottom_toTopOf="@+id/button"
-        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/mainUserName"
         app:layout_constraintHorizontal_bias="0.495"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/mainUserName"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.296" />
 
@@ -39,9 +38,9 @@
         android:text="Your passport number"
         android:textSize="16sp"
         app:layout_constraintBottom_toTopOf="@+id/button"
-        app:layout_constraintEnd_toEndOf="@+id/mainUserName"
+        app:layout_constraintEnd_toEndOf="@+id/mainEmail"
         app:layout_constraintHorizontal_bias="0.485"
-        app:layout_constraintStart_toStartOf="@+id/mainUserName"
+        app:layout_constraintStart_toStartOf="@+id/mainEmail"
         app:layout_constraintTop_toBottomOf="@+id/mainUserName"
         app:layout_constraintVertical_bias="0.115" />
 
@@ -52,9 +51,9 @@
         android:text="Your Name"
         android:textSize="16sp"
         app:layout_constraintBottom_toTopOf="@+id/button"
-        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/mainPassportNumber"
         app:layout_constraintHorizontal_bias="0.497"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/mainPassportNumber"
         app:layout_constraintTop_toBottomOf="@+id/welcomeTitle"
         app:layout_constraintVertical_bias="0.248" />
 
@@ -65,10 +64,22 @@
         android:text="Your email"
         android:textSize="16sp"
         app:layout_constraintBottom_toTopOf="@+id/button"
-        app:layout_constraintEnd_toEndOf="@+id/mainPassportNumber"
+        app:layout_constraintEnd_toEndOf="@+id/current_belt"
         app:layout_constraintHorizontal_bias="0.501"
-        app:layout_constraintStart_toStartOf="@+id/mainPassportNumber"
+        app:layout_constraintStart_toStartOf="@+id/current_belt"
         app:layout_constraintTop_toBottomOf="@+id/mainPassportNumber"
         app:layout_constraintVertical_bias="0.15" />
+
+    <TextView
+        android:id="@+id/current_belt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Your current belt"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/mainEmail" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

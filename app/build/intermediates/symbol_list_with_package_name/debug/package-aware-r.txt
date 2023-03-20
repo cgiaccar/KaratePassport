@@ -3050,6 +3050,7 @@ id cos
 id counterclockwise
 id cradle
 id currentState
+id current_belt
 id custom
 id customPanel
 id cut
@@ -3737,6 +3738,7 @@ string common_open_on_phone
 string common_signin_button_text
 string common_signin_button_text_long
 string copy_toast_msg
+string current_belt
 string default_web_client_id
 string error_a11y_label
 string error_icon_content_description
