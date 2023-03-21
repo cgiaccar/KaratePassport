@@ -20,6 +20,8 @@ drawable ic_list
 drawable ic_lock
 drawable ic_logout
 drawable ic_medal
+drawable ic_numeric
+drawable ic_person
 font aclonica
 font bigshot_one
 id app_bar

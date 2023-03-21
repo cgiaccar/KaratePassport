@@ -2828,6 +2828,8 @@ int drawable ic_mtrl_checked_circle 0x7f0800aa
 int drawable ic_mtrl_chip_checked_black 0x7f0800ab
 int drawable ic_mtrl_chip_checked_circle 0x7f0800ac
 int drawable ic_mtrl_chip_close_circle 0x7f0800ad
+int drawable ic_numeric 0x7f0800fb
+int drawable ic_person 0x7f0800fc
 int drawable ic_search_black_24 0x7f0800ae
 int drawable m3_appbar_background 0x7f0800af
 int drawable m3_avd_hide_password 0x7f0800b0

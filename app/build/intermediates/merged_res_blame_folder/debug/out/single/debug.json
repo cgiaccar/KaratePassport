@@ -40,6 +40,10 @@
         "source": "/Users/Camilla/AndroidStudioProjects/KaratePassport/app/src/main/res/layout/fragment_home.xml"
     },
     {
+        "merged": "/Users/Camilla/AndroidStudioProjects/KaratePassport/app/build/intermediates/merged_res/debug/drawable_ic_person.xml.flat",
+        "source": "/Users/Camilla/AndroidStudioProjects/KaratePassport/app/src/main/res/drawable/ic_person.xml"
+    },
+    {
         "merged": "/Users/Camilla/AndroidStudioProjects/KaratePassport/app/build/intermediates/merged_res/debug/layout_app_bar.xml.flat",
         "source": "/Users/Camilla/AndroidStudioProjects/KaratePassport/app/src/main/res/layout/app_bar.xml"
     },
@@ -58,6 +62,10 @@
     {
         "merged": "/Users/Camilla/AndroidStudioProjects/KaratePassport/app/build/intermediates/merged_res/debug/layout_navigation_host.xml.flat",
         "source": "/Users/Camilla/AndroidStudioProjects/KaratePassport/app/src/main/res/layout/navigation_host.xml"
+    },
+    {
+        "merged": "/Users/Camilla/AndroidStudioProjects/KaratePassport/app/build/intermediates/merged_res/debug/drawable_ic_numeric.xml.flat",
+        "source": "/Users/Camilla/AndroidStudioProjects/KaratePassport/app/src/main/res/drawable/ic_numeric.xml"
     },
     {
         "merged": "/Users/Camilla/AndroidStudioProjects/KaratePassport/app/build/intermediates/merged_res/debug/drawable_gradient_background.xml.flat",
