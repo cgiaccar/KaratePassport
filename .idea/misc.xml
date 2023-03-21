@@ -5,9 +5,11 @@
       <map>
         <entry key="app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.181" />
         <entry key="app/src/main/res/drawable/gradient_background.xml" value="0.2035" />
+        <entry key="app/src/main/res/drawable/ic_email.xml" value="0.1" />
         <entry key="app/src/main/res/drawable/ic_home.xml" value="0.1" />
         <entry key="app/src/main/res/drawable/ic_launcher_background.xml" value="0.28" />
         <entry key="app/src/main/res/drawable/ic_list.xml" value="0.1805" />
+        <entry key="app/src/main/res/drawable/ic_lock.xml" value="0.1" />
         <entry key="app/src/main/res/drawable/ic_logout.xml" value="0.1805" />
         <entry key="app/src/main/res/drawable/ic_medal.xml" value="0.121" />
         <entry key="app/src/main/res/drawable/ic_navigation.xml" value="0.1" />
