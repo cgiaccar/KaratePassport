@@ -24,7 +24,6 @@ drawable ic_medal
 drawable ic_numeric
 drawable ic_person
 font aclonica
-font bigshot_one
 id app_bar
 id blue_belt_date
 id brown_belt_date

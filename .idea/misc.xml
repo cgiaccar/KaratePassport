@@ -16,6 +16,8 @@
         <entry key="app/src/main/res/drawable/ic_navigation.xml" value="0.1" />
         <entry key="app/src/main/res/drawable/ic_password.xml" value="0.181" />
         <entry key="app/src/main/res/drawable/spinner_border.xml" value="0.1" />
+        <entry key="app/src/main/res/font/aclonica.xml" value="0.33425925925925926" />
+        <entry key="app/src/main/res/font/bigshot_one.xml" value="0.33425925925925926" />
         <entry key="app/src/main/res/layout/aap_bar.xml" value="0.22916666666666666" />
         <entry key="app/src/main/res/layout/activity_belt_log.xml" value="0.20361449329565603" />
         <entry key="app/src/main/res/layout/activity_grant_belt.xml" value="0.15070921985815602" />
