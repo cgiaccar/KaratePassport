@@ -23,6 +23,7 @@ drawable ic_logout
 drawable ic_medal
 drawable ic_numeric
 drawable ic_person
+drawable logo
 font aclonica
 id app_bar
 id blue_belt_date
@@ -41,6 +42,7 @@ id fragment_home
 id grant_belt_button
 id green_belt_date
 id imageView
+id imageView2
 id kyu_table
 id log_progress_bar
 id loggedAs

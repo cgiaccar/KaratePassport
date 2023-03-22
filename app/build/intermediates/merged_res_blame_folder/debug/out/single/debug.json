@@ -112,6 +112,10 @@
         "source": "/Users/Camilla/AndroidStudioProjects/KaratePassport/app/src/main/res/menu/nav_item_list.xml"
     },
     {
+        "merged": "/Users/Camilla/AndroidStudioProjects/KaratePassport/app/build/intermediates/merged_res/debug/drawable_logo.png.flat",
+        "source": "/Users/Camilla/AndroidStudioProjects/KaratePassport/app/src/main/res/drawable/logo.png"
+    },
+    {
         "merged": "/Users/Camilla/AndroidStudioProjects/KaratePassport/app/build/intermediates/merged_res/debug/mipmap-xxhdpi_ic_launcher_round.webp.flat",
         "source": "/Users/Camilla/AndroidStudioProjects/KaratePassport/app/src/main/res/mipmap-xxhdpi/ic_launcher_round.webp"
     },

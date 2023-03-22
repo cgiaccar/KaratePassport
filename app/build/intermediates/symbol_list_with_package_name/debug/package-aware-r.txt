@@ -2833,6 +2833,7 @@ drawable ic_mtrl_chip_close_circle
 drawable ic_numeric
 drawable ic_person
 drawable ic_search_black_24
+drawable logo
 drawable m3_appbar_background
 drawable m3_avd_hide_password
 drawable m3_avd_show_password
@@ -3153,6 +3154,7 @@ id ignore
 id ignoreRequest
 id image
 id imageView
+id imageView2
 id immediateStop
 id included
 id indeterminate
