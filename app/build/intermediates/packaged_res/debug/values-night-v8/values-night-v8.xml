@@ -10,8 +10,11 @@
         <item name="colorSecondaryVariant">@color/teal_200</item>
         <item name="colorOnSecondary">@color/black</item>
         <!-- Status bar color. -->
-        <item name="android:statusBarColor" ns1:targetApi="l">?attr/colorPrimaryVariant</item>
+        <item name="android:statusBarColor" ns1:targetApi="l">?attr/colorPrimary</item>
         <!-- Customize your theme here. -->
         <item name="android:fontFamily">@font/aclonica</item>
+        <item name="android:textColor">@android:color/tab_indicator_text</item>
+        <item name="android:textColorHint">?attr/colorOnPrimary</item>
+        <item name="editTextBackground">?attr/colorPrimary</item>
     </style>
 </resources>

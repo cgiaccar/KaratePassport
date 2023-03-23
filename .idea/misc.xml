@@ -25,13 +25,13 @@
         <entry key="app/src/main/res/layout/aap_bar.xml" value="0.22916666666666666" />
         <entry key="app/src/main/res/layout/activity_belt_log.xml" value="0.20361449329565603" />
         <entry key="app/src/main/res/layout/activity_grant_belt.xml" value="0.15070921985815602" />
-        <entry key="app/src/main/res/layout/activity_login.xml" value="0.27385832874487476" />
+        <entry key="app/src/main/res/layout/activity_login.xml" value="0.33094298450659365" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.16889648437500007" />
         <entry key="app/src/main/res/layout/activity_register.xml" value="0.31352049915503094" />
         <entry key="app/src/main/res/layout/app_bar.xml" value="0.22916666666666666" />
         <entry key="app/src/main/res/layout/content_main.xml" value="0.2346014492753623" />
         <entry key="app/src/main/res/layout/dropdown_menu.xml" value="0.262945556640625" />
-        <entry key="app/src/main/res/layout/fragment_belt_log.xml" value="0.3840850120367006" />
+        <entry key="app/src/main/res/layout/fragment_belt_log.xml" value="0.3513549094976381" />
         <entry key="app/src/main/res/layout/fragment_grant_belt.xml" value="0.3068181818181818" />
         <entry key="app/src/main/res/layout/fragment_home.xml" value="0.3351233548896257" />
         <entry key="app/src/main/res/layout/fragments_host.xml" value="0.15070921985815602" />
