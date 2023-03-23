@@ -9,7 +9,7 @@ public enum Belt {
     ORANGE(R.id.orange_belt_date, "Orange belt"),
     GREEN(R.id.green_belt_date, "Green belt"),
     BLUE(R.id.blue_belt_date, "Blue belt"),
-    BROWN(R.id.brown_belt_date, "Brow belt"),
+    BROWN(R.id.brown_belt_date, "Brown belt"),
     FIRST(R.id.first_dan_date, "First dan"),
     SECOND(R.id.second_dan_date, "Second dan"),
     THIRD(R.id.third_dan_date, "Third dan"),
