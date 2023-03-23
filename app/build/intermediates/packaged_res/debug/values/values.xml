@@ -29,7 +29,6 @@
     <string name="confirm_belt_button">Grant the belt!</string>
     <string name="confirm_user_button">Confirm user selection</string>
     <string name="create_account"><u>New Here? Create An Account</u></string>
-    <string name="current_belt">Current rank: %1$s</string>
     <string name="default_web_client_id" translatable="false">348949237298-9fe3tdun2da1unse6akckinsu5lqv02h.apps.googleusercontent.com</string>
     <string name="email_hint">Email Address</string>
     <string name="firebase_database_url" translatable="false">https://karatepassport-bac6b-default-rtdb.europe-west1.firebasedatabase.app</string>
@@ -42,6 +41,8 @@
     <string name="logged_as">Logged in as %1$s</string>
     <string name="login_button">Login</string>
     <string name="login_title">Login</string>
+    <string name="master_name">Master %1$s</string>
+    <string name="passport_number"># %1$s</string>
     <string name="passport_number_hint">Passport Number</string>
     <string name="password_hint">Password</string>
     <string name="project_id" translatable="false">karatepassport-bac6b</string>

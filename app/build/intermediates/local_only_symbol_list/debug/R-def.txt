@@ -42,6 +42,7 @@ id grant_belt_button
 id green_belt_date
 id imageView
 id imageView2
+id imageView3
 id invisible_tutorial
 id kyu_table
 id log_progress_bar
@@ -67,6 +68,7 @@ id password
 id password_text
 id progressBar
 id progressBar2
+id progressBar3
 id progress_bar
 id rank_spinner
 id registerBtn
@@ -106,7 +108,6 @@ string app_name
 string confirm_belt_button
 string confirm_user_button
 string create_account
-string current_belt
 string default_web_client_id
 string email_hint
 string firebase_database_url
@@ -119,6 +120,8 @@ string google_storage_bucket
 string logged_as
 string login_button
 string login_title
+string master_name
+string passport_number
 string passport_number_hint
 string password_hint
 string project_id

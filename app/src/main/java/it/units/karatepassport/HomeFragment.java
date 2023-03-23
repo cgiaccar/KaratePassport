@@ -8,14 +8,9 @@ import android.widget.TextView;
 
 import androidx.fragment.app.Fragment;
 
-import com.google.android.gms.tasks.OnCompleteListener;
-import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.firestore.DocumentReference;
 import com.google.firebase.firestore.FirebaseFirestore;
-import com.google.firebase.firestore.Query;
-import com.google.firebase.firestore.QueryDocumentSnapshot;
-import com.google.firebase.firestore.QuerySnapshot;
 
 import org.checkerframework.checker.nullness.qual.NonNull;
 
@@ -55,11 +50,15 @@ public class HomeFragment extends Fragment {
             if ((e == null) || (documentSnapshot != null && documentSnapshot.exists())) {
 
                 //using the names assigned in Register.java, visible also in the FirestoreDB
-                number.setText(documentSnapshot.getString("passportNumber"));
-                name.setText(documentSnapshot.getString("userName"));
+                String snapshotNumber = documentSnapshot.getString("passportNumber");
+                number.setText(getString(R.string.passport_number, snapshotNumber));
+                String snapshotName = documentSnapshot.getString("userName");
+                Boolean isMaster = documentSnapshot.getBoolean("isMaster");
+                if (isMaster == Boolean.TRUE) {
+                    name.setText(getString(R.string.master_name, snapshotName));
+                } else name.setText(snapshotName);
                 email.setText(documentSnapshot.getString("email"));
-                String snapshotBelt = documentSnapshot.getString("currentBelt");
-                currentBelt.setText(getString(R.string.current_belt, snapshotBelt));
+                currentBelt.setText(documentSnapshot.getString("currentBelt"));
             }
         });
     }

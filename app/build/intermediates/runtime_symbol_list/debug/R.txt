@@ -3153,6 +3153,7 @@ int id ignoreRequest 0x7f0a00f2
 int id image 0x7f0a00f3
 int id imageView 0x7f0a00f4
 int id imageView2 0x7f0a00f5
+int id imageView3 0x7f0a0240
 int id immediateStop 0x7f0a00f6
 int id included 0x7f0a00f7
 int id indeterminate 0x7f0a00f8
@@ -3302,6 +3303,7 @@ int id postLayout 0x7f0a0186
 int id pressed 0x7f0a0187
 int id progressBar 0x7f0a0188
 int id progressBar2 0x7f0a0189
+int id progressBar3 0x7f0a0241
 int id progress_bar 0x7f0a018a
 int id progress_circular 0x7f0a018b
 int id progress_horizontal 0x7f0a018c
@@ -3748,7 +3750,6 @@ int string confirm_belt_button 0x7f1400c8
 int string confirm_user_button 0x7f1400c9
 int string copy_toast_msg 0x7f14003b
 int string create_account 0x7f14003c
-int string current_belt 0x7f14003d
 int string default_web_client_id 0x7f14003e
 int string email_hint 0x7f14003f
 int string error_a11y_label 0x7f140040
@@ -3783,6 +3784,7 @@ int string m3_sys_motion_easing_linear 0x7f14005c
 int string m3_sys_motion_easing_standard 0x7f14005d
 int string m3_sys_motion_easing_standard_accelerate 0x7f14005e
 int string m3_sys_motion_easing_standard_decelerate 0x7f14005f
+int string master_name 0x7f1400cd
 int string material_clock_display_divider 0x7f140060
 int string material_clock_toggle_content_description 0x7f140061
 int string material_hour_24h_suffix 0x7f140062
@@ -3869,6 +3871,7 @@ int string mtrl_timepicker_cancel 0x7f1400b2
 int string mtrl_timepicker_confirm 0x7f1400b3
 int string nav_app_bar_navigate_up_description 0x7f1400b4
 int string nav_app_bar_open_drawer_description 0x7f1400b5
+int string passport_number 0x7f1400ce
 int string passport_number_hint 0x7f1400b6
 int string password_hint 0x7f1400b7
 int string password_toggle_content_description 0x7f1400b8

@@ -3154,6 +3154,7 @@ id ignoreRequest
 id image
 id imageView
 id imageView2
+id imageView3
 id immediateStop
 id included
 id indeterminate
@@ -3303,6 +3304,7 @@ id postLayout
 id pressed
 id progressBar
 id progressBar2
+id progressBar3
 id progress_bar
 id progress_circular
 id progress_horizontal
@@ -3749,7 +3751,6 @@ string confirm_belt_button
 string confirm_user_button
 string copy_toast_msg
 string create_account
-string current_belt
 string default_web_client_id
 string email_hint
 string error_a11y_label
@@ -3784,6 +3785,7 @@ string m3_sys_motion_easing_linear
 string m3_sys_motion_easing_standard
 string m3_sys_motion_easing_standard_accelerate
 string m3_sys_motion_easing_standard_decelerate
+string master_name
 string material_clock_display_divider
 string material_clock_toggle_content_description
 string material_hour_24h_suffix
@@ -3870,6 +3872,7 @@ string mtrl_timepicker_cancel
 string mtrl_timepicker_confirm
 string nav_app_bar_navigate_up_description
 string nav_app_bar_open_drawer_description
+string passport_number
 string passport_number_hint
 string password_hint
 string password_toggle_content_description
