@@ -4,6 +4,7 @@ import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ProgressBar;
 import android.widget.TextView;
 
 import androidx.fragment.app.Fragment;
@@ -22,6 +23,7 @@ public class HomeFragment extends Fragment {
     FirebaseAuth fAuth;
     FirebaseFirestore fStore;
     String userID;
+    ProgressBar progressBar;
 
 
     @Nullable
@@ -36,6 +38,7 @@ public class HomeFragment extends Fragment {
         name = view.findViewById(R.id.mainUserName);
         email = view.findViewById(R.id.mainEmail);
         currentBelt = view.findViewById(R.id.current_belt);
+        progressBar = view.findViewById(R.id.progressBar3);
 
         // initialization of Auth e Firestore
         fAuth = FirebaseAuth.getInstance();
@@ -60,6 +63,7 @@ public class HomeFragment extends Fragment {
                 email.setText(documentSnapshot.getString("email"));
                 currentBelt.setText(documentSnapshot.getString("currentBelt"));
             }
+            progressBar.setVisibility(View.GONE);
         });
     }
 
