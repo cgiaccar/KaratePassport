@@ -100,10 +100,12 @@ menu nav_item_list
 mipmap ic_launcher
 mipmap ic_launcher_round
 navigation navigation_graph
+string already_registered
 string app_name
 string create_account
 string current_belt
 string default_web_client_id
+string email_hint
 string firebase_database_url
 string forgot_password
 string gcm_defaultSenderId
@@ -112,5 +114,12 @@ string google_app_id
 string google_crash_reporting_api_key
 string google_storage_bucket
 string logged_as
+string login_button
+string login_title
+string passport_number_hint
+string password_hint
 string project_id
+string register_button
+string register_title
+string username_hint
 style Theme.KaratePassport

@@ -24,10 +24,12 @@
     <color name="teal_200">#FF03DAC5</color>
     <color name="teal_700">#FF018786</color>
     <color name="white">#FFFFFFFF</color>
+    <string name="already_registered"><u>Already Registered? Login Here</u></string>
     <string name="app_name">Karate Passport</string>
     <string name="create_account"><u>New Here? Create An Account</u></string>
     <string name="current_belt">Current rank: %1$s</string>
     <string name="default_web_client_id" translatable="false">348949237298-9fe3tdun2da1unse6akckinsu5lqv02h.apps.googleusercontent.com</string>
+    <string name="email_hint">Email Address</string>
     <string name="firebase_database_url" translatable="false">https://karatepassport-bac6b-default-rtdb.europe-west1.firebasedatabase.app</string>
     <string name="forgot_password"><u>Forgot your password?</u></string>
     <string name="gcm_defaultSenderId" translatable="false">348949237298</string>
@@ -36,7 +38,14 @@
     <string name="google_crash_reporting_api_key" translatable="false">AIzaSyBPNbZAwTHViG1mjM9155412kbDy2v6IxQ</string>
     <string name="google_storage_bucket" translatable="false">karatepassport-bac6b.appspot.com</string>
     <string name="logged_as">Logged in as %1$s</string>
+    <string name="login_button">Login</string>
+    <string name="login_title">Login</string>
+    <string name="passport_number_hint">Passport Number</string>
+    <string name="password_hint">Password</string>
     <string name="project_id" translatable="false">karatepassport-bac6b</string>
+    <string name="register_button">Register</string>
+    <string name="register_title">Create New Account</string>
+    <string name="username_hint">Username</string>
     <style name="Theme.KaratePassport" parent="Theme.MaterialComponents.DayNight.NoActionBar">
         
         <item name="colorPrimary">@color/purple_500</item>
