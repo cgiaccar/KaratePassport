@@ -1,5 +1,11 @@
 <resources>
     <string name="app_name">Karate Passport</string>
+    <string name="register_title">Create New Account</string>
+    <string name="passport_number_hint">Passport Number</string>
+    <string name="username_hint">Username</string>
+    <string name="email_hint">Email Address</string>
+    <string name="password_hint">Password</string>
+    <string name="register_button">Register</string>
     <string name="forgot_password"><u>Forgot your password?</u></string>
     <string name="create_account"><u>New Here? Create An Account</u></string>
     <string name="already_registered"><u>Already Registered? Login Here</u></string>
