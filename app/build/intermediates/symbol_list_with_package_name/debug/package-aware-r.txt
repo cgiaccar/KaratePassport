@@ -3744,6 +3744,8 @@ string common_google_play_services_wear_update_text
 string common_open_on_phone
 string common_signin_button_text
 string common_signin_button_text_long
+string confirm_belt_button
+string confirm_user_button
 string copy_toast_msg
 string create_account
 string current_belt
@@ -3764,6 +3766,7 @@ string google_api_key
 string google_app_id
 string google_crash_reporting_api_key
 string google_storage_bucket
+string grant_belt_title
 string hide_bottom_view_on_scroll_behavior
 string icon_content_description
 string item_view_role_description

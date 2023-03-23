@@ -3743,6 +3743,8 @@ int string common_google_play_services_wear_update_text 0x7f140037
 int string common_open_on_phone 0x7f140038
 int string common_signin_button_text 0x7f140039
 int string common_signin_button_text_long 0x7f14003a
+int string confirm_belt_button 0x7f1400c8
+int string confirm_user_button 0x7f1400c9
 int string copy_toast_msg 0x7f14003b
 int string create_account 0x7f14003c
 int string current_belt 0x7f14003d
@@ -3763,6 +3765,7 @@ int string google_api_key 0x7f14004b
 int string google_app_id 0x7f14004c
 int string google_crash_reporting_api_key 0x7f14004d
 int string google_storage_bucket 0x7f14004e
+int string grant_belt_title 0x7f1400ca
 int string hide_bottom_view_on_scroll_behavior 0x7f14004f
 int string icon_content_description 0x7f140050
 int string item_view_role_description 0x7f140051

@@ -26,6 +26,8 @@
     <color name="white">#FFFFFFFF</color>
     <string name="already_registered"><u>Already Registered? Login Here</u></string>
     <string name="app_name">Karate Passport</string>
+    <string name="confirm_belt_button">Grant the belt!</string>
+    <string name="confirm_user_button">Confirm user selection</string>
     <string name="create_account"><u>New Here? Create An Account</u></string>
     <string name="current_belt">Current rank: %1$s</string>
     <string name="default_web_client_id" translatable="false">348949237298-9fe3tdun2da1unse6akckinsu5lqv02h.apps.googleusercontent.com</string>
@@ -37,6 +39,7 @@
     <string name="google_app_id" translatable="false">1:348949237298:android:40d4ade7c7a8de087db62b</string>
     <string name="google_crash_reporting_api_key" translatable="false">AIzaSyBPNbZAwTHViG1mjM9155412kbDy2v6IxQ</string>
     <string name="google_storage_bucket" translatable="false">karatepassport-bac6b.appspot.com</string>
+    <string name="grant_belt_title">You are in the Grant a Belt fragment!</string>
     <string name="logged_as">Logged in as %1$s</string>
     <string name="login_button">Login</string>
     <string name="login_title">Login</string>
@@ -47,17 +50,17 @@
     <string name="register_title">Create New Account</string>
     <string name="username_hint">Username</string>
     <style name="Theme.KaratePassport" parent="Theme.MaterialComponents.DayNight.NoActionBar">
-        <!-- Primary brand color. -->
+        
         <item name="colorPrimary">@color/purple_500</item>
         <item name="colorPrimaryVariant">@color/purple_700</item>
         <item name="colorOnPrimary">@color/white</item>
-        <!-- Secondary brand color. -->
+        
         <item name="colorSecondary">@color/teal_200</item>
         <item name="colorSecondaryVariant">@color/teal_700</item>
         <item name="colorOnSecondary">@color/black</item>
-        <!-- Status bar color. -->
+        
         <item name="android:statusBarColor" ns1:targetApi="l">?attr/colorPrimary</item>
-        <!-- Customize your theme here. -->
+        
         <item name="android:fontFamily">@font/aclonica</item>
         <item name="android:textColor">@color/black</item>
         <item name="android:textColorHint">?attr/colorOnPrimary</item>

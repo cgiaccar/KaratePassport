@@ -102,6 +102,8 @@ mipmap ic_launcher_round
 navigation navigation_graph
 string already_registered
 string app_name
+string confirm_belt_button
+string confirm_user_button
 string create_account
 string current_belt
 string default_web_client_id
@@ -113,6 +115,7 @@ string google_api_key
 string google_app_id
 string google_crash_reporting_api_key
 string google_storage_bucket
+string grant_belt_title
 string logged_as
 string login_button
 string login_title
