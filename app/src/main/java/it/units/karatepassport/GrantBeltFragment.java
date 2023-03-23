@@ -11,6 +11,7 @@ import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.ProgressBar;
 import android.widget.Spinner;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.google.firebase.firestore.CollectionReference;
@@ -37,6 +38,7 @@ public class GrantBeltFragment extends Fragment {
     ArrayAdapter<String> passportsAdapter, ranksAdapter;
     Button selectPassportButton, grantBeltButton;
     String selectedPassport, selectedRank;
+    TextView invisibleTutorial;
 
     @Nullable
     @Override
@@ -50,6 +52,7 @@ public class GrantBeltFragment extends Fragment {
         progressBar = view.findViewById(R.id.progress_bar);
         passportsSpinner = view.findViewById(R.id.user_spinner);
         ranksSpinner = view.findViewById(R.id.rank_spinner);
+        invisibleTutorial = view.findViewById(R.id.invisible_tutorial);
         selectPassportButton = view.findViewById(R.id.select_user_button);
         grantBeltButton = view.findViewById(R.id.grant_belt_button);
         passportNumbers = new ArrayList<>();
@@ -68,6 +71,7 @@ public class GrantBeltFragment extends Fragment {
                 }
                 Collections.sort(passportNumbers);
                 passportsSpinner.setVisibility(View.VISIBLE);
+                selectPassportButton.setVisibility(View.VISIBLE);
                 progressBar.setVisibility(View.GONE);
                 passportsSpinner.setAdapter(passportsAdapter);
             }
@@ -77,12 +81,14 @@ public class GrantBeltFragment extends Fragment {
 
         selectPassportButton.setOnClickListener(unused -> {
             selectedPassport = passportsSpinner.getSelectedItem().toString();
+            invisibleTutorial.setVisibility(View.VISIBLE);
             ranksSpinner.setVisibility(View.VISIBLE);
             grantBeltButton.setVisibility(View.VISIBLE);
         });
 
         passportsSpinner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
+                invisibleTutorial.setVisibility(View.GONE);
                 ranksSpinner.setVisibility(View.GONE);
                 grantBeltButton.setVisibility(View.GONE);
             }
@@ -109,6 +115,7 @@ public class GrantBeltFragment extends Fragment {
                         } else {
                             Toast.makeText(getActivity(), "Error getting documents: " + task.getException().getMessage(), Toast.LENGTH_SHORT).show();
                         }
+                        invisibleTutorial.setVisibility(View.GONE);
                         ranksSpinner.setVisibility(View.GONE);
                         grantBeltButton.setVisibility(View.GONE);
                     });

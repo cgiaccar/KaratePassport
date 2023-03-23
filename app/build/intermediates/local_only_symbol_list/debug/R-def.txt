@@ -42,6 +42,7 @@ id grant_belt_button
 id green_belt_date
 id imageView
 id imageView2
+id invisible_tutorial
 id kyu_table
 id log_progress_bar
 id loggedAs
@@ -115,7 +116,6 @@ string google_api_key
 string google_app_id
 string google_crash_reporting_api_key
 string google_storage_bucket
-string grant_belt_title
 string logged_as
 string login_button
 string login_title
@@ -124,5 +124,7 @@ string password_hint
 string project_id
 string register_button
 string register_title
+string select_belt_tutorial
+string select_user_tutorial
 string username_hint
 style Theme.KaratePassport

@@ -3158,6 +3158,7 @@ int id included 0x7f0a00f7
 int id indeterminate 0x7f0a00f8
 int id info 0x7f0a00f9
 int id invisible 0x7f0a00fa
+int id invisible_tutorial 0x7f0a023f
 int id inward 0x7f0a00fb
 int id italic 0x7f0a00fc
 int id item_touch_helper_previous_elevation 0x7f0a00fd
@@ -3765,7 +3766,6 @@ int string google_api_key 0x7f14004b
 int string google_app_id 0x7f14004c
 int string google_crash_reporting_api_key 0x7f14004d
 int string google_storage_bucket 0x7f14004e
-int string grant_belt_title 0x7f1400ca
 int string hide_bottom_view_on_scroll_behavior 0x7f14004f
 int string icon_content_description 0x7f140050
 int string item_view_role_description 0x7f140051
@@ -3883,6 +3883,8 @@ int string search_menu_title 0x7f1400c0
 int string searchbar_scrolling_view_behavior 0x7f1400c1
 int string searchview_clear_text_content_description 0x7f1400c2
 int string searchview_navigation_content_description 0x7f1400c3
+int string select_belt_tutorial 0x7f1400cb
+int string select_user_tutorial 0x7f1400cc
 int string side_sheet_accessibility_pane_title 0x7f1400c4
 int string side_sheet_behavior 0x7f1400c5
 int string status_bar_notification_info_overflow 0x7f1400c6

@@ -3,7 +3,9 @@
 
     <string name="register_title">Create New Account</string>
     <string name="login_title">Login</string>
-    <string name="grant_belt_title">You are in the Grant a Belt fragment!</string>
+
+    <string name="select_user_tutorial">Start by selecting the user by their passport number below!</string>
+    <string name="select_belt_tutorial">Great! Now select a new rank and confirm.</string>
 
     <string name="passport_number_hint">Passport Number</string>
     <string name="username_hint">Username</string>
