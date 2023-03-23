@@ -68,10 +68,6 @@
         "source": "/Users/Camilla/AndroidStudioProjects/KaratePassport/app/src/main/res/drawable/ic_numeric.xml"
     },
     {
-        "merged": "/Users/Camilla/AndroidStudioProjects/KaratePassport/app/build/intermediates/merged_res/debug/drawable_gradient_background.xml.flat",
-        "source": "/Users/Camilla/AndroidStudioProjects/KaratePassport/app/src/main/res/drawable/gradient_background.xml"
-    },
-    {
         "merged": "/Users/Camilla/AndroidStudioProjects/KaratePassport/app/build/intermediates/merged_res/debug/layout_activity_login.xml.flat",
         "source": "/Users/Camilla/AndroidStudioProjects/KaratePassport/app/src/main/res/layout/activity_login.xml"
     },

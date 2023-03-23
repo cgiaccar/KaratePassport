@@ -12,7 +12,6 @@ color teal_200
 color teal_700
 color white
 drawable border
-drawable gradient_background
 drawable ic_belt
 drawable ic_email
 drawable ic_home
@@ -102,9 +101,11 @@ mipmap ic_launcher
 mipmap ic_launcher_round
 navigation navigation_graph
 string app_name
+string create_account
 string current_belt
 string default_web_client_id
 string firebase_database_url
+string forgot_password
 string gcm_defaultSenderId
 string google_api_key
 string google_app_id

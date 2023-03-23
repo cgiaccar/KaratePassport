@@ -6,6 +6,7 @@
         <entry key="app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.181" />
         <entry key="app/src/main/res/drawable/border.xml" value="0.1805" />
         <entry key="app/src/main/res/drawable/gradient_background.xml" value="0.2035" />
+        <entry key="app/src/main/res/drawable/ic_belt.xml" value="0.1805" />
         <entry key="app/src/main/res/drawable/ic_email.xml" value="0.1" />
         <entry key="app/src/main/res/drawable/ic_home.xml" value="0.1" />
         <entry key="app/src/main/res/drawable/ic_launcher_background.xml" value="0.28" />
@@ -23,7 +24,7 @@
         <entry key="app/src/main/res/layout/activity_grant_belt.xml" value="0.15070921985815602" />
         <entry key="app/src/main/res/layout/activity_login.xml" value="0.27385832874487476" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.16889648437500007" />
-        <entry key="app/src/main/res/layout/activity_register.xml" value="0.32882811634253106" />
+        <entry key="app/src/main/res/layout/activity_register.xml" value="0.31352049915503094" />
         <entry key="app/src/main/res/layout/app_bar.xml" value="0.22916666666666666" />
         <entry key="app/src/main/res/layout/content_main.xml" value="0.2346014492753623" />
         <entry key="app/src/main/res/layout/dropdown_menu.xml" value="0.262945556640625" />
