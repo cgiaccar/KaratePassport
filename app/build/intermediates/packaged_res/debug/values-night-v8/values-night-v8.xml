@@ -1,5 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources xmlns:ns1="http://schemas.android.com/tools">
+    <style name="MyToolbar" parent="@style/ThemeOverlay.AppCompat">
+        <!-- Title text -->
+        <item name="android:textColorPrimary">?attr/colorOnPrimary</item>
+        <!-- This will change drawer icon -->
+        <item name="drawerArrowStyle">@style/WhiteDrawerIconStyle</item>
+        <!-- background -->
+        <item name="android:background">?attr/colorPrimary</item>
+    </style>
     <style name="Theme.KaratePassport" parent="Theme.MaterialComponents.DayNight.NoActionBar">
         <!-- Primary brand color. -->
         <item name="colorPrimary">@color/purple_200</item>
@@ -16,6 +24,10 @@
         <item name="android:textColor">@android:color/tab_indicator_text</item>
         <item name="android:textColorHint">?attr/colorOnPrimary</item>
         <item name="android:editTextColor">?attr/colorOnPrimary</item>
-        <item name="editTextBackground">?attr/colorPrimary</item>
+        <item name="android:editTextBackground">?attr/colorPrimary</item>
+    </style>
+    <style name="WhiteDrawerIconStyle" parent="Widget.AppCompat.DrawerArrowToggle">
+        <item name="spinBars">true</item>
+        <item name="color">?attr/colorOnPrimary</item>
     </style>
 </resources>
