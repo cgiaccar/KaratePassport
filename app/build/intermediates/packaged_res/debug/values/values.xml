@@ -40,7 +40,7 @@
     <string name="google_storage_bucket" translatable="false">karatepassport-bac6b.appspot.com</string>
     <string name="logged_as">Logged in as %1$s</string>
     <string name="login_button">Login</string>
-    <string name="login_title">Login</string>
+    <string name="login_title">Login Page</string>
     <string name="master_name">Master %1$s</string>
     <string name="passport_number"># %1$s</string>
     <string name="passport_number_hint">Passport Number</string>

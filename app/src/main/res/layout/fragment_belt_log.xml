@@ -112,6 +112,7 @@
                 android:background="@drawable/border"
                 android:gravity="end"
                 android:padding="2dp"
+                android:paddingEnd="8dp"
                 android:text=""
                 android:textSize="16sp" />
         </TableRow>
@@ -138,6 +139,7 @@
                 android:background="@drawable/border"
                 android:gravity="end"
                 android:padding="2dp"
+                android:paddingEnd="8dp"
                 android:text=""
                 android:textSize="16sp" />
         </TableRow>
@@ -164,6 +166,7 @@
                 android:background="@drawable/border"
                 android:gravity="end"
                 android:padding="2dp"
+                android:paddingEnd="8dp"
                 android:text=""
                 android:textSize="16sp" />
         </TableRow>
@@ -190,6 +193,7 @@
                 android:background="@drawable/border"
                 android:gravity="end"
                 android:padding="2dp"
+                android:paddingEnd="8dp"
                 android:text=""
                 android:textSize="16sp" />
         </TableRow>
@@ -247,6 +251,7 @@
                 android:background="@drawable/border"
                 android:gravity="end"
                 android:padding="2dp"
+                android:paddingEnd="8dp"
                 android:text=""
                 android:textSize="16sp" />
         </TableRow>
@@ -273,6 +278,7 @@
                 android:background="@drawable/border"
                 android:gravity="end"
                 android:padding="2dp"
+                android:paddingEnd="8dp"
                 android:text=""
                 android:textSize="16sp" />
         </TableRow>
@@ -299,6 +305,7 @@
                 android:background="@drawable/border"
                 android:gravity="end"
                 android:padding="2dp"
+                android:paddingEnd="8dp"
                 android:text=""
                 android:textSize="16sp" />
         </TableRow>
@@ -325,6 +332,7 @@
                 android:background="@drawable/border"
                 android:gravity="end"
                 android:padding="2dp"
+                android:paddingEnd="8dp"
                 android:text=""
                 android:textSize="16sp" />
         </TableRow>
@@ -351,6 +359,7 @@
                 android:background="@drawable/border"
                 android:gravity="end"
                 android:padding="2dp"
+                android:paddingEnd="8dp"
                 android:text=""
                 android:textSize="16sp" />
         </TableRow>
@@ -377,6 +386,7 @@
                 android:background="@drawable/border"
                 android:gravity="end"
                 android:padding="2dp"
+                android:paddingEnd="8dp"
                 android:text=""
                 android:textSize="16sp" />
         </TableRow>
@@ -403,6 +413,7 @@
                 android:background="@drawable/border"
                 android:gravity="end"
                 android:padding="2dp"
+                android:paddingEnd="8dp"
                 android:text=""
                 android:textSize="16sp" />
         </TableRow>
@@ -429,6 +440,7 @@
                 android:background="@drawable/border"
                 android:gravity="end"
                 android:padding="2dp"
+                android:paddingEnd="8dp"
                 android:text=""
                 android:textSize="16sp" />
         </TableRow>
@@ -455,6 +467,7 @@
                 android:background="@drawable/border"
                 android:gravity="end"
                 android:padding="2dp"
+                android:paddingEnd="8dp"
                 android:text=""
                 android:textSize="16sp" />
         </TableRow>
@@ -481,6 +494,7 @@
                 android:background="@drawable/border"
                 android:gravity="end"
                 android:padding="2dp"
+                android:paddingEnd="8dp"
                 android:text=""
                 android:textSize="16sp" />
         </TableRow>

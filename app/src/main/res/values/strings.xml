@@ -2,7 +2,7 @@
     <string name="app_name">Karate Passport</string>
 
     <string name="register_title">Create New Account</string>
-    <string name="login_title">Login</string>
+    <string name="login_title">Login Page</string>
 
     <string name="select_user_tutorial">Start by selecting the user by their passport number below!</string>
     <string name="select_belt_tutorial">Great! Now select a new rank and confirm.</string>
