@@ -16,6 +16,6 @@
         <item name="android:textColor">@android:color/tab_indicator_text</item>
         <item name="android:textColorHint">?attr/colorOnPrimary</item>
         <item name="android:editTextColor">?attr/colorOnPrimary</item>
-        <item name="editTextBackground">?attr/colorPrimary</item>
+        <item name="android:editTextBackground">?attr/colorPrimary</item>
     </style>
 </resources>

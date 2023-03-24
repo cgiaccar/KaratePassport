@@ -132,4 +132,6 @@ string register_title
 string select_belt_tutorial
 string select_user_tutorial
 string username_hint
+style MyToolbar
 style Theme.KaratePassport
+style WhiteDrawerIconStyle
