@@ -117,9 +117,11 @@ string google_api_key
 string google_app_id
 string google_crash_reporting_api_key
 string google_storage_bucket
+string home_title
 string logged_as
 string login_button
 string login_title
+string logout_button
 string master_name
 string passport_number
 string passport_number_hint
