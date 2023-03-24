@@ -6,7 +6,8 @@
         <entry key="app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.181" />
         <entry key="app/src/main/res/drawable/border.xml" value="0.1805" />
         <entry key="app/src/main/res/drawable/gradient_background.xml" value="0.2035" />
-        <entry key="app/src/main/res/drawable/ic_belt.xml" value="0.1805" />
+        <entry key="app/src/main/res/drawable/ic_belt.xml" value="0.1532806396484374" />
+        <entry key="app/src/main/res/drawable/ic_belt_new.xml" value="0.1805" />
         <entry key="app/src/main/res/drawable/ic_email.xml" value="0.1" />
         <entry key="app/src/main/res/drawable/ic_home.xml" value="0.1" />
         <entry key="app/src/main/res/drawable/ic_launcher_background.xml" value="0.28" />
@@ -15,6 +16,7 @@
         <entry key="app/src/main/res/drawable/ic_logout.xml" value="0.1805" />
         <entry key="app/src/main/res/drawable/ic_medal.xml" value="0.121" />
         <entry key="app/src/main/res/drawable/ic_navigation.xml" value="0.1" />
+        <entry key="app/src/main/res/drawable/ic_noun_karate_belt_851934.xml" value="0.1805" />
         <entry key="app/src/main/res/drawable/ic_numeric.xml" value="0.1805" />
         <entry key="app/src/main/res/drawable/ic_password.xml" value="0.181" />
         <entry key="app/src/main/res/drawable/ic_person.xml" value="0.1805" />
