@@ -3143,6 +3143,7 @@ id header_title
 id hideable
 id home
 id homeAsUp
+id home_email
 id honorRequest
 id horizontal_only
 id icon
@@ -3185,9 +3186,6 @@ id loginBtn
 id logout_item
 id ltr
 id m3_side_sheet
-id mainEmail
-id mainPassportNumber
-id mainUserName
 id marquee
 id masked
 id match_constraint
@@ -3291,6 +3289,7 @@ id parentPanel
 id parentRelative
 id parent_matrix
 id passportNumber
+id passport_number
 id password
 id password_text
 id password_toggle
@@ -3461,6 +3460,7 @@ id uniform
 id unlabeled
 id up
 id useLogo
+id user_name
 id user_spinner
 id username
 id vertical_only

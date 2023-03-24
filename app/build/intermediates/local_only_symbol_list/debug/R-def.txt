@@ -40,6 +40,7 @@ id fourth_dan_date
 id fragment_home
 id grant_belt_button
 id green_belt_date
+id home_email
 id imageView
 id imageView2
 id imageView3
@@ -49,9 +50,6 @@ id log_progress_bar
 id loggedAs
 id loginBtn
 id logout_item
-id mainEmail
-id mainPassportNumber
-id mainUserName
 id menu_items
 id nav_belt_log
 id nav_grant_belt
@@ -64,6 +62,7 @@ id navigation_header
 id ninth_dan_date
 id orange_belt_date
 id passportNumber
+id passport_number
 id password
 id password_text
 id progressBar
@@ -84,6 +83,7 @@ id textView2
 id textView3
 id textView5
 id third_dan_date
+id user_name
 id user_spinner
 id username
 id welcomeTitle

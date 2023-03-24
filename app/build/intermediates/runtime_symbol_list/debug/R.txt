@@ -3142,6 +3142,7 @@ int id header_title 0x7f0a00e7
 int id hideable 0x7f0a00e8
 int id home 0x7f0a00e9
 int id homeAsUp 0x7f0a00ea
+int id home_email 0x7f0a0242
 int id honorRequest 0x7f0a00eb
 int id horizontal_only 0x7f0a00ec
 int id icon 0x7f0a00ed
@@ -3184,9 +3185,6 @@ int id loginBtn 0x7f0a010f
 int id logout_item 0x7f0a0110
 int id ltr 0x7f0a0111
 int id m3_side_sheet 0x7f0a0112
-int id mainEmail 0x7f0a0113
-int id mainPassportNumber 0x7f0a0114
-int id mainUserName 0x7f0a0115
 int id marquee 0x7f0a0116
 int id masked 0x7f0a0117
 int id match_constraint 0x7f0a0118
@@ -3290,6 +3288,7 @@ int id parentPanel 0x7f0a0179
 int id parentRelative 0x7f0a017a
 int id parent_matrix 0x7f0a017b
 int id passportNumber 0x7f0a017c
+int id passport_number 0x7f0a0243
 int id password 0x7f0a017d
 int id password_text 0x7f0a017e
 int id password_toggle 0x7f0a017f
@@ -3460,6 +3459,7 @@ int id uniform 0x7f0a0222
 int id unlabeled 0x7f0a0223
 int id up 0x7f0a0224
 int id useLogo 0x7f0a0225
+int id user_name 0x7f0a0244
 int id user_spinner 0x7f0a0226
 int id username 0x7f0a0227
 int id vertical_only 0x7f0a0228

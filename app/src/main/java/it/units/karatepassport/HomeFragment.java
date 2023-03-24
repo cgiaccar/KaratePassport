@@ -19,7 +19,7 @@ import javax.annotation.Nullable;
 
 public class HomeFragment extends Fragment {
 
-    TextView name,email,number,currentBelt;
+    TextView name,email, passportNumber,currentBelt;
     FirebaseAuth fAuth;
     FirebaseFirestore fStore;
     String userID;
@@ -34,9 +34,9 @@ public class HomeFragment extends Fragment {
 
     @Override
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
-        number = view.findViewById(R.id.mainPassportNumber);
-        name = view.findViewById(R.id.mainUserName);
-        email = view.findViewById(R.id.mainEmail);
+        passportNumber = view.findViewById(R.id.passport_number);
+        name = view.findViewById(R.id.user_name);
+        email = view.findViewById(R.id.home_email);
         currentBelt = view.findViewById(R.id.current_belt);
         progressBar = view.findViewById(R.id.progressBar3);
 
@@ -54,7 +54,7 @@ public class HomeFragment extends Fragment {
 
                 //using the names assigned in Register.java, visible also in the FirestoreDB
                 String snapshotNumber = documentSnapshot.getString("passportNumber");
-                number.setText(getString(R.string.passport_number, snapshotNumber));
+                passportNumber.setText(getString(R.string.passport_number, snapshotNumber));
                 String snapshotName = documentSnapshot.getString("userName");
                 Boolean isMaster = documentSnapshot.getBoolean("isMaster");
                 if (isMaster == Boolean.TRUE) {
@@ -64,6 +64,10 @@ public class HomeFragment extends Fragment {
                 currentBelt.setText(documentSnapshot.getString("currentBelt"));
             }
             progressBar.setVisibility(View.GONE);
+            passportNumber.setVisibility(View.VISIBLE);
+            name.setVisibility(View.VISIBLE);
+            email.setVisibility(View.VISIBLE);
+            currentBelt.setVisibility(View.VISIBLE);
         });
     }
 

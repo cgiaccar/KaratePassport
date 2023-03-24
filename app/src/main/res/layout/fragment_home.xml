@@ -20,10 +20,11 @@
         app:layout_constraintVertical_bias="0.060000002" />
 
     <TextView
-        android:id="@+id/mainPassportNumber"
+        android:id="@+id/passport_number"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Your passport number"
+        android:visibility="invisible"
         android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -40,7 +41,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.111"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/mainPassportNumber"
+        app:layout_constraintTop_toBottomOf="@+id/passport_number"
         app:layout_constraintVertical_bias="0.177" />
 
     <ProgressBar
@@ -54,10 +55,11 @@
         app:layout_constraintTop_toTopOf="@+id/imageView3" />
 
     <TextView
-        android:id="@+id/mainUserName"
+        android:id="@+id/user_name"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="40dp"
+        android:visibility="invisible"
         android:text="Your Name"
         android:textSize="16sp"
         app:layout_constraintBottom_toBottomOf="@+id/imageView3"
@@ -66,10 +68,11 @@
         app:layout_constraintVertical_bias="0.120000005" />
 
     <TextView
-        android:id="@+id/mainEmail"
+        android:id="@+id/home_email"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="40dp"
+        android:visibility="invisible"
         android:text="Your email"
         android:textSize="16sp"
         app:layout_constraintBottom_toBottomOf="@+id/imageView3"
@@ -81,6 +84,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="40dp"
+        android:visibility="invisible"
         android:text="Your current belt"
         android:textSize="16sp"
         app:layout_constraintBottom_toBottomOf="@+id/imageView3"
