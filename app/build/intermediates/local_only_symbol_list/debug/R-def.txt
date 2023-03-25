@@ -5,6 +5,8 @@ array com_google_android_gms_fonts_certs_dev
 array com_google_android_gms_fonts_certs_prod
 array preloaded_fonts
 color black
+color dark_red
+color light_yellow
 color purple_200
 color purple_500
 color purple_700

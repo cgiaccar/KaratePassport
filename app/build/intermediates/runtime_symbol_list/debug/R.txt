@@ -1386,6 +1386,7 @@ int color common_google_signin_btn_text_light_disabled 0x7f060039
 int color common_google_signin_btn_text_light_focused 0x7f06003a
 int color common_google_signin_btn_text_light_pressed 0x7f06003b
 int color common_google_signin_btn_tint 0x7f06003c
+int color dark_red 0x7f060293
 int color design_bottom_navigation_shadow_color 0x7f06003d
 int color design_box_stroke_color 0x7f06003e
 int color design_dark_default_color_background 0x7f06003f
@@ -1434,6 +1435,7 @@ int color foreground_material_dark 0x7f060069
 int color foreground_material_light 0x7f06006a
 int color highlighted_text_material_dark 0x7f06006b
 int color highlighted_text_material_light 0x7f06006c
+int color light_yellow 0x7f060295
 int color m3_appbar_overlay_color 0x7f06006d
 int color m3_assist_chip_icon_tint_color 0x7f06006e
 int color m3_assist_chip_stroke_color 0x7f06006f
