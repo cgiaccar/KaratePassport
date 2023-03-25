@@ -146,7 +146,7 @@ MERGED from [androidx.startup:startup-runtime:1.1.1] /Users/Camilla/.gradle/cach
 	android:label
 		ADDED from /Users/Camilla/AndroidStudioProjects/KaratePassport/app/src/main/AndroidManifest.xml:10:9-41
 	android:roundIcon
-		ADDED from /Users/Camilla/AndroidStudioProjects/KaratePassport/app/src/main/AndroidManifest.xml:11:9-54
+		ADDED from /Users/Camilla/AndroidStudioProjects/KaratePassport/app/src/main/AndroidManifest.xml:11:9-48
 	android:icon
 		ADDED from /Users/Camilla/AndroidStudioProjects/KaratePassport/app/src/main/AndroidManifest.xml:9:9-43
 	android:allowBackup

@@ -2812,8 +2812,6 @@ int drawable ic_clock_black_24dp 0x7f0800a0
 int drawable ic_email 0x7f0800a1
 int drawable ic_home 0x7f0800a2
 int drawable ic_keyboard_black_24dp 0x7f0800a3
-int drawable ic_launcher_background 0x7f0800a4
-int drawable ic_launcher_foreground 0x7f0800a5
 int drawable ic_lock 0x7f0800a6
 int drawable ic_logout 0x7f0800a7
 int drawable ic_m3_chip_check 0x7f0800a8
@@ -3679,7 +3677,6 @@ int layout spinner_layout_selected 0x7f0d0076
 int layout support_simple_spinner_dropdown_item 0x7f0d0074
 int menu nav_item_list 0x7f0f0000
 int mipmap ic_launcher 0x7f100000
-int mipmap ic_launcher_round 0x7f100001
 int navigation navigation_graph 0x7f110000
 int plurals mtrl_badge_content_description 0x7f120000
 int raw firebase_common_keep 0x7f130000
