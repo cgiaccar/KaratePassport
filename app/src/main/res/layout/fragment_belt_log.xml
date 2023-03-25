@@ -7,6 +7,19 @@
     xmlns:tools="http://schemas.android.com/tools"
     tools:context=".BeltLogFragment">
 
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="809dp"
+        android:layout_height="875dp"
+        android:alpha="0.3"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.899"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.787"
+        app:srcCompat="@drawable/logo" />
+
     <TableLayout
         android:id="@+id/kyu_table"
         android:layout_width="match_parent"
