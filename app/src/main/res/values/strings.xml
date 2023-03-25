@@ -24,6 +24,6 @@
     <string name="already_registered"><u>Already Registered? Login Here</u></string>
 
     <string name="logged_as">Logged in as %1$s</string>
-    <string name="passport_number"># %1$s</string>
+    <string name="passport_number">Passport number: #%1$s</string>
     <string name="master_name">Master %1$s</string>
 </resources>

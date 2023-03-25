@@ -47,7 +47,7 @@
     <string name="login_title">Login Page</string>
     <string name="logout_button">Logout</string>
     <string name="master_name">Master %1$s</string>
-    <string name="passport_number"># %1$s</string>
+    <string name="passport_number">Passport number: #%1$s</string>
     <string name="passport_number_hint">Passport Number</string>
     <string name="password_hint">Password</string>
     <string name="project_id" translatable="false">karatepassport-bac6b</string>
@@ -57,25 +57,25 @@
     <string name="select_user_tutorial">Start by selecting the user by their passport number below!</string>
     <string name="username_hint">Username</string>
     <style name="MyToolbar" parent="@style/ThemeOverlay.AppCompat">
-        <!-- Title text -->
+        
         <item name="android:textColorPrimary">?attr/colorOnPrimary</item>
-        <!-- This will change drawer icon -->
+        
         <item name="drawerArrowStyle">@style/WhiteDrawerIconStyle</item>
-        <!-- background -->
+        
         <item name="android:background">?attr/colorPrimary</item>
     </style>
     <style name="Theme.KaratePassport" parent="Theme.MaterialComponents.DayNight.NoActionBar">
-        <!-- Primary brand color. -->
+        
         <item name="colorPrimary">@color/dark_red</item>
         <item name="colorPrimaryVariant">@color/purple_700</item>
         <item name="colorOnPrimary">@color/light_yellow</item>
-        <!-- Secondary brand color. -->
+        
         <item name="colorSecondary">@color/teal_200</item>
         <item name="colorSecondaryVariant">@color/teal_700</item>
         <item name="colorOnSecondary">@color/black</item>
-        <!-- Status bar color. -->
+        
         <item name="android:statusBarColor" ns1:targetApi="l">?attr/colorPrimary</item>
-        <!-- Customize your theme here. -->
+        
         <item name="android:fontFamily">@font/aclonica</item>
         <item name="android:textColor">?attr/colorPrimary</item>
         <item name="android:textColorHint">?attr/colorOnPrimary</item>
