@@ -11179,7 +11179,7 @@
         <item name="android:statusBarColor" ns2:targetApi="l">?attr/colorPrimary</item>
         
         <item name="android:fontFamily">@font/aclonica</item>
-        <item name="android:textColor">@android:color/tab_indicator_text</item>
+        <item name="android:textColor">?attr/colorPrimary</item>
         <item name="android:textColorHint">?attr/colorOnPrimary</item>
         <item name="android:editTextColor">?attr/colorOnPrimary</item>
         <item name="android:editTextBackground">?attr/colorPrimary</item>
