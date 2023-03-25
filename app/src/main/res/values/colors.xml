@@ -10,4 +10,5 @@
 
     <color name="dark_red">#4C1603</color>
     <color name="light_yellow">#FFB667</color>
+    <color name="spinner_selected">@color/dark_red</color>
 </resources>

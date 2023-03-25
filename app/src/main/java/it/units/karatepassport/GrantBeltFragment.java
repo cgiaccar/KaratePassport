@@ -60,8 +60,10 @@ public class GrantBeltFragment extends Fragment {
         for (Belt belt : Belt.values()) {
             ranks.add(belt.rank);
         }
-        passportsAdapter = new ArrayAdapter<>(getActivity(), R.layout.spinner_layout, passportNumbers);
-        ranksAdapter = new ArrayAdapter<>(getActivity(), R.layout.spinner_layout, ranks);
+        passportsAdapter = new ArrayAdapter<>(getActivity(), R.layout.spinner_layout_selected, passportNumbers);
+        passportsAdapter.setDropDownViewResource(R.layout.spinner_layout_dropdown);
+        ranksAdapter = new ArrayAdapter<>(getActivity(), R.layout.spinner_layout_selected, ranks);
+        ranksAdapter.setDropDownViewResource(R.layout.spinner_layout_dropdown);
 
         CollectionReference usersCollection = fStore.collection("users");
         usersCollection.get().addOnCompleteListener(task -> {

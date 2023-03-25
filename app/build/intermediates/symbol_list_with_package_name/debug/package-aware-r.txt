@@ -1976,6 +1976,7 @@ color secondary_text_default_material_dark
 color secondary_text_default_material_light
 color secondary_text_disabled_material_dark
 color secondary_text_disabled_material_light
+color spinner_selected
 color switch_thumb_disabled_material_dark
 color switch_thumb_disabled_material_light
 color switch_thumb_material_dark
@@ -3681,7 +3682,8 @@ layout notification_template_part_time
 layout select_dialog_item_material
 layout select_dialog_multichoice_material
 layout select_dialog_singlechoice_material
-layout spinner_layout
+layout spinner_layout_dropdown
+layout spinner_layout_selected
 layout support_simple_spinner_dropdown_item
 menu nav_item_list
 mipmap ic_launcher
