@@ -80,6 +80,7 @@ public class MainActivity extends AppCompatActivity {
                     navigationView.getMenu().findItem(R.id.nav_grant_belt).setVisible(true);
                 }
             }
+            navigationView.getMenu().getItem(0).setChecked(true);
         });
     }
 
