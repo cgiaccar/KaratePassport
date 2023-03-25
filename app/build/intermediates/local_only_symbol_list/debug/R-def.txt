@@ -4,16 +4,9 @@ array com_google_android_gms_fonts_certs
 array com_google_android_gms_fonts_certs_dev
 array com_google_android_gms_fonts_certs_prod
 array preloaded_fonts
-color black
 color dark_red
 color light_yellow
-color purple_200
-color purple_500
-color purple_700
 color spinner_selected
-color teal_200
-color teal_700
-color white
 drawable border
 drawable ic_belt
 drawable ic_email
