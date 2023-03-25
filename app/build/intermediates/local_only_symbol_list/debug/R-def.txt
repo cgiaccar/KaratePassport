@@ -43,7 +43,6 @@ id green_belt_date
 id home_email
 id imageView
 id imageView2
-id imageView3
 id invisible_tutorial
 id kyu_table
 id log_progress_bar
