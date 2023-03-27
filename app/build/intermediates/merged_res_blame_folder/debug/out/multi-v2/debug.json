@@ -9265,25 +9265,6 @@
                     }
                 },
                 {
-                    "source": "/Users/Camilla/.gradle/caches/transforms-3/b5a529aeaf5deb519969c7ed58a26f8a/transformed/fragment-1.5.5/res/values/values.xml",
-                    "from": {
-                        "startLines": "2,3,4,5,10",
-                        "startColumns": "4,4,4,4,4",
-                        "startOffsets": "55,112,177,241,411",
-                        "endLines": "2,3,4,9,13",
-                        "endColumns": "56,64,63,24,24",
-                        "endOffsets": "107,172,236,406,555"
-                    },
-                    "to": {
-                        "startLines": "1674,1710,1747,11090,11095",
-                        "startColumns": "4,4,4,4,4",
-                        "startOffsets": "110789,112652,114567,696388,696558",
-                        "endLines": "1674,1710,1747,11094,11098",
-                        "endColumns": "56,64,63,24,24",
-                        "endOffsets": "110841,112712,114626,696553,696702"
-                    }
-                },
-                {
                     "source": "/Users/Camilla/AndroidStudioProjects/KaratePassport/app/src/main/res/values/themes.xml",
                     "from": {
                         "startLines": "16,2,25",
@@ -9539,6 +9520,25 @@
                         "startOffsets": "120991",
                         "endColumns": "82",
                         "endOffsets": "121069"
+                    }
+                },
+                {
+                    "source": "/Users/Camilla/.gradle/caches/transforms-3/59aa07db01bebd73b2cccd4a9bca5525/transformed/fragment-1.5.6/res/values/values.xml",
+                    "from": {
+                        "startLines": "2,3,4,5,10",
+                        "startColumns": "4,4,4,4,4",
+                        "startOffsets": "55,112,177,241,411",
+                        "endLines": "2,3,4,9,13",
+                        "endColumns": "56,64,63,24,24",
+                        "endOffsets": "107,172,236,406,555"
+                    },
+                    "to": {
+                        "startLines": "1674,1710,1747,11090,11095",
+                        "startColumns": "4,4,4,4,4",
+                        "startOffsets": "110789,112652,114567,696388,696558",
+                        "endLines": "1674,1710,1747,11094,11098",
+                        "endColumns": "56,64,63,24,24",
+                        "endOffsets": "110841,112712,114626,696553,696702"
                     }
                 },
                 {
