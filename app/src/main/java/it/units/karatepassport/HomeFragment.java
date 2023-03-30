@@ -19,12 +19,11 @@ import javax.annotation.Nullable;
 
 public class HomeFragment extends Fragment {
 
-    TextView name,email, passportNumber,currentBelt;
+    TextView userName, email, passportNumber, currentBelt;
     FirebaseAuth fAuth;
     FirebaseFirestore fStore;
-    String userID;
+    String userId;
     ProgressBar progressBar;
-
 
     @Nullable
     @Override
@@ -34,38 +33,35 @@ public class HomeFragment extends Fragment {
 
     @Override
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
+
+        // initialization of Auth and Firestore
+        fAuth = FirebaseAuth.getInstance();
+        fStore = FirebaseFirestore.getInstance();
+
+        userId = fAuth.getCurrentUser().getUid();
         passportNumber = view.findViewById(R.id.passport_number);
-        name = view.findViewById(R.id.user_name);
+        userName = view.findViewById(R.id.user_name);
         email = view.findViewById(R.id.home_email);
         currentBelt = view.findViewById(R.id.current_belt);
         progressBar = view.findViewById(R.id.progressBar3);
 
-        // initialization of Auth e Firestore
-        fAuth = FirebaseAuth.getInstance();
-        fStore = FirebaseFirestore.getInstance();
-
-        userID = fAuth.getCurrentUser().getUid();
-
-        // this is the reference to what we want to retrieve, to the specific user
-        DocumentReference documentReference = fStore.collection("users").document(userID);
+        DocumentReference documentReference = fStore.collection("users").document(userId);
 
         documentReference.addSnapshotListener((documentSnapshot, e) -> {
             if ((e == null) || (documentSnapshot != null && documentSnapshot.exists())) {
-
-                //using the names assigned in Register.java, visible also in the FirestoreDB
                 String snapshotNumber = documentSnapshot.getString("passportNumber");
                 passportNumber.setText(getString(R.string.passport_number, snapshotNumber));
                 String snapshotName = documentSnapshot.getString("userName");
                 Boolean isMaster = documentSnapshot.getBoolean("isMaster");
                 if (isMaster == Boolean.TRUE) {
-                    name.setText(getString(R.string.master_name, snapshotName));
-                } else name.setText(snapshotName);
+                    userName.setText(getString(R.string.master_name, snapshotName));
+                } else userName.setText(snapshotName);
                 email.setText(documentSnapshot.getString("email"));
                 currentBelt.setText(documentSnapshot.getString("currentBelt"));
             }
             progressBar.setVisibility(View.GONE);
             passportNumber.setVisibility(View.VISIBLE);
-            name.setVisibility(View.VISIBLE);
+            userName.setVisibility(View.VISIBLE);
             email.setVisibility(View.VISIBLE);
             currentBelt.setVisibility(View.VISIBLE);
         });
