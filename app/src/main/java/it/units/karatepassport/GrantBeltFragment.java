@@ -48,7 +48,9 @@ public class GrantBeltFragment extends Fragment {
 
     @Override
     public void onViewCreated(@NonNull View view, Bundle savedInstanceState) {
+
         fStore = FirebaseFirestore.getInstance();
+
         progressBar = view.findViewById(R.id.progress_bar);
         passportsSpinner = view.findViewById(R.id.user_spinner);
         ranksSpinner = view.findViewById(R.id.rank_spinner);
@@ -60,15 +62,18 @@ public class GrantBeltFragment extends Fragment {
         for (Belt belt : Belt.values()) {
             ranks.add(belt.rank);
         }
+
         passportsAdapter = new ArrayAdapter<>(getActivity(), R.layout.spinner_layout_selected, passportNumbers);
         passportsAdapter.setDropDownViewResource(R.layout.spinner_layout_dropdown);
+
         ranksAdapter = new ArrayAdapter<>(getActivity(), R.layout.spinner_layout_selected, ranks);
         ranksAdapter.setDropDownViewResource(R.layout.spinner_layout_dropdown);
 
+        // fill passportsSpinner
         CollectionReference usersCollection = fStore.collection("users");
         usersCollection.get().addOnCompleteListener(task -> {
             if (task.isSuccessful()) {
-                for (QueryDocumentSnapshot document : task.getResult()) {
+                for (QueryDocumentSnapshot document : task.getResult()) {   // for each user in users
                     passportNumbers.add(document.getString("passportNumber"));
                 }
                 Collections.sort(passportNumbers);
@@ -88,6 +93,7 @@ public class GrantBeltFragment extends Fragment {
             grantBeltButton.setVisibility(View.VISIBLE);
         });
 
+        // so the user has to click selectPassportButton (changing the selectedPassport) to go on with the procedure
         passportsSpinner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
                 invisibleTutorial.setVisibility(View.GONE);
@@ -104,9 +110,9 @@ public class GrantBeltFragment extends Fragment {
                     .addOnCompleteListener(task -> {
                         if (task.isSuccessful()) {
                             Toast.makeText(getActivity(), "Rank granted successfully!", Toast.LENGTH_SHORT).show();
-                            for (QueryDocumentSnapshot document : task.getResult()) {
+                            for (QueryDocumentSnapshot document : task.getResult()) {   // for each user corresponding to the selectedPassport (only one)
                                 DocumentReference userReference = usersCollection.document(document.getId());
-                                Map<String, Object> user = new HashMap<>(); // the most popular method to create new data is by using an hashmap
+                                Map<String, Object> user = new HashMap<>();
                                 user.put("currentBelt", selectedRank);
                                 userReference.update(user);
                                 DocumentReference beltsReference = userReference.collection("belts").document(selectedRank);
@@ -117,6 +123,7 @@ public class GrantBeltFragment extends Fragment {
                         } else {
                             Toast.makeText(getActivity(), "Error getting documents: " + task.getException().getMessage(), Toast.LENGTH_SHORT).show();
                         }
+                        // again, to assure the user upgrades selectedPassport clicking selectPassportButton
                         invisibleTutorial.setVisibility(View.GONE);
                         ranksSpinner.setVisibility(View.GONE);
                         grantBeltButton.setVisibility(View.GONE);
