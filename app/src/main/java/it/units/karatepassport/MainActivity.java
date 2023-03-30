@@ -23,19 +23,21 @@ import com.google.firebase.firestore.FirebaseFirestore;
 import it.units.karatepassport.databinding.ActivityMainBinding;
 
 public class MainActivity extends AppCompatActivity {
+
     TextView loggedAs;
     FirebaseAuth fAuth;
     FirebaseFirestore fStore;
-    String userID;
-    private AppBarConfiguration mAppBarConfiguration;
+    String userId;
+    private AppBarConfiguration appBarConfiguration;
     View headerView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
 
+        super.onCreate(savedInstanceState);
         ActivityMainBinding binding = ActivityMainBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
+
 
         // app bar and navigation handling
         Toolbar toolbar = findViewById(R.id.app_bar);
@@ -52,20 +54,20 @@ public class MainActivity extends AppCompatActivity {
             return true;
         });
 
-        mAppBarConfiguration = new AppBarConfiguration.Builder(
+        appBarConfiguration = new AppBarConfiguration.Builder(
                 R.id.nav_home, R.id.nav_belt_log, R.id.nav_grant_belt)
                 .setOpenableLayout(drawerLayout)
                 .build();
-        NavigationUI.setupActionBarWithNavController(this, navController, mAppBarConfiguration);
+        NavigationUI.setupActionBarWithNavController(this, navController, appBarConfiguration);
         NavigationUI.setupWithNavController(navigationView, navController);
 
 
-        // personalize navigation header depending on user
+        // personalize navigation menu depending on user
         fAuth = FirebaseAuth.getInstance();
         fStore = FirebaseFirestore.getInstance();
 
-        userID = fAuth.getCurrentUser().getUid();
-        DocumentReference documentReference = fStore.collection("users").document(userID);
+        userId = fAuth.getCurrentUser().getUid();
+        DocumentReference documentReference = fStore.collection("users").document(userId);
 
         documentReference.addSnapshotListener((documentSnapshot, e) -> {
             if ((e == null) || (documentSnapshot != null && documentSnapshot.exists())) {
@@ -80,6 +82,7 @@ public class MainActivity extends AppCompatActivity {
                     navigationView.getMenu().findItem(R.id.nav_grant_belt).setVisible(true);
                 }
             }
+            // Home is selected at the start
             navigationView.getMenu().getItem(0).setChecked(true);
         });
     }
@@ -87,7 +90,7 @@ public class MainActivity extends AppCompatActivity {
     @Override
     public boolean onSupportNavigateUp() {  // to make the menu icon work
         NavController navController = Navigation.findNavController(this, R.id.nav_host_fragment);
-        return NavigationUI.navigateUp(navController, mAppBarConfiguration)
+        return NavigationUI.navigateUp(navController, appBarConfiguration)
                 || super.onSupportNavigateUp();
     }
 
