@@ -25,7 +25,7 @@ public class BeltLogFragment extends Fragment {
 
     FirebaseAuth fAuth;
     FirebaseFirestore fStore;
-    String userID;
+    String userId;
     ProgressBar progressBar;
     TableLayout kyuTable, danTable;
 
@@ -38,20 +38,19 @@ public class BeltLogFragment extends Fragment {
     @Override
     public void onViewCreated(@NonNull View view, Bundle savedInstanceState) {
 
-        // initialization of Auth and Firestore
         fAuth = FirebaseAuth.getInstance();
         fStore = FirebaseFirestore.getInstance();
 
-        userID = fAuth.getCurrentUser().getUid();
+        userId = fAuth.getCurrentUser().getUid();
         progressBar = view.findViewById(R.id.log_progress_bar);
         kyuTable = view.findViewById(R.id.kyu_table);
         danTable = view.findViewById(R.id.dan_table);
 
         CollectionReference beltsReference = fStore.collection("users")
-                .document(userID).collection("belts");
+                .document(userId).collection("belts");
         beltsReference.get().addOnCompleteListener(task -> {
             if (task.isSuccessful()) {
-                for (QueryDocumentSnapshot document : task.getResult()) {
+                for (QueryDocumentSnapshot document : task.getResult()) {   // for each belt in belts
                     String rank = document.getId();
                     Belt belt = Belt.getByRank(rank);
                     TextView textView = view.findViewById(belt.textView);
