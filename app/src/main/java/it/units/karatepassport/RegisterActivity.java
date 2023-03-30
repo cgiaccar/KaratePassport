@@ -23,13 +23,13 @@ import java.util.Map;
 
 public class RegisterActivity extends AppCompatActivity {
 
-    EditText mEmail, mUsername, mPassportNumber, mPassword;
-    Button mRegisterBtn;
-    TextView mLoginHereBtn;
+    EditText userNameField, passportNumberField, emailField, passwordField;
+    Button registerButton;
+    TextView linkToLogin;
     FirebaseAuth fAuth;
-    ProgressBar progressBar;
     FirebaseFirestore fStore;
-    String userID;
+    ProgressBar progressBar;
+    String userId;
     DocumentReference passportReference;
 
     @Override
@@ -37,12 +37,12 @@ public class RegisterActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_register);
 
-        mEmail = findViewById(R.id.email);
-        mUsername = findViewById(R.id.username);
-        mPassportNumber = findViewById(R.id.passportNumber);
-        mPassword = findViewById(R.id.password_text);
-        mRegisterBtn = findViewById(R.id.registerBtn);
-        mLoginHereBtn = findViewById(R.id.textLoginHere);
+        userNameField = findViewById(R.id.username);
+        passportNumberField = findViewById(R.id.passportNumber);
+        emailField = findViewById(R.id.email);
+        passwordField = findViewById(R.id.password_text);
+        registerButton = findViewById(R.id.registerBtn);
+        linkToLogin = findViewById(R.id.textLoginHere);
         progressBar = findViewById(R.id.progressBar);
 
         fAuth = FirebaseAuth.getInstance();
@@ -54,37 +54,36 @@ public class RegisterActivity extends AppCompatActivity {
             finish();
         }
 
-        // on Register button click
-        mRegisterBtn.setOnClickListener(view -> {
-            String email = mEmail.getText().toString().trim();
-            String password = mPassword.getText().toString().trim();
-            String userName = mUsername.getText().toString();
-            String passportNumber = mPassportNumber.getText().toString();
+        registerButton.setOnClickListener(view -> {
+            String userName = userNameField.getText().toString();
+            String passportNumber = passportNumberField.getText().toString();
+            String email = emailField.getText().toString().trim();
+            String password = passwordField.getText().toString().trim();
             passportReference = fStore.collection("passports").document(passportNumber);
 
             // check if user inputs are valid
             if (TextUtils.isEmpty(passportNumber)) {
-                mPassportNumber.setError("Passport Number is required.");
+                passportNumberField.setError("Passport Number is required.");
                 return;
             }
 
             if (!TextUtils.isDigitsOnly(passportNumber)) {
-                mPassportNumber.setError("Invalid Passport Number.");
+                passportNumberField.setError("Invalid Passport Number.");
                 return;
             }
 
             if (TextUtils.isEmpty(email)) {
-                mEmail.setError("Email is required.");
+                emailField.setError("Email is required.");
                 return;
             }
 
             if (TextUtils.isEmpty(password)) {
-                mPassword.setError("Password is required.");
+                passwordField.setError("Password is required.");
                 return;
             }
 
             if (password.length() < 6) {
-                mPassword.setError("Password must be at least six characters long");
+                passwordField.setError("Password must be at least six characters long");
                 return;
             }
 
@@ -92,10 +91,9 @@ public class RegisterActivity extends AppCompatActivity {
             passportReference.get().addOnCompleteListener(checkingTask -> {
                 if (checkingTask.isSuccessful()) {
                     DocumentSnapshot document = checkingTask.getResult();
-                    if (document.exists()) {    // the passport already exists, error
-                        mPassportNumber.setError("Passport Number already exists.");
+                    if (document.exists()) {
+                        passportNumberField.setError("Passport Number already exists.");
                     }
-
                     else {    // the passport is new, continue with registration
                         progressBar.setVisibility(View.VISIBLE);
 
@@ -103,17 +101,18 @@ public class RegisterActivity extends AppCompatActivity {
                         fAuth.createUserWithEmailAndPassword(email, password).addOnCompleteListener(creationTask -> {
                             if (creationTask.isSuccessful()) {
                                 Toast.makeText(RegisterActivity.this, "User created successfully!", Toast.LENGTH_SHORT).show();
-                                // as soon as the user is created, we save the user data into the Firebase Firestore Database
-                                userID = fAuth.getCurrentUser().getUid(); // get current user (currently registering user) unique ID
-                                DocumentReference userReference = fStore.collection("users").document(userID); // creates a new user inside the collection of users using their unique ID
-                                Map<String, Object> user = new HashMap<>(); // the most popular method to create new data is by using an hashmap
+
+                                // save new user's data in database
+                                userId = fAuth.getCurrentUser().getUid(); // get new user's ID from Firebase Auth
+                                DocumentReference userReference = fStore.collection("users").document(userId); // use ID to create new user in database
+                                Map<String, Object> user = new HashMap<>();
                                 user.put("userName", userName);
                                 user.put("passportNumber", passportNumber);
                                 user.put("email", email);
                                 user.put("currentBelt", Belt.WHITE.rank);
                                 userReference.set(user);
 
-                                // automatically grants the white belt to a new user
+                                // automatically grants the white belt to the new user
                                 DocumentReference beltsReference = userReference.collection("belts").document(Belt.WHITE.rank);
                                 Map<String, Object> belt = new HashMap<>();
                                 belt.put("timestamp", FieldValue.serverTimestamp());
@@ -121,7 +120,7 @@ public class RegisterActivity extends AppCompatActivity {
 
                                 // the passport number is stored in the collection for uniqueness checking
                                 Map<String, Object> passportOwner = new HashMap<>();
-                                passportOwner.put("owner", userID);
+                                passportOwner.put("owner", userId);
                                 passportReference.set(passportOwner);
 
                                 startActivity(new Intent(getApplicationContext(), MainActivity.class));
@@ -137,7 +136,7 @@ public class RegisterActivity extends AppCompatActivity {
             });
         });
 
-        mLoginHereBtn.setOnClickListener(view -> startActivity(new Intent(getApplicationContext(), LoginActivity.class)));
+        linkToLogin.setOnClickListener(view -> startActivity(new Intent(getApplicationContext(), LoginActivity.class)));
     }
 
 }
