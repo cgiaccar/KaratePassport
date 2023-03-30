@@ -17,9 +17,9 @@ import com.google.firebase.auth.FirebaseAuth;
 
 public class LoginActivity extends AppCompatActivity {
 
-    EditText mEmail, mPassword;
-    Button mLoginBtn;
-    TextView mRegisterHereBtn, mForgotPassword;
+    EditText emailField, passwordField;
+    Button loginButton;
+    TextView linkToRegister, linkForgotPassword;
     FirebaseAuth fAuth;
     ProgressBar progressBar;
 
@@ -28,11 +28,11 @@ public class LoginActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
 
-        mEmail = findViewById(R.id.email);
-        mPassword = findViewById(R.id.password_text);
-        mForgotPassword = findViewById(R.id.forgotPassword);
-        mLoginBtn = findViewById(R.id.loginBtn);
-        mRegisterHereBtn = findViewById(R.id.textRegisterHere);
+        emailField = findViewById(R.id.email);
+        passwordField = findViewById(R.id.password_text);
+        linkForgotPassword = findViewById(R.id.forgotPassword);
+        loginButton = findViewById(R.id.loginBtn);
+        linkToRegister = findViewById(R.id.textRegisterHere);
         progressBar = findViewById(R.id.progressBar2);
 
         fAuth = FirebaseAuth.getInstance();
@@ -43,23 +43,23 @@ public class LoginActivity extends AppCompatActivity {
             finish();
         }
 
-        mLoginBtn.setOnClickListener(view -> {
-            String email = mEmail.getText().toString().trim();
-            String password = mPassword.getText().toString().trim();
+        loginButton.setOnClickListener(view -> {
+            String email = this.emailField.getText().toString().trim();
+            String password = this.passwordField.getText().toString().trim();
 
             // check if user inputs are valid
             if (TextUtils.isEmpty(email)) {
-                mEmail.setError("Email is required.");
+                this.emailField.setError("Email is required.");
                 return;
             }
 
             if (TextUtils.isEmpty(password)) {
-                mPassword.setError("Password is required.");
+                this.passwordField.setError("Password is required.");
                 return;
             }
 
             if (password.length() < 6) {
-                mPassword.setError("Password must be at least six characters long");
+                this.passwordField.setError("Password must be at least six characters long");
             }
 
             progressBar.setVisibility(View.VISIBLE);
@@ -76,9 +76,9 @@ public class LoginActivity extends AppCompatActivity {
             });
         });
 
-        mRegisterHereBtn.setOnClickListener(view -> startActivity(new Intent(getApplicationContext(), RegisterActivity.class)));
+        linkToRegister.setOnClickListener(view -> startActivity(new Intent(getApplicationContext(), RegisterActivity.class)));
 
-        mForgotPassword.setOnClickListener(view -> {
+        linkForgotPassword.setOnClickListener(view -> {
             EditText resetMail = new EditText(view.getContext());
             AlertDialog.Builder passwordResetDialog = new AlertDialog.Builder(view.getContext());
             passwordResetDialog.setTitle("Reset your Password?");
