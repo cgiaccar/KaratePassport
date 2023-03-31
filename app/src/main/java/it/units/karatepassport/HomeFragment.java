@@ -50,7 +50,7 @@ public class HomeFragment extends Fragment {
         documentReference.addSnapshotListener((documentSnapshot, e) -> {
             if ((e == null) || (documentSnapshot != null && documentSnapshot.exists())) {
                 String snapshotNumber = documentSnapshot.getString("passportNumber");
-                passportNumber.setText(getString(R.string.passport_number, snapshotNumber));
+                passportNumber.setText(view.getContext().getString(R.string.passport_number, snapshotNumber));
                 String snapshotName = documentSnapshot.getString("userName");
                 Boolean isMaster = documentSnapshot.getBoolean("isMaster");
                 if (isMaster == Boolean.TRUE) {
